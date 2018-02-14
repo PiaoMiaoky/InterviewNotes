@@ -103,7 +103,7 @@ public class Singleton {
 
 只需要对 getUniqueInstance() 方法加锁，就能让该方法一次只能一个线程访问，从而避免了对 uniqueInstance 变量进行多次实例化的问题。但是这样有一个问题是一次只能一个线程进入，性能上会有一定的浪费。
 
-```
+```java
 public static synchronized Singleton getUniqueInstance() {
     if (uniqueInstance == null) {
         uniqueInstance = new Singleton();
@@ -123,7 +123,7 @@ private static Singleton uniqueInstance = new Singleton();
 
 考虑第一个解决方案，它是直接对 getUniqueInstance() 方法进行加锁，而实际上只需要对 uniqueInstance = new Singleton(); 这条语句加锁即可。使用两个条件语句来判断 uniqueInstance 是否已经实例化，如果没有实例化才需要加锁。
 
-```
+```java
 public class Singleton {
     private volatile static Singleton uniqueInstance;
     private Singleton() {
@@ -1252,7 +1252,7 @@ private boolean less(int v, int w) {
 
 如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
 
-```
+```java
 private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> o2-o1); // 实现左边部分
 private PriorityQueue<Integer> minHeep = new PriorityQueue<>(); // 实现右边部分，右边部分所有元素大于左边部分
 private int cnt = 0;
