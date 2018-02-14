@@ -1,5 +1,6 @@
 <!-- GFM-TOC -->
 * [第二章 面试需要的基础知识](#第二章-面试需要的基础知识)
+    * [2. 实现 Singleton](#2-实现-singleton)
     * [3. 数组中重复的数字](#3-数组中重复的数字)
     * [4. 二维数组中的查找](#4-二维数组中的查找)
     * [5. 替换空格](#5-替换空格)
@@ -14,9 +15,11 @@
     * [11. 旋转数组的最小数字](#11-旋转数组的最小数字)
     * [12. 矩阵中的路径](#12-矩阵中的路径)
     * [13. 机器人的运动范围](#13-机器人的运动范围)
+    * [14. 剪绳子](#14-剪绳子)
     * [15. 二进制中 1 的个数](#15-二进制中-1-的个数)
 * [第三章 高质量的代码](#第三章-高质量的代码)
     * [16. 数值的整数次方](#16-数值的整数次方)
+    * [18. 删除链表中重复的结点](#18-删除链表中重复的结点)
     * [19. 正则表达式匹配](#19-正则表达式匹配)
     * [20. 表示数值的字符串](#20-表示数值的字符串)
     * [21. 调整数组顺序使奇数位于偶数前面](#21-调整数组顺序使奇数位于偶数前面)
@@ -27,11 +30,14 @@
     * [26. 树的子结构](#26-树的子结构)
 * [第四章 解决面试题的思路](#第四章-解决面试题的思路)
     * [27. 二叉树的镜像](#27-二叉树的镜像)
-    * [28. 对称的二叉树](#28-对称的二叉树)
+    * [28.1 对称的二叉树](#281-对称的二叉树)
+    * [28.2 平衡二叉树](#282-平衡二叉树)
     * [29. 顺时针打印矩阵](#29-顺时针打印矩阵)
     * [30. 包含 min 函数的栈](#30-包含-min-函数的栈)
     * [31. 栈的压入、弹出序列](#31-栈的压入弹出序列)
-    * [32. 从上往下打印二叉树](#32-从上往下打印二叉树)
+    * [32.1 从上往下打印二叉树](#321-从上往下打印二叉树)
+    * [32.3  把二叉树打印成多行](#323--把二叉树打印成多行)
+    * [32.3 按之字形顺序打印二叉树](#323-按之字形顺序打印二叉树)
     * [33. 二叉搜索树的后序遍历序列](#33-二叉搜索树的后序遍历序列)
     * [34. 二叉树中和为某一值的路径](#34-二叉树中和为某一值的路径)
     * [35. 复杂链表的复制](#35-复杂链表的复制)
@@ -41,6 +47,8 @@
 * [第五章 优化时间和空间效率](#第五章-优化时间和空间效率)
     * [39. 数组中出现次数超过一半的数字](#39-数组中出现次数超过一半的数字)
     * [40. 最小的 K 个数](#40-最小的-k-个数)
+    * [41.1 数据流中的中位数](#411-数据流中的中位数)
+    * [14.2 字符流中第一个不重复的字符](#142-字符流中第一个不重复的字符)
     * [42. 连续子数组的最大和](#42-连续子数组的最大和)
     * [43. 从 1 到 n 整数中 1 出现的次数](#43-从-1-到-n-整数中-1-出现的次数)
     * [45. 把数组排成最小的数](#45-把数组排成最小的数)
@@ -53,28 +61,85 @@
     * [54. 二叉搜索树的第 k 个结点](#54-二叉搜索树的第-k-个结点)
     * [55 二叉树的深度](#55-二叉树的深度)
     * [56. 数组中只出现一次的数字](#56-数组中只出现一次的数字)
-    * [57. 和为 S 的两个数字](#57-和为-s-的两个数字)
+    * [57.1 和为 S 的两个数字](#571-和为-s-的两个数字)
+    * [57.2 和为 S 的连续正数序列](#572-和为-s-的连续正数序列)
     * [58.1 翻转单词顺序列](#581-翻转单词顺序列)
     * [58.2 左旋转字符串](#582-左旋转字符串)
+    * [59. 滑动窗口的最大值](#59-滑动窗口的最大值)
     * [61. 扑克牌顺子](#61-扑克牌顺子)
     * [62. 圆圈中最后剩下的数](#62-圆圈中最后剩下的数)
+* [63. 股票的最大利润](#63-股票的最大利润)
     * [64. 求 1+2+3+...+n](#64-求-123n)
     * [65. 不用加减乘除做加法](#65-不用加减乘除做加法)
     * [66. 构建乘积数组](#66-构建乘积数组)
 * [第七章 两个面试案例](#第七章-两个面试案例)
     * [67. 把字符串转换成整数](#67-把字符串转换成整数)
-* [未分类](#未分类)
-    * [平衡二叉树](#平衡二叉树)
-    * [和为 S 的连续正数序列](#和为-s-的连续正数序列)
-    * [ 字符流中第一个不重复的字符](#-字符流中第一个不重复的字符)
-    * [ 删除链表中重复的结点](#-删除链表中重复的结点)
-    * [按之字形顺序打印二叉树](#按之字形顺序打印二叉树)
-    * [ 把二叉树打印成多行](#-把二叉树打印成多行)
-    * [ 二叉搜索树的第 k 个结点](#-二叉搜索树的第-k-个结点)
-    * [滑动窗口的最大值](#滑动窗口的最大值)
+    * [68. 树中两个节点的最低公共祖先](#68-树中两个节点的最低公共祖先)
 <!-- GFM-TOC -->
 
 # 第二章 面试需要的基础知识
+
+## 2. 实现 Singleton
+
+**经典实现**
+
+以下实现中，私有静态变量被延迟化实例化，这样做的好处是，如果没有用到该类，那么就不会创建该私有静态变量，从而节约资源。这个实现在多线程环境下是不安全的，因为多个线程能够同时进入 if(uniqueInstance == null) 内的语句块，那么就会多次实例化 uniqueInstance 私有静态变量。
+
+```java
+public class Singleton {
+    private static Singleton uniqueInstance;
+    private Singleton() {
+    }
+    public static Singleton getUniqueInstance() {
+        if (uniqueInstance == null) {
+            uniqueInstance = new Singleton();
+        }
+        return uniqueInstance;
+    }
+}
+```
+
+**线程不安全问题的解决方案一**
+
+只需要对 getUniqueInstance() 方法加锁，就能让该方法一次只能一个线程访问，从而避免了对 uniqueInstance 变量进行多次实例化的问题。但是这样有一个问题是一次只能一个线程进入，性能上会有一定的浪费。
+
+```
+public static synchronized Singleton getUniqueInstance() {
+    if (uniqueInstance == null) {
+        uniqueInstance = new Singleton();
+    }
+    return uniqueInstance;
+}
+```
+**线程不安全问题的解决方案二**
+
+不用延迟实例化，采用直接实例化。
+
+```java
+private static Singleton uniqueInstance = new Singleton();
+```
+
+**线程不安全问题的解决方案三**
+
+考虑第一个解决方案，它是直接对 getUniqueInstance() 方法进行加锁，而实际上只需要对 uniqueInstance = new Singleton(); 这条语句加锁即可。使用两个条件语句来判断 uniqueInstance 是否已经实例化，如果没有实例化才需要加锁。
+
+```
+public class Singleton {
+    private volatile static Singleton uniqueInstance;
+    private Singleton() {
+    }
+    public static synchronized Singleton getUniqueInstance() {
+        if (uniqueInstance == null) {
+            synchronized (Singleton.class) {
+                if (uniqueInstance == null) {
+                    uniqueInstance = new Singleton();
+                }
+            }
+        }
+        return uniqueInstance;
+    }
+}
+```
 
 ## 3. 数组中重复的数字
 
@@ -398,6 +463,7 @@ private boolean backtracking(char[][] m, int rows, int cols, char[] str, boolean
 }
 ```
 
+
 ## 13. 机器人的运动范围
 
 **题目描述**
@@ -444,6 +510,28 @@ private void initDigitSum(int rows, int cols) {
 }
 ```
 
+## 14. 剪绳子
+
+**题目描述**
+
+把一根绳子剪成多段，并且使得每段的长度乘积最大。
+
+**解题思路**
+
+尽可能多得剪长度为 3 的绳子，并且不允许有长度为 1 的绳子出现，如果出现了，就从已经切好长度为 3 的绳子中拿出一段与长度为 1 的绳子重新组合，把它们切成两段长度为 2 的绳子。
+
+```java
+int maxProductAfterCuttin(int length) {
+    if (length < 2) return 0;
+    if (length == 2) return 1;
+    if (length == 3) return 2;
+    int timesOf3 = length / 3;
+    if (length - timesOf3 * 3 == 1) timesOf3--;
+    int timesOf2 = (length - timesOf3 * 3) / 2;
+    return (int) (Math.pow(3, timesOf3)) * (int) (Math.pow(2, timesOf2));
+}
+```
+
 ## 15. 二进制中 1 的个数
 
 ```java
@@ -485,6 +573,25 @@ public double Power(double base, int exponent) {
 }
 ```
 
+## 18. 删除链表中重复的结点
+
+```java
+public ListNode deleteDuplication(ListNode pHead) {
+    if (pHead == null) return null;
+    if (pHead.next == null) return pHead;
+    if (pHead.val == pHead.next.val) {
+        ListNode next = pHead.next;
+        while (next != null && pHead.val == next.val) {
+            next = next.next;
+        }
+        return deleteDuplication(next);
+    } else {
+        pHead.next = deleteDuplication(pHead.next);
+        return pHead;
+    }
+}
+```
+
 ## 19. 正则表达式匹配
 
 **题目描述**
@@ -513,6 +620,10 @@ public boolean match(char[] str, char[] pattern) {
 ```
 
 ## 20. 表示数值的字符串
+
+**题目描述**
+
+请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如，字符串 "+100","5e2","-123","3.1416" 和 "-1E-16" 都表示数值。 但是 "12e","1a3.14","1.2.3","+-5" 和 "12e+4.3" 都不是。
 
 ```java
 public boolean isNumeric(char[] str) {
@@ -544,6 +655,22 @@ public void reOrderArray(int[] array) {
 }
 ```
 
+时间复杂度 : O(n)
+空间复杂度 : O(n)
+
+```java
+public void reOrderArray(int[] array) {
+    int oddCnt = 0;
+    for (int num : array) if (num % 2 == 1) oddCnt++;
+    int[] copy = array.clone();
+    int i = 0, j = oddCnt;
+    for (int num : copy) {
+        if (num % 2 == 1) array[i++] = num;
+        else array[j++] = num;
+    }
+}
+```
+
 ## 22. 链表中倒数第 k 个结点
 
 ```java
@@ -561,21 +688,7 @@ public ListNode FindKthToTail(ListNode head, int k) {
 }
 ```
 
-时间复杂度 : O(n)
-空间复杂度 : O(n)
 
-```java
-public void reOrderArray(int[] array) {
-    int oddCnt = 0;
-    for (int num : array) if (num % 2 == 1) oddCnt++;
-    int[] copy = array.clone();
-    int i = 0, j = oddCnt;
-    for (int num : copy) {
-        if (num % 2 == 1) array[i++] = num;
-        else array[j++] = num;
-    }
-}
-```
 
 ## 23. 链表中环的入口结点
 
@@ -668,7 +781,7 @@ public void Mirror(TreeNode root) {
 }
 ```
 
-## 28. 对称的二叉树
+## 28.1 对称的二叉树
 
 ```java
 boolean isSymmetrical(TreeNode pRoot) {
@@ -681,6 +794,25 @@ boolean isSymmetrical(TreeNode t1, TreeNode t2) {
     if (t1 == null || t2 == null) return false;
     if (t1.val != t2.val) return false;
     return isSymmetrical(t1.left, t2.right) && isSymmetrical(t1.right, t2.left);
+}
+```
+
+## 28.2 平衡二叉树
+
+```java
+private boolean isBalanced = true;
+
+public boolean IsBalanced_Solution(TreeNode root) {
+    height(root);
+    return isBalanced;
+}
+
+private int height(TreeNode root) {
+    if (root == null) return 0;
+    int left = height(root.left);
+    int right = height(root.right);
+    if (Math.abs(left - right) > 1) isBalanced = false;
+    return 1 + Math.max(left, right);
 }
 ```
 
@@ -746,7 +878,7 @@ public boolean IsPopOrder(int[] pushA, int[] popA) {
 }
 ```
 
-## 32. 从上往下打印二叉树
+## 32.1 从上往下打印二叉树
 
 ```java
 public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
@@ -766,6 +898,60 @@ public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
     return ret;
 }
 ```
+
+## 32.3  把二叉树打印成多行
+
+```java
+ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+    ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+    if (pRoot == null) return ret;
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.add(pRoot);
+    while (!queue.isEmpty()) {
+        int cnt = queue.size();
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < cnt; i++) {
+            TreeNode node = queue.poll();
+            list.add(node.val);
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
+        }
+        ret.add(list);
+    }
+    return ret;
+}
+```
+
+## 32.3 按之字形顺序打印二叉树
+
+```java
+public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+    ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+    if (pRoot == null) return ret;
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.add(pRoot);
+    boolean reverse = false;
+    while (!queue.isEmpty()) {
+        int cnt = queue.size();
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < cnt; i++) {
+            TreeNode node = queue.poll();
+            list.add(node.val);
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
+        }
+        if (reverse) {
+            Collections.reverse(list);
+            reverse = false;
+        } else {
+            reverse = true;
+        }
+        ret.add(list);
+    }
+    return ret;
+}
+```
+
 
 ## 33. 二叉搜索树的后序遍历序列
 
@@ -816,6 +1002,10 @@ private void dfs(TreeNode node, int target, int curSum, ArrayList<Integer> path)
 
 ## 35. 复杂链表的复制
 
+**题目描述**
+
+输入一个复杂链表（每个节点中有节点值，以及两个指针，一个指向下一个节点，另一个特殊指针指向任意一个节点），返回结果为复制后复杂链表的 head。（注意，输出结果中请不要返回参数中的节点引用，否则判题程序会直接返回空）
+
 第一步，在每个节点的后面插入复制的节点。
 
 ![](https://github.com/00000H/notes/blob/master/pics/f8b12555-967b-423d-a84e-bc9eff104b8b.jpg)
@@ -862,6 +1052,10 @@ public RandomListNode Clone(RandomListNode pHead) {
 ```
 
 ## 36. 二叉搜索树与双向链表
+
+**题目描述**
+
+输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。要求不能创建任何新的结点，只能调整树中结点指针的指向。
 
 ```java
 private TreeNode pre = null;
@@ -916,6 +1110,10 @@ private TreeNode Deserialize() {
 ```
 
 ## 38. 字符串的排列
+
+**题目描述**
+
+输入一个字符串 , 按字典序打印出该字符串中字符的所有排列。例如输入字符串 abc, 则打印出由字符 a, b, c 所能排列出来的所有字符串 abc, acb, bac, bca, cab 和 cba。
 
 ```java
 private ArrayList<String> ret = new ArrayList<>();
@@ -1047,6 +1245,67 @@ private boolean less(int v, int w) {
 }
 ```
 
+## 41.1 数据流中的中位数
+
+
+**题目描述**
+
+如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
+
+```
+private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> o2-o1); // 实现左边部分
+private PriorityQueue<Integer> minHeep = new PriorityQueue<>(); // 实现右边部分，右边部分所有元素大于左边部分
+private int cnt = 0;
+
+public void Insert(Integer num) {
+    // 插入要保证两个堆存于平衡状态
+    if(cnt % 2 == 0) { 
+        // 为偶数的情况下插入到最小堆，先经过最大堆筛选，这样就能保证最大堆中的元素都小于最小堆中的元素
+        maxHeap.add(num);
+        minHeep.add(maxHeap.poll());
+    } else {
+        minHeep.add(num);
+        maxHeap.add(minHeep.poll());
+    }
+    cnt++;
+}
+
+public Double GetMedian() {
+    if(cnt % 2 == 0) {
+        return (maxHeap.peek() + minHeep.peek()) / 2.0;
+    } else {
+        return (double) minHeep.peek();
+    }
+}
+```
+
+## 14.2 字符流中第一个不重复的字符
+
+**题目描述**
+
+请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符 "go" 时，第一个只出现一次的字符是 "g"。当从该字符流中读出前六个字符“google" 时，第一个只出现一次的字符是 "l"。
+
+```java
+//Insert one char from stringstream
+private int[] cnts = new int[256];
+private Queue<Character> queue = new LinkedList<>();
+
+public void Insert(char ch) {
+    cnts[ch]++;
+    queue.add(ch);
+    while (!queue.isEmpty() && cnts[queue.peek()] > 1) {
+        queue.poll();
+    }
+}
+
+//return the first appearence once char in current stringstream
+public char FirstAppearingOnce() {
+    if (queue.isEmpty()) return '#';
+    return queue.peek();
+}
+```
+
+
 ## 42. 连续子数组的最大和
 
 ```java
@@ -1080,6 +1339,10 @@ public int NumberOf1Between1AndN_Solution(int n) {
 
 ## 45. 把数组排成最小的数
 
+**题目描述**
+
+输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组 {3，32，321}，则打印出这三个数字能排成的最小数字为 321323。
+
 ```java
 public String PrintMinNumber(int[] numbers) {
     int n = numbers.length;
@@ -1093,6 +1356,10 @@ public String PrintMinNumber(int[] numbers) {
 ```
 
 ## 49. 丑数
+
+**题目描述**
+
+把只包含因子 2、3 和 5 的数称作丑数（Ugly Number）。例如 6、8 都是丑数，但 14 不是，因为它包含因子 7。 习惯上我们把 1 当做是第一个丑数。求按从小到大的顺序的第 N 个丑数。
 
 ```java
 public int GetUglyNumber_Solution(int index) {
@@ -1181,6 +1448,8 @@ public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
 
 ## 53 数字在排序数组中出现的次数
 
+
+
 ```java
 public int GetNumberOfK(int[] array, int k) {
     int l = 0, h = array.length - 1;
@@ -1246,7 +1515,7 @@ public void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
 }
 ```
 
-## 57. 和为 S 的两个数字
+## 57.1 和为 S 的两个数字
 
 ```java
 public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
@@ -1258,6 +1527,37 @@ public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
         else j--;
     }
     return new ArrayList<Integer>();
+}
+```
+
+## 57.2 和为 S 的连续正数序列
+
+```java
+public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
+    ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+    int start = 1, end = 2;
+    int mid = sum / 2;
+    int curSum = 3;
+    while (start <= mid && end < sum) {
+        if (curSum > sum) {
+            curSum -= start;
+            start++;
+        } else if (curSum < sum) {
+            end++;
+            curSum += end;
+        } else {
+            ArrayList<Integer> list = new ArrayList<>();
+            for (int i = start; i <= end; i++) {
+                list.add(i);
+            }
+            ret.add(list);
+            curSum -= start;
+            start++;
+            end++;
+            curSum += end;
+        }
+    }
+    return ret;
 }
 ```
 
@@ -1314,6 +1614,24 @@ private void reverse(char[] c, int i, int j) {
 }
 ```
 
+## 59. 滑动窗口的最大值
+
+```java
+public ArrayList<Integer> maxInWindows(int[] num, int size) {
+    ArrayList<Integer> ret = new ArrayList<>();
+    PriorityQueue<Integer> heap = new PriorityQueue<Integer>((o1, o2) -> o2 - o1);
+    if (size > num.length || size < 1) return ret;
+    for (int i = 0; i < size; i++) heap.add(num[i]);
+    ret.add(heap.peek());
+    for (int i = 1; i + size - 1 < num.length; i++) {
+        heap.remove(num[i - 1]);
+        heap.add(num[i + size - 1]);
+        ret.add(heap.peek());
+    }
+    return ret;
+}
+```
+
 ## 61. 扑克牌顺子
 
 ```java
@@ -1347,6 +1665,22 @@ public int LastRemaining_Solution(int n, int m) {
     if (n == 0) return -1;
     if (n == 1) return 0;
     return (LastRemaining_Solution(n - 1, m) + m) % n;
+}
+```
+
+# 63. 股票的最大利润
+
+```java
+public int maxProfit(int[] prices) {
+    int n = prices.length;
+    if(n == 0) return 0;
+    int soFarMin = prices[0];
+    int max = 0;
+    for(int i = 1; i < n; i++) {
+        if(soFarMin > prices[i]) soFarMin = prices[i];
+        else max = Math.max(max, prices[i] - soFarMin);
+    }
+    return max;
 }
 ```
 
@@ -1414,190 +1748,12 @@ public int StrToInt(String str) {
 }
 ```
 
-# 未分类
-
-## 平衡二叉树
+## 68. 树中两个节点的最低公共祖先
 
 ```java
-private boolean isBalanced = true;
-
-public boolean IsBalanced_Solution(TreeNode root) {
-    height(root);
-    return isBalanced;
-}
-
-private int height(TreeNode root) {
-    if (root == null) return 0;
-    int left = height(root.left);
-    int right = height(root.right);
-    if (Math.abs(left - right) > 1) isBalanced = false;
-    return 1 + Math.max(left, right);
+public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    if(root.val > p.val && root.val > q.val) return lowestCommonAncestor(root.left, p, q);
+    if(root.val < p.val && root.val < q.val) return lowestCommonAncestor(root.right, p, q);
+    return root;
 }
 ```
-
-## 和为 S 的连续正数序列
-
-```java
-public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
-    ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
-    int start = 1, end = 2;
-    int mid = sum / 2;
-    int curSum = 3;
-    while (start <= mid && end < sum) {
-        if (curSum > sum) {
-            curSum -= start;
-            start++;
-        } else if (curSum < sum) {
-            end++;
-            curSum += end;
-        } else {
-            ArrayList<Integer> list = new ArrayList<>();
-            for (int i = start; i <= end; i++) {
-                list.add(i);
-            }
-            ret.add(list);
-            curSum -= start;
-            start++;
-            end++;
-            curSum += end;
-        }
-    }
-    return ret;
-}
-```
-
-##  字符流中第一个不重复的字符
-
-```java
-//Insert one char from stringstream
-private int[] cnts = new int[256];
-private Queue<Character> queue = new LinkedList<>();
-
-public void Insert(char ch) {
-    cnts[ch]++;
-    queue.add(ch);
-    while (!queue.isEmpty() && cnts[queue.peek()] > 1) {
-        queue.poll();
-    }
-}
-
-//return the first appearence once char in current stringstream
-public char FirstAppearingOnce() {
-    if (queue.isEmpty()) return '#';
-    return queue.peek();
-}
-```
-
-
-
-##  删除链表中重复的结点
-
-```java
-public ListNode deleteDuplication(ListNode pHead) {
-    if (pHead == null) return null;
-    if (pHead.next == null) return pHead;
-    if (pHead.val == pHead.next.val) {
-        ListNode next = pHead.next;
-        while (next != null && pHead.val == next.val) {
-            next = next.next;
-        }
-        return deleteDuplication(next);
-    } else {
-        pHead.next = deleteDuplication(pHead.next);
-        return pHead;
-    }
-}
-```
-
-## 按之字形顺序打印二叉树
-
-```java
-public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
-    ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
-    if (pRoot == null) return ret;
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.add(pRoot);
-    boolean reverse = false;
-    while (!queue.isEmpty()) {
-        int cnt = queue.size();
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < cnt; i++) {
-            TreeNode node = queue.poll();
-            list.add(node.val);
-            if (node.left != null) queue.add(node.left);
-            if (node.right != null) queue.add(node.right);
-        }
-        if (reverse) {
-            Collections.reverse(list);
-            reverse = false;
-        } else {
-            reverse = true;
-        }
-        ret.add(list);
-    }
-    return ret;
-}
-```
-
-##  把二叉树打印成多行
-
-```java
-ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
-    ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
-    if (pRoot == null) return ret;
-    Queue<TreeNode> queue = new LinkedList<>();
-    queue.add(pRoot);
-    while (!queue.isEmpty()) {
-        int cnt = queue.size();
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < cnt; i++) {
-            TreeNode node = queue.poll();
-            list.add(node.val);
-            if (node.left != null) queue.add(node.left);
-            if (node.right != null) queue.add(node.right);
-        }
-        ret.add(list);
-    }
-    return ret;
-}
-```
-
-##  二叉搜索树的第 k 个结点
-
-```java
-TreeNode ret;
-int cnt = 0;
-TreeNode KthNode(TreeNode pRoot, int k)
-{
-    inorder(pRoot, k);
-    return ret;
-}
-
-private void inorder(TreeNode root, int k) {
-    if(root == null) return;
-    if(cnt > k) return;
-    inorder(root.left, k);
-    cnt++;
-    if(cnt == k) ret = root;
-    inorder(root.right, k);
-}
-```
-
-## 滑动窗口的最大值
-
-```java
-public ArrayList<Integer> maxInWindows(int[] num, int size) {
-    ArrayList<Integer> ret = new ArrayList<>();
-    PriorityQueue<Integer> heap = new PriorityQueue<Integer>((o1, o2) -> o2 - o1);
-    if (size > num.length || size < 1) return ret;
-    for (int i = 0; i < size; i++) heap.add(num[i]);
-    ret.add(heap.peek());
-    for (int i = 1; i + size - 1 < num.length; i++) {
-        heap.remove(num[i - 1]);
-        heap.add(num[i + size - 1]);
-        ret.add(heap.peek());
-    }
-    return ret;
-}
-```
-
