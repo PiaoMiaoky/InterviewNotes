@@ -4,17 +4,17 @@
 
 整理自《算法 第四版》，只整理了前三章，因为面试常问的内容主要集中在排序和树，之后的内容春招结束再整理。
 
-> [Leetocde题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Leetocde%E9%A2%98%E8%A7%A3.md)
+> [Leetocde 题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Leetocde%E9%A2%98%E8%A7%A3.md)
 
 对题目做了一个分类，并对每种题型的解题思想做了总结。
 
 已经整理了 300+ 的题目，基本涵盖所有经典题目，持续整理中。
 
-> [剑指offer题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/%E5%89%91%E6%8C%87offer%E9%A2%98%E8%A7%A3.md)
+> [剑指 offer 题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/%E5%89%91%E6%8C%87offer%E9%A2%98%E8%A7%A3.md)
 
 目录按《剑指 Offer 第二版》编排，在牛客网的在线编程中出现的题目都已经 AC。
 
-> [2016校招真题题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/2016%E6%A0%A1%E6%8B%9B%E7%9C%9F%E9%A2%98%E9%A2%98%E8%A7%A3.md)
+> [2016 校招真题题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/2016%E6%A0%A1%E6%8B%9B%E7%9C%9F%E9%A2%98%E9%A2%98%E8%A7%A3.md)
 
 未完成
 
@@ -26,4 +26,20 @@
 
 # 网络
 
+> 计算机网络
+
+整理自《计算机网络 第七版》
+
+> HTTP
+
+整理自《图解 HTTP》
+
 # 操作系统
+
+> 计算机操作系统
+
+整理自《现代操作系统》
+
+> Linux
+
+整理自《鸟哥的 Linux 私房菜》
