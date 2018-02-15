@@ -36,10 +36,16 @@
 
 # 操作系统
 
-> 计算机操作系统
+> [计算机操作系统](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/计算机操作系统.md)
 
 整理自《现代操作系统》
 
-> Linux
+> [Linux](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Linux.md)
 
 整理自《鸟哥的 Linux 私房菜》
+
+# 资料下载
+
+> [百度网盘](https://pan.baidu.com/s/1o9oD1s2#list/path=%2F)
+
+一些 pdf 书籍
