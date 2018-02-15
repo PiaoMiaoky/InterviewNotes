@@ -22,6 +22,8 @@
 
 > [设计模式](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/设计模式.md)
 
+整理自《Head First 设计模式》，这本书内容废话太多，笔记内容提取了重点部分。
+
 # 网络
 
 # 操作系统
