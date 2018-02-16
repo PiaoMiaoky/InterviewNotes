@@ -4,7 +4,7 @@
 
 整理自《算法 第四版》，只整理了前三章，因为面试常问的内容主要集中在排序和树，之后的内容春招结束再整理。
 
-> [Leetocde 题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Leetocde%20题解.md)
+> [Leetcode 题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Leetcode%20题解.md)
 
 对题目做了一个分类，并对每种题型的解题思想做了总结。
 
