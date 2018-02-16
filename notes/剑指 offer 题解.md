@@ -1,89 +1,89 @@
 <!-- GFM-TOC -->
-* [ç¬¬äºŒç«  é¢è¯•éœ€è¦çš„åŸºç¡€çŸ¥è¯†](#ç¬¬äºŒç« -é¢è¯•éœ€è¦çš„åŸºç¡€çŸ¥è¯†)
-    * [2. å®žçŽ° Singleton](#2-å®žçŽ°-singleton)
-    * [3. æ•°ç»„ä¸­é‡å¤çš„æ•°å­—](#3-æ•°ç»„ä¸­é‡å¤çš„æ•°å­—)
-    * [4. äºŒç»´æ•°ç»„ä¸­çš„æŸ¥æ‰¾](#4-äºŒç»´æ•°ç»„ä¸­çš„æŸ¥æ‰¾)
-    * [5. æ›¿æ¢ç©ºæ ¼](#5-æ›¿æ¢ç©ºæ ¼)
-    * [6. ä»Žå°¾åˆ°å¤´æ‰“å°é“¾è¡¨](#6-ä»Žå°¾åˆ°å¤´æ‰“å°é“¾è¡¨)
-    * [7. é‡å»ºäºŒå‰æ ‘](#7-é‡å»ºäºŒå‰æ ‘)
-    * [8. äºŒå‰æ ‘çš„ä¸‹ä¸€ä¸ªç»“ç‚¹](#8-äºŒå‰æ ‘çš„ä¸‹ä¸€ä¸ªç»“ç‚¹)
-    * [9. ç”¨ä¸¤ä¸ªæ ˆå®žçŽ°é˜Ÿåˆ—](#9-ç”¨ä¸¤ä¸ªæ ˆå®žçŽ°é˜Ÿåˆ—)
-    * [10.1 æ–æ³¢é‚£å¥‘æ•°åˆ—](#101-æ–æ³¢é‚£å¥‘æ•°åˆ—)
-    * [10.2 è·³å°é˜¶](#102-è·³å°é˜¶)
-    * [10.3 å˜æ€è·³å°é˜¶](#103-å˜æ€è·³å°é˜¶)
-    * [10.4 çŸ©å½¢è¦†ç›–](#104-çŸ©å½¢è¦†ç›–)
-    * [11. æ—‹è½¬æ•°ç»„çš„æœ€å°æ•°å­—](#11-æ—‹è½¬æ•°ç»„çš„æœ€å°æ•°å­—)
-    * [12. çŸ©é˜µä¸­çš„è·¯å¾„](#12-çŸ©é˜µä¸­çš„è·¯å¾„)
-    * [13. æœºå™¨äººçš„è¿åŠ¨èŒƒå›´](#13-æœºå™¨äººçš„è¿åŠ¨èŒƒå›´)
-    * [14. å‰ªç»³å­](#14-å‰ªç»³å­)
-    * [15. äºŒè¿›åˆ¶ä¸­ 1 çš„ä¸ªæ•°](#15-äºŒè¿›åˆ¶ä¸­-1-çš„ä¸ªæ•°)
-* [ç¬¬ä¸‰ç«  é«˜è´¨é‡çš„ä»£ç ](#ç¬¬ä¸‰ç« -é«˜è´¨é‡çš„ä»£ç )
-    * [16. æ•°å€¼çš„æ•´æ•°æ¬¡æ–¹](#16-æ•°å€¼çš„æ•´æ•°æ¬¡æ–¹)
-    * [18. åˆ é™¤é“¾è¡¨ä¸­é‡å¤çš„ç»“ç‚¹](#18-åˆ é™¤é“¾è¡¨ä¸­é‡å¤çš„ç»“ç‚¹)
-    * [19. æ­£åˆ™è¡¨è¾¾å¼åŒ¹é…](#19-æ­£åˆ™è¡¨è¾¾å¼åŒ¹é…)
-    * [20. è¡¨ç¤ºæ•°å€¼çš„å­—ç¬¦ä¸²](#20-è¡¨ç¤ºæ•°å€¼çš„å­—ç¬¦ä¸²)
-    * [21. è°ƒæ•´æ•°ç»„é¡ºåºä½¿å¥‡æ•°ä½äºŽå¶æ•°å‰é¢](#21-è°ƒæ•´æ•°ç»„é¡ºåºä½¿å¥‡æ•°ä½äºŽå¶æ•°å‰é¢)
-    * [22. é“¾è¡¨ä¸­å€’æ•°ç¬¬ k ä¸ªç»“ç‚¹](#22-é“¾è¡¨ä¸­å€’æ•°ç¬¬-k-ä¸ªç»“ç‚¹)
-    * [23. é“¾è¡¨ä¸­çŽ¯çš„å…¥å£ç»“ç‚¹](#23-é“¾è¡¨ä¸­çŽ¯çš„å…¥å£ç»“ç‚¹)
-    * [24. åè½¬é“¾è¡¨](#24-åè½¬é“¾è¡¨)
-    * [25. åˆå¹¶ä¸¤ä¸ªæŽ’åºçš„é“¾è¡¨](#25-åˆå¹¶ä¸¤ä¸ªæŽ’åºçš„é“¾è¡¨)
-    * [26. æ ‘çš„å­ç»“æž„](#26-æ ‘çš„å­ç»“æž„)
-* [ç¬¬å››ç«  è§£å†³é¢è¯•é¢˜çš„æ€è·¯](#ç¬¬å››ç« -è§£å†³é¢è¯•é¢˜çš„æ€è·¯)
-    * [27. äºŒå‰æ ‘çš„é•œåƒ](#27-äºŒå‰æ ‘çš„é•œåƒ)
-    * [28.1 å¯¹ç§°çš„äºŒå‰æ ‘](#281-å¯¹ç§°çš„äºŒå‰æ ‘)
-    * [28.2 å¹³è¡¡äºŒå‰æ ‘](#282-å¹³è¡¡äºŒå‰æ ‘)
-    * [29. é¡ºæ—¶é’ˆæ‰“å°çŸ©é˜µ](#29-é¡ºæ—¶é’ˆæ‰“å°çŸ©é˜µ)
-    * [30. åŒ…å« min å‡½æ•°çš„æ ˆ](#30-åŒ…å«-min-å‡½æ•°çš„æ ˆ)
-    * [31. æ ˆçš„åŽ‹å…¥ã€å¼¹å‡ºåºåˆ—](#31-æ ˆçš„åŽ‹å…¥å¼¹å‡ºåºåˆ—)
-    * [32.1 ä»Žä¸Šå¾€ä¸‹æ‰“å°äºŒå‰æ ‘](#321-ä»Žä¸Šå¾€ä¸‹æ‰“å°äºŒå‰æ ‘)
-    * [32.3  æŠŠäºŒå‰æ ‘æ‰“å°æˆå¤šè¡Œ](#323--æŠŠäºŒå‰æ ‘æ‰“å°æˆå¤šè¡Œ)
-    * [32.3 æŒ‰ä¹‹å­—å½¢é¡ºåºæ‰“å°äºŒå‰æ ‘](#323-æŒ‰ä¹‹å­—å½¢é¡ºåºæ‰“å°äºŒå‰æ ‘)
-    * [33. äºŒå‰æœç´¢æ ‘çš„åŽåºéåŽ†åºåˆ—](#33-äºŒå‰æœç´¢æ ‘çš„åŽåºéåŽ†åºåˆ—)
-    * [34. äºŒå‰æ ‘ä¸­å’Œä¸ºæŸä¸€å€¼çš„è·¯å¾„](#34-äºŒå‰æ ‘ä¸­å’Œä¸ºæŸä¸€å€¼çš„è·¯å¾„)
-    * [35. å¤æ‚é“¾è¡¨çš„å¤åˆ¶](#35-å¤æ‚é“¾è¡¨çš„å¤åˆ¶)
-    * [36. äºŒå‰æœç´¢æ ‘ä¸ŽåŒå‘é“¾è¡¨](#36-äºŒå‰æœç´¢æ ‘ä¸ŽåŒå‘é“¾è¡¨)
-    * [37. åºåˆ—åŒ–äºŒå‰æ ‘](#37-åºåˆ—åŒ–äºŒå‰æ ‘)
-    * [38. å­—ç¬¦ä¸²çš„æŽ’åˆ—](#38-å­—ç¬¦ä¸²çš„æŽ’åˆ—)
-* [ç¬¬äº”ç«  ä¼˜åŒ–æ—¶é—´å’Œç©ºé—´æ•ˆçŽ‡](#ç¬¬äº”ç« -ä¼˜åŒ–æ—¶é—´å’Œç©ºé—´æ•ˆçŽ‡)
-    * [39. æ•°ç»„ä¸­å‡ºçŽ°æ¬¡æ•°è¶…è¿‡ä¸€åŠçš„æ•°å­—](#39-æ•°ç»„ä¸­å‡ºçŽ°æ¬¡æ•°è¶…è¿‡ä¸€åŠçš„æ•°å­—)
-    * [40. æœ€å°çš„ K ä¸ªæ•°](#40-æœ€å°çš„-k-ä¸ªæ•°)
-    * [41.1 æ•°æ®æµä¸­çš„ä¸­ä½æ•°](#411-æ•°æ®æµä¸­çš„ä¸­ä½æ•°)
-    * [14.2 å­—ç¬¦æµä¸­ç¬¬ä¸€ä¸ªä¸é‡å¤çš„å­—ç¬¦](#142-å­—ç¬¦æµä¸­ç¬¬ä¸€ä¸ªä¸é‡å¤çš„å­—ç¬¦)
-    * [42. è¿žç»­å­æ•°ç»„çš„æœ€å¤§å’Œ](#42-è¿žç»­å­æ•°ç»„çš„æœ€å¤§å’Œ)
-    * [43. ä»Ž 1 åˆ° n æ•´æ•°ä¸­ 1 å‡ºçŽ°çš„æ¬¡æ•°](#43-ä»Ž-1-åˆ°-n-æ•´æ•°ä¸­-1-å‡ºçŽ°çš„æ¬¡æ•°)
-    * [45. æŠŠæ•°ç»„æŽ’æˆæœ€å°çš„æ•°](#45-æŠŠæ•°ç»„æŽ’æˆæœ€å°çš„æ•°)
-    * [49. ä¸‘æ•°](#49-ä¸‘æ•°)
-    * [50. ç¬¬ä¸€ä¸ªåªå‡ºçŽ°ä¸€æ¬¡çš„å­—ç¬¦ä½ç½®](#50-ç¬¬ä¸€ä¸ªåªå‡ºçŽ°ä¸€æ¬¡çš„å­—ç¬¦ä½ç½®)
-    * [51. æ•°ç»„ä¸­çš„é€†åºå¯¹](#51-æ•°ç»„ä¸­çš„é€†åºå¯¹)
-    * [52. ä¸¤ä¸ªé“¾è¡¨çš„ç¬¬ä¸€ä¸ªå…¬å…±ç»“ç‚¹](#52-ä¸¤ä¸ªé“¾è¡¨çš„ç¬¬ä¸€ä¸ªå…¬å…±ç»“ç‚¹)
-* [ç¬¬å…­ç«  é¢è¯•ä¸­çš„å„é¡¹èƒ½åŠ›](#ç¬¬å…­ç« -é¢è¯•ä¸­çš„å„é¡¹èƒ½åŠ›)
-    * [53 æ•°å­—åœ¨æŽ’åºæ•°ç»„ä¸­å‡ºçŽ°çš„æ¬¡æ•°](#53-æ•°å­—åœ¨æŽ’åºæ•°ç»„ä¸­å‡ºçŽ°çš„æ¬¡æ•°)
-    * [54. äºŒå‰æœç´¢æ ‘çš„ç¬¬ k ä¸ªç»“ç‚¹](#54-äºŒå‰æœç´¢æ ‘çš„ç¬¬-k-ä¸ªç»“ç‚¹)
-    * [55 äºŒå‰æ ‘çš„æ·±åº¦](#55-äºŒå‰æ ‘çš„æ·±åº¦)
-    * [56. æ•°ç»„ä¸­åªå‡ºçŽ°ä¸€æ¬¡çš„æ•°å­—](#56-æ•°ç»„ä¸­åªå‡ºçŽ°ä¸€æ¬¡çš„æ•°å­—)
-    * [57.1 å’Œä¸º S çš„ä¸¤ä¸ªæ•°å­—](#571-å’Œä¸º-s-çš„ä¸¤ä¸ªæ•°å­—)
-    * [57.2 å’Œä¸º S çš„è¿žç»­æ­£æ•°åºåˆ—](#572-å’Œä¸º-s-çš„è¿žç»­æ­£æ•°åºåˆ—)
-    * [58.1 ç¿»è½¬å•è¯é¡ºåºåˆ—](#581-ç¿»è½¬å•è¯é¡ºåºåˆ—)
-    * [58.2 å·¦æ—‹è½¬å­—ç¬¦ä¸²](#582-å·¦æ—‹è½¬å­—ç¬¦ä¸²)
-    * [59. æ»‘åŠ¨çª—å£çš„æœ€å¤§å€¼](#59-æ»‘åŠ¨çª—å£çš„æœ€å¤§å€¼)
-    * [61. æ‰‘å…‹ç‰Œé¡ºå­](#61-æ‰‘å…‹ç‰Œé¡ºå­)
-    * [62. åœ†åœˆä¸­æœ€åŽå‰©ä¸‹çš„æ•°](#62-åœ†åœˆä¸­æœ€åŽå‰©ä¸‹çš„æ•°)
-* [63. è‚¡ç¥¨çš„æœ€å¤§åˆ©æ¶¦](#63-è‚¡ç¥¨çš„æœ€å¤§åˆ©æ¶¦)
-    * [64. æ±‚ 1+2+3+...+n](#64-æ±‚-123n)
-    * [65. ä¸ç”¨åŠ å‡ä¹˜é™¤åšåŠ æ³•](#65-ä¸ç”¨åŠ å‡ä¹˜é™¤åšåŠ æ³•)
-    * [66. æž„å»ºä¹˜ç§¯æ•°ç»„](#66-æž„å»ºä¹˜ç§¯æ•°ç»„)
-* [ç¬¬ä¸ƒç«  ä¸¤ä¸ªé¢è¯•æ¡ˆä¾‹](#ç¬¬ä¸ƒç« -ä¸¤ä¸ªé¢è¯•æ¡ˆä¾‹)
-    * [67. æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆæ•´æ•°](#67-æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆæ•´æ•°)
-    * [68. æ ‘ä¸­ä¸¤ä¸ªèŠ‚ç‚¹çš„æœ€ä½Žå…¬å…±ç¥–å…ˆ](#68-æ ‘ä¸­ä¸¤ä¸ªèŠ‚ç‚¹çš„æœ€ä½Žå…¬å…±ç¥–å…ˆ)
+* [µÚ¶þÕÂ ÃæÊÔÐèÒªµÄ»ù´¡ÖªÊ¶](#µÚ¶þÕÂ-ÃæÊÔÐèÒªµÄ»ù´¡ÖªÊ¶)
+    * [2. ÊµÏÖ Singleton](#2-ÊµÏÖ-singleton)
+    * [3. Êý×éÖÐÖØ¸´µÄÊý×Ö](#3-Êý×éÖÐÖØ¸´µÄÊý×Ö)
+    * [4. ¶þÎ¬Êý×éÖÐµÄ²éÕÒ](#4-¶þÎ¬Êý×éÖÐµÄ²éÕÒ)
+    * [5. Ìæ»»¿Õ¸ñ](#5-Ìæ»»¿Õ¸ñ)
+    * [6. ´ÓÎ²µ½Í·´òÓ¡Á´±í](#6-´ÓÎ²µ½Í·´òÓ¡Á´±í)
+    * [7. ÖØ½¨¶þ²æÊ÷](#7-ÖØ½¨¶þ²æÊ÷)
+    * [8. ¶þ²æÊ÷µÄÏÂÒ»¸ö½áµã](#8-¶þ²æÊ÷µÄÏÂÒ»¸ö½áµã)
+    * [9. ÓÃÁ½¸öÕ»ÊµÏÖ¶ÓÁÐ](#9-ÓÃÁ½¸öÕ»ÊµÏÖ¶ÓÁÐ)
+    * [10.1 ì³²¨ÄÇÆõÊýÁÐ](#101-ì³²¨ÄÇÆõÊýÁÐ)
+    * [10.2 ÌøÌ¨½×](#102-ÌøÌ¨½×)
+    * [10.3 ±äÌ¬ÌøÌ¨½×](#103-±äÌ¬ÌøÌ¨½×)
+    * [10.4 ¾ØÐÎ¸²¸Ç](#104-¾ØÐÎ¸²¸Ç)
+    * [11. Ðý×ªÊý×éµÄ×îÐ¡Êý×Ö](#11-Ðý×ªÊý×éµÄ×îÐ¡Êý×Ö)
+    * [12. ¾ØÕóÖÐµÄÂ·¾¶](#12-¾ØÕóÖÐµÄÂ·¾¶)
+    * [13. »úÆ÷ÈËµÄÔË¶¯·¶Î§](#13-»úÆ÷ÈËµÄÔË¶¯·¶Î§)
+    * [14. ¼ôÉþ×Ó](#14-¼ôÉþ×Ó)
+    * [15. ¶þ½øÖÆÖÐ 1 µÄ¸öÊý](#15-¶þ½øÖÆÖÐ-1-µÄ¸öÊý)
+* [µÚÈýÕÂ ¸ßÖÊÁ¿µÄ´úÂë](#µÚÈýÕÂ-¸ßÖÊÁ¿µÄ´úÂë)
+    * [16. ÊýÖµµÄÕûÊý´Î·½](#16-ÊýÖµµÄÕûÊý´Î·½)
+    * [18. É¾³ýÁ´±íÖÐÖØ¸´µÄ½áµã](#18-É¾³ýÁ´±íÖÐÖØ¸´µÄ½áµã)
+    * [19. ÕýÔò±í´ïÊ½Æ¥Åä](#19-ÕýÔò±í´ïÊ½Æ¥Åä)
+    * [20. ±íÊ¾ÊýÖµµÄ×Ö·û´®](#20-±íÊ¾ÊýÖµµÄ×Ö·û´®)
+    * [21. µ÷ÕûÊý×éË³ÐòÊ¹ÆæÊýÎ»ÓÚÅ¼ÊýÇ°Ãæ](#21-µ÷ÕûÊý×éË³ÐòÊ¹ÆæÊýÎ»ÓÚÅ¼ÊýÇ°Ãæ)
+    * [22. Á´±íÖÐµ¹ÊýµÚ k ¸ö½áµã](#22-Á´±íÖÐµ¹ÊýµÚ-k-¸ö½áµã)
+    * [23. Á´±íÖÐ»·µÄÈë¿Ú½áµã](#23-Á´±íÖÐ»·µÄÈë¿Ú½áµã)
+    * [24. ·´×ªÁ´±í](#24-·´×ªÁ´±í)
+    * [25. ºÏ²¢Á½¸öÅÅÐòµÄÁ´±í](#25-ºÏ²¢Á½¸öÅÅÐòµÄÁ´±í)
+    * [26. Ê÷µÄ×Ó½á¹¹](#26-Ê÷µÄ×Ó½á¹¹)
+* [µÚËÄÕÂ ½â¾öÃæÊÔÌâµÄË¼Â·](#µÚËÄÕÂ-½â¾öÃæÊÔÌâµÄË¼Â·)
+    * [27. ¶þ²æÊ÷µÄ¾µÏñ](#27-¶þ²æÊ÷µÄ¾µÏñ)
+    * [28.1 ¶Ô³ÆµÄ¶þ²æÊ÷](#281-¶Ô³ÆµÄ¶þ²æÊ÷)
+    * [28.2 Æ½ºâ¶þ²æÊ÷](#282-Æ½ºâ¶þ²æÊ÷)
+    * [29. Ë³Ê±Õë´òÓ¡¾ØÕó](#29-Ë³Ê±Õë´òÓ¡¾ØÕó)
+    * [30. °üº¬ min º¯ÊýµÄÕ»](#30-°üº¬-min-º¯ÊýµÄÕ»)
+    * [31. Õ»µÄÑ¹Èë¡¢µ¯³öÐòÁÐ](#31-Õ»µÄÑ¹Èëµ¯³öÐòÁÐ)
+    * [32.1 ´ÓÉÏÍùÏÂ´òÓ¡¶þ²æÊ÷](#321-´ÓÉÏÍùÏÂ´òÓ¡¶þ²æÊ÷)
+    * [32.3  °Ñ¶þ²æÊ÷´òÓ¡³É¶àÐÐ](#323--°Ñ¶þ²æÊ÷´òÓ¡³É¶àÐÐ)
+    * [32.3 °´Ö®×ÖÐÎË³Ðò´òÓ¡¶þ²æÊ÷](#323-°´Ö®×ÖÐÎË³Ðò´òÓ¡¶þ²æÊ÷)
+    * [33. ¶þ²æËÑË÷Ê÷µÄºóÐò±éÀúÐòÁÐ](#33-¶þ²æËÑË÷Ê÷µÄºóÐò±éÀúÐòÁÐ)
+    * [34. ¶þ²æÊ÷ÖÐºÍÎªÄ³Ò»ÖµµÄÂ·¾¶](#34-¶þ²æÊ÷ÖÐºÍÎªÄ³Ò»ÖµµÄÂ·¾¶)
+    * [35. ¸´ÔÓÁ´±íµÄ¸´ÖÆ](#35-¸´ÔÓÁ´±íµÄ¸´ÖÆ)
+    * [36. ¶þ²æËÑË÷Ê÷ÓëË«ÏòÁ´±í](#36-¶þ²æËÑË÷Ê÷ÓëË«ÏòÁ´±í)
+    * [37. ÐòÁÐ»¯¶þ²æÊ÷](#37-ÐòÁÐ»¯¶þ²æÊ÷)
+    * [38. ×Ö·û´®µÄÅÅÁÐ](#38-×Ö·û´®µÄÅÅÁÐ)
+* [µÚÎåÕÂ ÓÅ»¯Ê±¼äºÍ¿Õ¼äÐ§ÂÊ](#µÚÎåÕÂ-ÓÅ»¯Ê±¼äºÍ¿Õ¼äÐ§ÂÊ)
+    * [39. Êý×éÖÐ³öÏÖ´ÎÊý³¬¹ýÒ»°ëµÄÊý×Ö](#39-Êý×éÖÐ³öÏÖ´ÎÊý³¬¹ýÒ»°ëµÄÊý×Ö)
+    * [40. ×îÐ¡µÄ K ¸öÊý](#40-×îÐ¡µÄ-k-¸öÊý)
+    * [41.1 Êý¾ÝÁ÷ÖÐµÄÖÐÎ»Êý](#411-Êý¾ÝÁ÷ÖÐµÄÖÐÎ»Êý)
+    * [14.2 ×Ö·ûÁ÷ÖÐµÚÒ»¸ö²»ÖØ¸´µÄ×Ö·û](#142-×Ö·ûÁ÷ÖÐµÚÒ»¸ö²»ÖØ¸´µÄ×Ö·û)
+    * [42. Á¬Ðø×ÓÊý×éµÄ×î´óºÍ](#42-Á¬Ðø×ÓÊý×éµÄ×î´óºÍ)
+    * [43. ´Ó 1 µ½ n ÕûÊýÖÐ 1 ³öÏÖµÄ´ÎÊý](#43-´Ó-1-µ½-n-ÕûÊýÖÐ-1-³öÏÖµÄ´ÎÊý)
+    * [45. °ÑÊý×éÅÅ³É×îÐ¡µÄÊý](#45-°ÑÊý×éÅÅ³É×îÐ¡µÄÊý)
+    * [49. ³óÊý](#49-³óÊý)
+    * [50. µÚÒ»¸öÖ»³öÏÖÒ»´ÎµÄ×Ö·ûÎ»ÖÃ](#50-µÚÒ»¸öÖ»³öÏÖÒ»´ÎµÄ×Ö·ûÎ»ÖÃ)
+    * [51. Êý×éÖÐµÄÄæÐò¶Ô](#51-Êý×éÖÐµÄÄæÐò¶Ô)
+    * [52. Á½¸öÁ´±íµÄµÚÒ»¸ö¹«¹²½áµã](#52-Á½¸öÁ´±íµÄµÚÒ»¸ö¹«¹²½áµã)
+* [µÚÁùÕÂ ÃæÊÔÖÐµÄ¸÷ÏîÄÜÁ¦](#µÚÁùÕÂ-ÃæÊÔÖÐµÄ¸÷ÏîÄÜÁ¦)
+    * [53 Êý×ÖÔÚÅÅÐòÊý×éÖÐ³öÏÖµÄ´ÎÊý](#53-Êý×ÖÔÚÅÅÐòÊý×éÖÐ³öÏÖµÄ´ÎÊý)
+    * [54. ¶þ²æËÑË÷Ê÷µÄµÚ k ¸ö½áµã](#54-¶þ²æËÑË÷Ê÷µÄµÚ-k-¸ö½áµã)
+    * [55 ¶þ²æÊ÷µÄÉî¶È](#55-¶þ²æÊ÷µÄÉî¶È)
+    * [56. Êý×éÖÐÖ»³öÏÖÒ»´ÎµÄÊý×Ö](#56-Êý×éÖÐÖ»³öÏÖÒ»´ÎµÄÊý×Ö)
+    * [57.1 ºÍÎª S µÄÁ½¸öÊý×Ö](#571-ºÍÎª-s-µÄÁ½¸öÊý×Ö)
+    * [57.2 ºÍÎª S µÄÁ¬ÐøÕýÊýÐòÁÐ](#572-ºÍÎª-s-µÄÁ¬ÐøÕýÊýÐòÁÐ)
+    * [58.1 ·­×ªµ¥´ÊË³ÐòÁÐ](#581-·­×ªµ¥´ÊË³ÐòÁÐ)
+    * [58.2 ×óÐý×ª×Ö·û´®](#582-×óÐý×ª×Ö·û´®)
+    * [59. »¬¶¯´°¿ÚµÄ×î´óÖµ](#59-»¬¶¯´°¿ÚµÄ×î´óÖµ)
+    * [61. ÆË¿ËÅÆË³×Ó](#61-ÆË¿ËÅÆË³×Ó)
+    * [62. Ô²È¦ÖÐ×îºóÊ£ÏÂµÄÊý](#62-Ô²È¦ÖÐ×îºóÊ£ÏÂµÄÊý)
+* [63. ¹ÉÆ±µÄ×î´óÀûÈó](#63-¹ÉÆ±µÄ×î´óÀûÈó)
+    * [64. Çó 1+2+3+...+n](#64-Çó-123n)
+    * [65. ²»ÓÃ¼Ó¼õ³Ë³ý×ö¼Ó·¨](#65-²»ÓÃ¼Ó¼õ³Ë³ý×ö¼Ó·¨)
+    * [66. ¹¹½¨³Ë»ýÊý×é](#66-¹¹½¨³Ë»ýÊý×é)
+* [µÚÆßÕÂ Á½¸öÃæÊÔ°¸Àý](#µÚÆßÕÂ-Á½¸öÃæÊÔ°¸Àý)
+    * [67. °Ñ×Ö·û´®×ª»»³ÉÕûÊý](#67-°Ñ×Ö·û´®×ª»»³ÉÕûÊý)
+    * [68. Ê÷ÖÐÁ½¸ö½ÚµãµÄ×îµÍ¹«¹²×æÏÈ](#68-Ê÷ÖÐÁ½¸ö½ÚµãµÄ×îµÍ¹«¹²×æÏÈ)
 <!-- GFM-TOC -->
 
-# ç¬¬äºŒç«  é¢è¯•éœ€è¦çš„åŸºç¡€çŸ¥è¯†
+# µÚ¶þÕÂ ÃæÊÔÐèÒªµÄ»ù´¡ÖªÊ¶
 
-## 2. å®žçŽ° Singleton
+## 2. ÊµÏÖ Singleton
 
-**ç»å…¸å®žçŽ°**
+**¾­µäÊµÏÖ**
 
-ä»¥ä¸‹å®žçŽ°ä¸­ï¼Œç§æœ‰é™æ€å˜é‡è¢«å»¶è¿ŸåŒ–å®žä¾‹åŒ–ï¼Œè¿™æ ·åšçš„å¥½å¤„æ˜¯ï¼Œå¦‚æžœæ²¡æœ‰ç”¨åˆ°è¯¥ç±»ï¼Œé‚£ä¹ˆå°±ä¸ä¼šåˆ›å»ºè¯¥ç§æœ‰é™æ€å˜é‡ï¼Œä»Žè€ŒèŠ‚çº¦èµ„æºã€‚è¿™ä¸ªå®žçŽ°åœ¨å¤šçº¿ç¨‹çŽ¯å¢ƒä¸‹æ˜¯ä¸å®‰å…¨çš„ï¼Œå› ä¸ºå¤šä¸ªçº¿ç¨‹èƒ½å¤ŸåŒæ—¶è¿›å…¥ if(uniqueInstance == null) å†…çš„è¯­å¥å—ï¼Œé‚£ä¹ˆå°±ä¼šå¤šæ¬¡å®žä¾‹åŒ– uniqueInstance ç§æœ‰é™æ€å˜é‡ã€‚
+ÒÔÏÂÊµÏÖÖÐ£¬Ë½ÓÐ¾²Ì¬±äÁ¿±»ÑÓ³Ù»¯ÊµÀý»¯£¬ÕâÑù×öµÄºÃ´¦ÊÇ£¬Èç¹ûÃ»ÓÐÓÃµ½¸ÃÀà£¬ÄÇÃ´¾Í²»»á´´½¨¸ÃË½ÓÐ¾²Ì¬±äÁ¿£¬´Ó¶ø½ÚÔ¼×ÊÔ´¡£Õâ¸öÊµÏÖÔÚ¶àÏß³Ì»·¾³ÏÂÊÇ²»°²È«µÄ£¬ÒòÎª¶à¸öÏß³ÌÄÜ¹»Í¬Ê±½øÈë if(uniqueInstance == null) ÄÚµÄÓï¾ä¿é£¬ÄÇÃ´¾Í»á¶à´ÎÊµÀý»¯ uniqueInstance Ë½ÓÐ¾²Ì¬±äÁ¿¡£
 
 ```java
 public class Singleton {
@@ -99,9 +99,9 @@ public class Singleton {
 }
 ```
 
-**çº¿ç¨‹ä¸å®‰å…¨é—®é¢˜çš„è§£å†³æ–¹æ¡ˆä¸€**
+**Ïß³Ì²»°²È«ÎÊÌâµÄ½â¾ö·½°¸Ò»**
 
-åªéœ€è¦å¯¹ getUniqueInstance() æ–¹æ³•åŠ é”ï¼Œå°±èƒ½è®©è¯¥æ–¹æ³•ä¸€æ¬¡åªèƒ½ä¸€ä¸ªçº¿ç¨‹è®¿é—®ï¼Œä»Žè€Œé¿å…äº†å¯¹ uniqueInstance å˜é‡è¿›è¡Œå¤šæ¬¡å®žä¾‹åŒ–çš„é—®é¢˜ã€‚ä½†æ˜¯è¿™æ ·æœ‰ä¸€ä¸ªé—®é¢˜æ˜¯ä¸€æ¬¡åªèƒ½ä¸€ä¸ªçº¿ç¨‹è¿›å…¥ï¼Œæ€§èƒ½ä¸Šä¼šæœ‰ä¸€å®šçš„æµªè´¹ã€‚
+Ö»ÐèÒª¶Ô getUniqueInstance() ·½·¨¼ÓËø£¬¾ÍÄÜÈÃ¸Ã·½·¨Ò»´ÎÖ»ÄÜÒ»¸öÏß³Ì·ÃÎÊ£¬´Ó¶ø±ÜÃâÁË¶Ô uniqueInstance ±äÁ¿½øÐÐ¶à´ÎÊµÀý»¯µÄÎÊÌâ¡£µ«ÊÇÕâÑùÓÐÒ»¸öÎÊÌâÊÇÒ»´ÎÖ»ÄÜÒ»¸öÏß³Ì½øÈë£¬ÐÔÄÜÉÏ»áÓÐÒ»¶¨µÄÀË·Ñ¡£
 
 ```java
 public static synchronized Singleton getUniqueInstance() {
@@ -111,17 +111,17 @@ public static synchronized Singleton getUniqueInstance() {
     return uniqueInstance;
 }
 ```
-**çº¿ç¨‹ä¸å®‰å…¨é—®é¢˜çš„è§£å†³æ–¹æ¡ˆäºŒ**
+**Ïß³Ì²»°²È«ÎÊÌâµÄ½â¾ö·½°¸¶þ**
 
-ä¸ç”¨å»¶è¿Ÿå®žä¾‹åŒ–ï¼Œé‡‡ç”¨ç›´æŽ¥å®žä¾‹åŒ–ã€‚
+²»ÓÃÑÓ³ÙÊµÀý»¯£¬²ÉÓÃÖ±½ÓÊµÀý»¯¡£
 
 ```java
 private static Singleton uniqueInstance = new Singleton();
 ```
 
-**çº¿ç¨‹ä¸å®‰å…¨é—®é¢˜çš„è§£å†³æ–¹æ¡ˆä¸‰**
+**Ïß³Ì²»°²È«ÎÊÌâµÄ½â¾ö·½°¸Èý**
 
-è€ƒè™‘ç¬¬ä¸€ä¸ªè§£å†³æ–¹æ¡ˆï¼Œå®ƒæ˜¯ç›´æŽ¥å¯¹ getUniqueInstance() æ–¹æ³•è¿›è¡ŒåŠ é”ï¼Œè€Œå®žé™…ä¸Šåªéœ€è¦å¯¹ uniqueInstance = new Singleton(); è¿™æ¡è¯­å¥åŠ é”å³å¯ã€‚ä½¿ç”¨ä¸¤ä¸ªæ¡ä»¶è¯­å¥æ¥åˆ¤æ–­ uniqueInstance æ˜¯å¦å·²ç»å®žä¾‹åŒ–ï¼Œå¦‚æžœæ²¡æœ‰å®žä¾‹åŒ–æ‰éœ€è¦åŠ é”ã€‚
+¿¼ÂÇµÚÒ»¸ö½â¾ö·½°¸£¬ËüÊÇÖ±½Ó¶Ô getUniqueInstance() ·½·¨½øÐÐ¼ÓËø£¬¶øÊµ¼ÊÉÏÖ»ÐèÒª¶Ô uniqueInstance = new Singleton(); ÕâÌõÓï¾ä¼ÓËø¼´¿É¡£Ê¹ÓÃÁ½¸öÌõ¼þÓï¾äÀ´ÅÐ¶Ï uniqueInstance ÊÇ·ñÒÑ¾­ÊµÀý»¯£¬Èç¹ûÃ»ÓÐÊµÀý»¯²ÅÐèÒª¼ÓËø¡£
 
 ```java
 public class Singleton {
@@ -141,15 +141,15 @@ public class Singleton {
 }
 ```
 
-## 3. æ•°ç»„ä¸­é‡å¤çš„æ•°å­—
+## 3. Êý×éÖÐÖØ¸´µÄÊý×Ö
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-åœ¨ä¸€ä¸ªé•¿åº¦ä¸º n çš„æ•°ç»„é‡Œçš„æ‰€æœ‰æ•°å­—éƒ½åœ¨ 0 åˆ° n-1 çš„èŒƒå›´å†…ã€‚ æ•°ç»„ä¸­æŸäº›æ•°å­—æ˜¯é‡å¤çš„ï¼Œä½†ä¸çŸ¥é“æœ‰å‡ ä¸ªæ•°å­—æ˜¯é‡å¤çš„ã€‚ä¹Ÿä¸çŸ¥é“æ¯ä¸ªæ•°å­—é‡å¤å‡ æ¬¡ã€‚è¯·æ‰¾å‡ºæ•°ç»„ä¸­ä»»æ„ä¸€ä¸ªé‡å¤çš„æ•°å­—ã€‚ ä¾‹å¦‚ï¼Œå¦‚æžœè¾“å…¥é•¿åº¦ä¸º 7 çš„æ•°ç»„ {2, 3, 1, 0, 2, 5, 3}ï¼Œé‚£ä¹ˆå¯¹åº”çš„è¾“å‡ºæ˜¯ç¬¬ä¸€ä¸ªé‡å¤çš„æ•°å­— 2ã€‚
+ÔÚÒ»¸ö³¤¶ÈÎª n µÄÊý×éÀïµÄËùÓÐÊý×Ö¶¼ÔÚ 0 µ½ n-1 µÄ·¶Î§ÄÚ¡£ Êý×éÖÐÄ³Ð©Êý×ÖÊÇÖØ¸´µÄ£¬µ«²»ÖªµÀÓÐ¼¸¸öÊý×ÖÊÇÖØ¸´µÄ¡£Ò²²»ÖªµÀÃ¿¸öÊý×ÖÖØ¸´¼¸´Î¡£ÇëÕÒ³öÊý×éÖÐÈÎÒâÒ»¸öÖØ¸´µÄÊý×Ö¡£ ÀýÈç£¬Èç¹ûÊäÈë³¤¶ÈÎª 7 µÄÊý×é {2, 3, 1, 0, 2, 5, 3}£¬ÄÇÃ´¶ÔÓ¦µÄÊä³öÊÇµÚÒ»¸öÖØ¸´µÄÊý×Ö 2¡£
 
-**è§£é¢˜æ€è·¯**
+**½âÌâË¼Â·**
 
-è¿™ç§æ•°ç»„å…ƒç´ åœ¨ [0, n-1] èŒƒå›´å†…çš„é—®é¢˜ï¼Œå¯ä»¥å°†å€¼ä¸º i çš„å…ƒç´ æ”¾åˆ°ç¬¬ i ä¸ªä½ç½®ä¸Šã€‚
+ÕâÖÖÊý×éÔªËØÔÚ [0, n-1] ·¶Î§ÄÚµÄÎÊÌâ£¬¿ÉÒÔ½«ÖµÎª i µÄÔªËØ·Åµ½µÚ i ¸öÎ»ÖÃÉÏ¡£
 
 ```java
 public boolean duplicate(int numbers[], int length, int[] duplication) {
@@ -172,11 +172,11 @@ private void swap(int[] numbers, int i, int j) {
 }
 ```
 
-## 4. äºŒç»´æ•°ç»„ä¸­çš„æŸ¥æ‰¾
+## 4. ¶þÎ¬Êý×éÖÐµÄ²éÕÒ
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-åœ¨ä¸€ä¸ªäºŒç»´æ•°ç»„ä¸­ï¼Œæ¯ä¸€è¡Œéƒ½æŒ‰ç…§ä»Žå·¦åˆ°å³é€’å¢žçš„é¡ºåºæŽ’åºï¼Œæ¯ä¸€åˆ—éƒ½æŒ‰ç…§ä»Žä¸Šåˆ°ä¸‹é€’å¢žçš„é¡ºåºæŽ’åºã€‚è¯·å®Œæˆä¸€ä¸ªå‡½æ•°ï¼Œè¾“å…¥è¿™æ ·çš„ä¸€ä¸ªäºŒç»´æ•°ç»„å’Œä¸€ä¸ªæ•´æ•°ï¼Œåˆ¤æ–­æ•°ç»„ä¸­æ˜¯å¦å«æœ‰è¯¥æ•´æ•°ã€‚
+ÔÚÒ»¸ö¶þÎ¬Êý×éÖÐ£¬Ã¿Ò»ÐÐ¶¼°´ÕÕ´Ó×óµ½ÓÒµÝÔöµÄË³ÐòÅÅÐò£¬Ã¿Ò»ÁÐ¶¼°´ÕÕ´ÓÉÏµ½ÏÂµÝÔöµÄË³ÐòÅÅÐò¡£ÇëÍê³ÉÒ»¸öº¯Êý£¬ÊäÈëÕâÑùµÄÒ»¸ö¶þÎ¬Êý×éºÍÒ»¸öÕûÊý£¬ÅÐ¶ÏÊý×éÖÐÊÇ·ñº¬ÓÐ¸ÃÕûÊý¡£
 
 ```java
 public boolean Find(int target, int [][] array) {
@@ -192,21 +192,21 @@ public boolean Find(int target, int [][] array) {
 }
 ```
 
-## 5. æ›¿æ¢ç©ºæ ¼
+## 5. Ìæ»»¿Õ¸ñ
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¯·å®žçŽ°ä¸€ä¸ªå‡½æ•°ï¼Œå°†ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­çš„ç©ºæ ¼æ›¿æ¢æˆâ€œ%20â€ã€‚ä¾‹å¦‚ï¼Œå½“å­—ç¬¦ä¸²ä¸º We Are Happy. åˆ™ç»è¿‡æ›¿æ¢ä¹‹åŽçš„å­—ç¬¦ä¸²ä¸º We%20Are%20Happyã€‚
+ÇëÊµÏÖÒ»¸öº¯Êý£¬½«Ò»¸ö×Ö·û´®ÖÐµÄ¿Õ¸ñÌæ»»³É¡°%20¡±¡£ÀýÈç£¬µ±×Ö·û´®Îª We Are Happy. Ôò¾­¹ýÌæ»»Ö®ºóµÄ×Ö·û´®Îª We%20Are%20Happy¡£
 
-**é¢˜ç›®è¦æ±‚**
+**ÌâÄ¿ÒªÇó**
 
-ä»¥ O(1) çš„ç©ºé—´å¤æ‚åº¦æ¥æ±‚è§£ã€‚
+ÒÔ O(1) µÄ¿Õ¼ä¸´ÔÓ¶ÈÀ´Çó½â¡£
 
 ```java
 public String replaceSpace(StringBuffer str) {
     int n = str.length();
     for (int i = 0; i < n; i++) {
-        if (str.charAt(i) == ' ') str.append("  "); // å°¾éƒ¨å¡«å……ä¸¤ä¸ª
+        if (str.charAt(i) == ' ') str.append("  "); // Î²²¿Ìî³äÁ½¸ö
     }
 
     int idxOfOriginal = n - 1;
@@ -225,9 +225,9 @@ public String replaceSpace(StringBuffer str) {
 }
 ```
 
-## 6. ä»Žå°¾åˆ°å¤´æ‰“å°é“¾è¡¨
+## 6. ´ÓÎ²µ½Í·´òÓ¡Á´±í
 
-æ­£å‘éåŽ†ç„¶åŽè°ƒç”¨ Collections.reverse().
+ÕýÏò±éÀúÈ»ºóµ÷ÓÃ Collections.reverse().
 
 ```java
 public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
@@ -241,7 +241,7 @@ public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 }
 ```
 
-é€’å½’
+µÝ¹é
 
 ```java
 public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
@@ -254,11 +254,11 @@ public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 }
 ```
 
-ä¸ä½¿ç”¨åº“å‡½æ•°ï¼Œå¹¶ä¸”ä¸ä½¿ç”¨é€’å½’çš„è¿­ä»£å®žçŽ°ï¼Œåˆ©ç”¨é“¾è¡¨çš„å¤´æ’æ³•ä¸ºé€†åºçš„ç‰¹æ€§ã€‚
+²»Ê¹ÓÃ¿âº¯Êý£¬²¢ÇÒ²»Ê¹ÓÃµÝ¹éµÄµü´úÊµÏÖ£¬ÀûÓÃÁ´±íµÄÍ·²å·¨ÎªÄæÐòµÄÌØÐÔ¡£
 
 ```java
 public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
-    ListNode head = new ListNode(-1); // å¤´ç»“ç‚¹
+    ListNode head = new ListNode(-1); // Í·½áµã
     ListNode cur = listNode;
     while (cur != null) {
         ListNode next = cur.next;
@@ -276,11 +276,11 @@ public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 }
 ```
 
-## 7. é‡å»ºäºŒå‰æ ‘
+## 7. ÖØ½¨¶þ²æÊ÷
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¾“å…¥æŸäºŒå‰æ ‘çš„å‰åºéåŽ†å’Œä¸­åºéåŽ†çš„ç»“æžœï¼Œè¯·é‡å»ºå‡ºè¯¥äºŒå‰æ ‘ã€‚å‡è®¾è¾“å…¥çš„å‰åºéåŽ†å’Œä¸­åºéåŽ†çš„ç»“æžœä¸­éƒ½ä¸å«é‡å¤çš„æ•°å­—ã€‚
+ÊäÈëÄ³¶þ²æÊ÷µÄÇ°Ðò±éÀúºÍÖÐÐò±éÀúµÄ½á¹û£¬ÇëÖØ½¨³ö¸Ã¶þ²æÊ÷¡£¼ÙÉèÊäÈëµÄÇ°Ðò±éÀúºÍÖÐÐò±éÀúµÄ½á¹ûÖÐ¶¼²»º¬ÖØ¸´µÄÊý×Ö¡£
 
 ```java
 public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
@@ -300,11 +300,11 @@ private TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int[] in, 
 }
 ```
 
-## 8. äºŒå‰æ ‘çš„ä¸‹ä¸€ä¸ªç»“ç‚¹
+## 8. ¶þ²æÊ÷µÄÏÂÒ»¸ö½áµã
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-ç»™å®šä¸€ä¸ªäºŒå‰æ ‘å’Œå…¶ä¸­çš„ä¸€ä¸ªç»“ç‚¹ï¼Œè¯·æ‰¾å‡ºä¸­åºéåŽ†é¡ºåºçš„ä¸‹ä¸€ä¸ªç»“ç‚¹å¹¶ä¸”è¿”å›žã€‚æ³¨æ„ï¼Œæ ‘ä¸­çš„ç»“ç‚¹ä¸ä»…åŒ…å«å·¦å³å­ç»“ç‚¹ï¼ŒåŒæ—¶åŒ…å«æŒ‡å‘çˆ¶ç»“ç‚¹çš„æŒ‡é’ˆã€‚
+¸ø¶¨Ò»¸ö¶þ²æÊ÷ºÍÆäÖÐµÄÒ»¸ö½áµã£¬ÇëÕÒ³öÖÐÐò±éÀúË³ÐòµÄÏÂÒ»¸ö½áµã²¢ÇÒ·µ»Ø¡£×¢Òâ£¬Ê÷ÖÐµÄ½áµã²»½ö°üº¬×óÓÒ×Ó½áµã£¬Í¬Ê±°üº¬Ö¸Ïò¸¸½áµãµÄÖ¸Õë¡£
 
 ```java
 public TreeLinkNode GetNext(TreeLinkNode pNode) {
@@ -325,7 +325,7 @@ public TreeLinkNode GetNext(TreeLinkNode pNode) {
 }
 ```
 
-## 9. ç”¨ä¸¤ä¸ªæ ˆå®žçŽ°é˜Ÿåˆ—
+## 9. ÓÃÁ½¸öÕ»ÊµÏÖ¶ÓÁÐ
 
 ```java
 Stack<Integer> stack1 = new Stack<Integer>();
@@ -345,7 +345,7 @@ public int pop() {
 }
 ```
 
-## 10.1 æ–æ³¢é‚£å¥‘æ•°åˆ—
+## 10.1 ì³²¨ÄÇÆõÊýÁÐ
 
 ```java
 private int[] fib = new int[40];
@@ -363,7 +363,7 @@ public int Fibonacci(int n) {
 }
 ```
 
-## 10.2 è·³å°é˜¶
+## 10.2 ÌøÌ¨½×
 
 ```java
 public int JumpFloor(int target) {
@@ -378,7 +378,7 @@ public int JumpFloor(int target) {
 }
 ```
 
-## 10.3 å˜æ€è·³å°é˜¶
+## 10.3 ±äÌ¬ÌøÌ¨½×
 
 ```java
 public int JumpFloorII(int target) {
@@ -393,11 +393,11 @@ public int JumpFloorII(int target) {
 }
 ```
 
-## 10.4 çŸ©å½¢è¦†ç›–
+## 10.4 ¾ØÐÎ¸²¸Ç
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-æˆ‘ä»¬å¯ä»¥ç”¨ 2\*1 çš„å°çŸ©å½¢æ¨ªç€æˆ–è€…ç«–ç€åŽ»è¦†ç›–æ›´å¤§çš„çŸ©å½¢ã€‚è¯·é—®ç”¨ n ä¸ª 2\*1 çš„å°çŸ©å½¢æ— é‡å åœ°è¦†ç›–ä¸€ä¸ª 2\*n çš„å¤§çŸ©å½¢ï¼Œæ€»å…±æœ‰å¤šå°‘ç§æ–¹æ³•ï¼Ÿ
+ÎÒÃÇ¿ÉÒÔÓÃ 2\*1 µÄÐ¡¾ØÐÎºá×Å»òÕßÊú×ÅÈ¥¸²¸Ç¸ü´óµÄ¾ØÐÎ¡£ÇëÎÊÓÃ n ¸ö 2\*1 µÄÐ¡¾ØÐÎÎÞÖØµþµØ¸²¸ÇÒ»¸ö 2\*n µÄ´ó¾ØÐÎ£¬×Ü¹²ÓÐ¶àÉÙÖÖ·½·¨£¿
 
 ```java
 public int RectCover(int target) {
@@ -407,11 +407,11 @@ public int RectCover(int target) {
 ```
 
 
-## 11. æ—‹è½¬æ•°ç»„çš„æœ€å°æ•°å­—
+## 11. Ðý×ªÊý×éµÄ×îÐ¡Êý×Ö
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-æŠŠä¸€ä¸ªæ•°ç»„æœ€å¼€å§‹çš„è‹¥å¹²ä¸ªå…ƒç´ æ¬åˆ°æ•°ç»„çš„æœ«å°¾ï¼Œæˆ‘ä»¬ç§°ä¹‹ä¸ºæ•°ç»„çš„æ—‹è½¬ã€‚ è¾“å…¥ä¸€ä¸ªéžé€’å‡æŽ’åºçš„æ•°ç»„çš„ä¸€ä¸ªæ—‹è½¬ï¼Œè¾“å‡ºæ—‹è½¬æ•°ç»„çš„æœ€å°å…ƒç´ ã€‚ ä¾‹å¦‚æ•°ç»„ {3, 4, 5, 1, 2} ä¸º {1, 2, 3, 4, 5} çš„ä¸€ä¸ªæ—‹è½¬ï¼Œè¯¥æ•°ç»„çš„æœ€å°å€¼ä¸º 1ã€‚ NOTEï¼šç»™å‡ºçš„æ‰€æœ‰å…ƒç´ éƒ½å¤§äºŽ 0ï¼Œè‹¥æ•°ç»„å¤§å°ä¸º 0ï¼Œè¯·è¿”å›ž 0ã€‚
+°ÑÒ»¸öÊý×é×î¿ªÊ¼µÄÈô¸É¸öÔªËØ°áµ½Êý×éµÄÄ©Î²£¬ÎÒÃÇ³ÆÖ®ÎªÊý×éµÄÐý×ª¡£ ÊäÈëÒ»¸ö·ÇµÝ¼õÅÅÐòµÄÊý×éµÄÒ»¸öÐý×ª£¬Êä³öÐý×ªÊý×éµÄ×îÐ¡ÔªËØ¡£ ÀýÈçÊý×é {3, 4, 5, 1, 2} Îª {1, 2, 3, 4, 5} µÄÒ»¸öÐý×ª£¬¸ÃÊý×éµÄ×îÐ¡ÖµÎª 1¡£ NOTE£º¸ø³öµÄËùÓÐÔªËØ¶¼´óÓÚ 0£¬ÈôÊý×é´óÐ¡Îª 0£¬Çë·µ»Ø 0¡£
 
 ```java
 public int minNumberInRotateArray(int[] array) {
@@ -423,11 +423,11 @@ public int minNumberInRotateArray(int[] array) {
 }
 ```
 
-## 12. çŸ©é˜µä¸­çš„è·¯å¾„
+## 12. ¾ØÕóÖÐµÄÂ·¾¶
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¯·è®¾è®¡ä¸€ä¸ªå‡½æ•°ï¼Œç”¨æ¥åˆ¤æ–­åœ¨ä¸€ä¸ªçŸ©é˜µä¸­æ˜¯å¦å­˜åœ¨ä¸€æ¡åŒ…å«æŸå­—ç¬¦ä¸²æ‰€æœ‰å­—ç¬¦çš„è·¯å¾„ã€‚è·¯å¾„å¯ä»¥ä»ŽçŸ©é˜µä¸­çš„ä»»æ„ä¸€ä¸ªæ ¼å­å¼€å§‹ï¼Œæ¯ä¸€æ­¥å¯ä»¥åœ¨çŸ©é˜µä¸­å‘å·¦ï¼Œå‘å³ï¼Œå‘ä¸Šï¼Œå‘ä¸‹ç§»åŠ¨ä¸€ä¸ªæ ¼å­ã€‚å¦‚æžœä¸€æ¡è·¯å¾„ç»è¿‡äº†çŸ©é˜µä¸­çš„æŸä¸€ä¸ªæ ¼å­ï¼Œåˆ™è¯¥è·¯å¾„ä¸èƒ½å†è¿›å…¥è¯¥æ ¼å­ã€‚ ä¾‹å¦‚ a b c e s f c s a d e e çŸ©é˜µä¸­åŒ…å«ä¸€æ¡å­—ç¬¦ä¸² "bcced" çš„è·¯å¾„ï¼Œä½†æ˜¯çŸ©é˜µä¸­ä¸åŒ…å« "abcb" è·¯å¾„ï¼Œå› ä¸ºå­—ç¬¦ä¸²çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ b å æ®äº†çŸ©é˜µä¸­çš„ç¬¬ä¸€è¡Œç¬¬äºŒä¸ªæ ¼å­ä¹‹åŽï¼Œè·¯å¾„ä¸èƒ½å†æ¬¡è¿›å…¥è¯¥æ ¼å­ã€‚
+ÇëÉè¼ÆÒ»¸öº¯Êý£¬ÓÃÀ´ÅÐ¶ÏÔÚÒ»¸ö¾ØÕóÖÐÊÇ·ñ´æÔÚÒ»Ìõ°üº¬Ä³×Ö·û´®ËùÓÐ×Ö·ûµÄÂ·¾¶¡£Â·¾¶¿ÉÒÔ´Ó¾ØÕóÖÐµÄÈÎÒâÒ»¸ö¸ñ×Ó¿ªÊ¼£¬Ã¿Ò»²½¿ÉÒÔÔÚ¾ØÕóÖÐÏò×ó£¬ÏòÓÒ£¬ÏòÉÏ£¬ÏòÏÂÒÆ¶¯Ò»¸ö¸ñ×Ó¡£Èç¹ûÒ»ÌõÂ·¾¶¾­¹ýÁË¾ØÕóÖÐµÄÄ³Ò»¸ö¸ñ×Ó£¬Ôò¸ÃÂ·¾¶²»ÄÜÔÙ½øÈë¸Ã¸ñ×Ó¡£ ÀýÈç a b c e s f c s a d e e ¾ØÕóÖÐ°üº¬Ò»Ìõ×Ö·û´® "bcced" µÄÂ·¾¶£¬µ«ÊÇ¾ØÕóÖÐ²»°üº¬ "abcb" Â·¾¶£¬ÒòÎª×Ö·û´®µÄµÚÒ»¸ö×Ö·û b Õ¼¾ÝÁË¾ØÕóÖÐµÄµÚÒ»ÐÐµÚ¶þ¸ö¸ñ×ÓÖ®ºó£¬Â·¾¶²»ÄÜÔÙ´Î½øÈë¸Ã¸ñ×Ó¡£
 
 ```java
 private int[][] next = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
@@ -464,11 +464,11 @@ private boolean backtracking(char[][] m, int rows, int cols, char[] str, boolean
 ```
 
 
-## 13. æœºå™¨äººçš„è¿åŠ¨èŒƒå›´
+## 13. »úÆ÷ÈËµÄÔË¶¯·¶Î§
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-åœ°ä¸Šæœ‰ä¸€ä¸ª m è¡Œå’Œ n åˆ—çš„æ–¹æ ¼ã€‚ä¸€ä¸ªæœºå™¨äººä»Žåæ ‡ 0, 0 çš„æ ¼å­å¼€å§‹ç§»åŠ¨ï¼Œæ¯ä¸€æ¬¡åªèƒ½å‘å·¦ï¼Œå³ï¼Œä¸Šï¼Œä¸‹å››ä¸ªæ–¹å‘ç§»åŠ¨ä¸€æ ¼ï¼Œä½†æ˜¯ä¸èƒ½è¿›å…¥è¡Œåæ ‡å’Œåˆ—åæ ‡çš„æ•°ä½ä¹‹å’Œå¤§äºŽ k çš„æ ¼å­ã€‚ ä¾‹å¦‚ï¼Œå½“ k ä¸º 18 æ—¶ï¼Œæœºå™¨äººèƒ½å¤Ÿè¿›å…¥æ–¹æ ¼ï¼ˆ35, 37ï¼‰ï¼Œå› ä¸º 3+5+3+7 = 18ã€‚ä½†æ˜¯ï¼Œå®ƒä¸èƒ½è¿›å…¥æ–¹æ ¼ï¼ˆ35, 38ï¼‰ï¼Œå› ä¸º 3+5+3+8 = 19ã€‚è¯·é—®è¯¥æœºå™¨äººèƒ½å¤Ÿè¾¾åˆ°å¤šå°‘ä¸ªæ ¼å­ï¼Ÿ
+µØÉÏÓÐÒ»¸ö m ÐÐºÍ n ÁÐµÄ·½¸ñ¡£Ò»¸ö»úÆ÷ÈË´Ó×ø±ê 0, 0 µÄ¸ñ×Ó¿ªÊ¼ÒÆ¶¯£¬Ã¿Ò»´ÎÖ»ÄÜÏò×ó£¬ÓÒ£¬ÉÏ£¬ÏÂËÄ¸ö·½ÏòÒÆ¶¯Ò»¸ñ£¬µ«ÊÇ²»ÄÜ½øÈëÐÐ×ø±êºÍÁÐ×ø±êµÄÊýÎ»Ö®ºÍ´óÓÚ k µÄ¸ñ×Ó¡£ ÀýÈç£¬µ± k Îª 18 Ê±£¬»úÆ÷ÈËÄÜ¹»½øÈë·½¸ñ£¨35, 37£©£¬ÒòÎª 3+5+3+7 = 18¡£µ«ÊÇ£¬Ëü²»ÄÜ½øÈë·½¸ñ£¨35, 38£©£¬ÒòÎª 3+5+3+8 = 19¡£ÇëÎÊ¸Ã»úÆ÷ÈËÄÜ¹»´ïµ½¶àÉÙ¸ö¸ñ×Ó£¿
 
 ```java
 private int cnt = 0;
@@ -510,15 +510,15 @@ private void initDigitSum(int rows, int cols) {
 }
 ```
 
-## 14. å‰ªç»³å­
+## 14. ¼ôÉþ×Ó
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-æŠŠä¸€æ ¹ç»³å­å‰ªæˆå¤šæ®µï¼Œå¹¶ä¸”ä½¿å¾—æ¯æ®µçš„é•¿åº¦ä¹˜ç§¯æœ€å¤§ã€‚
+°ÑÒ»¸ùÉþ×Ó¼ô³É¶à¶Î£¬²¢ÇÒÊ¹µÃÃ¿¶ÎµÄ³¤¶È³Ë»ý×î´ó¡£
 
-**è§£é¢˜æ€è·¯**
+**½âÌâË¼Â·**
 
-å°½å¯èƒ½å¤šå¾—å‰ªé•¿åº¦ä¸º 3 çš„ç»³å­ï¼Œå¹¶ä¸”ä¸å…è®¸æœ‰é•¿åº¦ä¸º 1 çš„ç»³å­å‡ºçŽ°ï¼Œå¦‚æžœå‡ºçŽ°äº†ï¼Œå°±ä»Žå·²ç»åˆ‡å¥½é•¿åº¦ä¸º 3 çš„ç»³å­ä¸­æ‹¿å‡ºä¸€æ®µä¸Žé•¿åº¦ä¸º 1 çš„ç»³å­é‡æ–°ç»„åˆï¼ŒæŠŠå®ƒä»¬åˆ‡æˆä¸¤æ®µé•¿åº¦ä¸º 2 çš„ç»³å­ã€‚
+¾¡¿ÉÄÜ¶àµÃ¼ô³¤¶ÈÎª 3 µÄÉþ×Ó£¬²¢ÇÒ²»ÔÊÐíÓÐ³¤¶ÈÎª 1 µÄÉþ×Ó³öÏÖ£¬Èç¹û³öÏÖÁË£¬¾Í´ÓÒÑ¾­ÇÐºÃ³¤¶ÈÎª 3 µÄÉþ×ÓÖÐÄÃ³öÒ»¶ÎÓë³¤¶ÈÎª 1 µÄÉþ×ÓÖØÐÂ×éºÏ£¬°ÑËüÃÇÇÐ³ÉÁ½¶Î³¤¶ÈÎª 2 µÄÉþ×Ó¡£
 
 ```java
 int maxProductAfterCuttin(int length) {
@@ -532,7 +532,7 @@ int maxProductAfterCuttin(int length) {
 }
 ```
 
-## 15. äºŒè¿›åˆ¶ä¸­ 1 çš„ä¸ªæ•°
+## 15. ¶þ½øÖÆÖÐ 1 µÄ¸öÊý
 
 ```java
 public int NumberOf1(int n) {
@@ -540,7 +540,7 @@ public int NumberOf1(int n) {
 }
 ```
 
-n&(n-1) è¯¥ä½è¿ç®—æ˜¯åŽ»é™¤ n çš„ä½çº§è¡¨ç¤ºä¸­æœ€ä½Žçš„é‚£ä¸€ä½ã€‚ä¾‹å¦‚å¯¹äºŽäºŒè¿›åˆ¶è¡¨ç¤º 10110100ï¼Œå‡åŽ» 1 å¾—åˆ° 10110011ï¼Œè¿™ä¸¤ä¸ªæ•°ç›¸ä¸Žå¾—åˆ° 10110000ã€‚
+n&(n-1) ¸ÃÎ»ÔËËãÊÇÈ¥³ý n µÄÎ»¼¶±íÊ¾ÖÐ×îµÍµÄÄÇÒ»Î»¡£ÀýÈç¶ÔÓÚ¶þ½øÖÆ±íÊ¾ 10110100£¬¼õÈ¥ 1 µÃµ½ 10110011£¬ÕâÁ½¸öÊýÏàÓëµÃµ½ 10110000¡£
 
 ```java
 public int NumberOf1(int n) {
@@ -554,9 +554,9 @@ public int NumberOf1(int n) {
 
 ```
 
-# ç¬¬ä¸‰ç«  é«˜è´¨é‡çš„ä»£ç 
+# µÚÈýÕÂ ¸ßÖÊÁ¿µÄ´úÂë
 
-## 16. æ•°å€¼çš„æ•´æ•°æ¬¡æ–¹
+## 16. ÊýÖµµÄÕûÊý´Î·½
 
 ```java
 public double Power(double base, int exponent) {
@@ -573,7 +573,7 @@ public double Power(double base, int exponent) {
 }
 ```
 
-## 18. åˆ é™¤é“¾è¡¨ä¸­é‡å¤çš„ç»“ç‚¹
+## 18. É¾³ýÁ´±íÖÐÖØ¸´µÄ½áµã
 
 ```java
 public ListNode deleteDuplication(ListNode pHead) {
@@ -592,11 +592,11 @@ public ListNode deleteDuplication(ListNode pHead) {
 }
 ```
 
-## 19. æ­£åˆ™è¡¨è¾¾å¼åŒ¹é…
+## 19. ÕýÔò±í´ïÊ½Æ¥Åä
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¯·å®žçŽ°ä¸€ä¸ªå‡½æ•°ç”¨æ¥åŒ¹é…åŒ…æ‹¬ '.' å’Œ '\*' çš„æ­£åˆ™è¡¨è¾¾å¼ã€‚æ¨¡å¼ä¸­çš„å­—ç¬¦ '.' è¡¨ç¤ºä»»æ„ä¸€ä¸ªå­—ç¬¦ï¼Œè€Œ '\*' è¡¨ç¤ºå®ƒå‰é¢çš„å­—ç¬¦å¯ä»¥å‡ºçŽ°ä»»æ„æ¬¡ï¼ˆåŒ…å« 0 æ¬¡ï¼‰ã€‚ åœ¨æœ¬é¢˜ä¸­ï¼ŒåŒ¹é…æ˜¯æŒ‡å­—ç¬¦ä¸²çš„æ‰€æœ‰å­—ç¬¦åŒ¹é…æ•´ä¸ªæ¨¡å¼ã€‚ä¾‹å¦‚ï¼Œå­—ç¬¦ä¸² "aaa" ä¸Žæ¨¡å¼ "a.a" å’Œ "ab\*ac\*a" åŒ¹é…ï¼Œä½†æ˜¯ä¸Ž "aa.a" å’Œ "ab\*a" å‡ä¸åŒ¹é…
+ÇëÊµÏÖÒ»¸öº¯ÊýÓÃÀ´Æ¥Åä°üÀ¨ '.' ºÍ '\*' µÄÕýÔò±í´ïÊ½¡£Ä£Ê½ÖÐµÄ×Ö·û '.' ±íÊ¾ÈÎÒâÒ»¸ö×Ö·û£¬¶ø '\*' ±íÊ¾ËüÇ°ÃæµÄ×Ö·û¿ÉÒÔ³öÏÖÈÎÒâ´Î£¨°üº¬ 0 ´Î£©¡£ ÔÚ±¾ÌâÖÐ£¬Æ¥ÅäÊÇÖ¸×Ö·û´®µÄËùÓÐ×Ö·ûÆ¥ÅäÕû¸öÄ£Ê½¡£ÀýÈç£¬×Ö·û´® "aaa" ÓëÄ£Ê½ "a.a" ºÍ "ab\*ac\*a" Æ¥Åä£¬µ«ÊÇÓë "aa.a" ºÍ "ab\*a" ¾ù²»Æ¥Åä
 
 ```java
 public boolean match(char[] str, char[] pattern) {
@@ -619,11 +619,11 @@ public boolean match(char[] str, char[] pattern) {
 }
 ```
 
-## 20. è¡¨ç¤ºæ•°å€¼çš„å­—ç¬¦ä¸²
+## 20. ±íÊ¾ÊýÖµµÄ×Ö·û´®
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¯·å®žçŽ°ä¸€ä¸ªå‡½æ•°ç”¨æ¥åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦è¡¨ç¤ºæ•°å€¼ï¼ˆåŒ…æ‹¬æ•´æ•°å’Œå°æ•°ï¼‰ã€‚ä¾‹å¦‚ï¼Œå­—ç¬¦ä¸² "+100","5e2","-123","3.1416" å’Œ "-1E-16" éƒ½è¡¨ç¤ºæ•°å€¼ã€‚ ä½†æ˜¯ "12e","1a3.14","1.2.3","+-5" å’Œ "12e+4.3" éƒ½ä¸æ˜¯ã€‚
+ÇëÊµÏÖÒ»¸öº¯ÊýÓÃÀ´ÅÐ¶Ï×Ö·û´®ÊÇ·ñ±íÊ¾ÊýÖµ£¨°üÀ¨ÕûÊýºÍÐ¡Êý£©¡£ÀýÈç£¬×Ö·û´® "+100","5e2","-123","3.1416" ºÍ "-1E-16" ¶¼±íÊ¾ÊýÖµ¡£ µ«ÊÇ "12e","1a3.14","1.2.3","+-5" ºÍ "12e+4.3" ¶¼²»ÊÇ¡£
 
 ```java
 public boolean isNumeric(char[] str) {
@@ -632,10 +632,10 @@ public boolean isNumeric(char[] str) {
 }
 ```
 
-## 21. è°ƒæ•´æ•°ç»„é¡ºåºä½¿å¥‡æ•°ä½äºŽå¶æ•°å‰é¢
+## 21. µ÷ÕûÊý×éË³ÐòÊ¹ÆæÊýÎ»ÓÚÅ¼ÊýÇ°Ãæ
 
-æ—¶é—´å¤æ‚åº¦ : O(n<sup>2</sup>)
-ç©ºé—´å¤æ‚åº¦ : O(1)
+Ê±¼ä¸´ÔÓ¶È : O(n<sup>2</sup>)
+¿Õ¼ä¸´ÔÓ¶È : O(1)
 
 ```java
 public void reOrderArray(int[] array) {
@@ -655,8 +655,8 @@ public void reOrderArray(int[] array) {
 }
 ```
 
-æ—¶é—´å¤æ‚åº¦ : O(n)
-ç©ºé—´å¤æ‚åº¦ : O(n)
+Ê±¼ä¸´ÔÓ¶È : O(n)
+¿Õ¼ä¸´ÔÓ¶È : O(n)
 
 ```java
 public void reOrderArray(int[] array) {
@@ -671,7 +671,7 @@ public void reOrderArray(int[] array) {
 }
 ```
 
-## 22. é“¾è¡¨ä¸­å€’æ•°ç¬¬ k ä¸ªç»“ç‚¹
+## 22. Á´±íÖÐµ¹ÊýµÚ k ¸ö½áµã
 
 ```java
 public ListNode FindKthToTail(ListNode head, int k) {
@@ -690,7 +690,7 @@ public ListNode FindKthToTail(ListNode head, int k) {
 
 
 
-## 23. é“¾è¡¨ä¸­çŽ¯çš„å…¥å£ç»“ç‚¹
+## 23. Á´±íÖÐ»·µÄÈë¿Ú½áµã
 
 ```java
 public ListNode EntryNodeOfLoop(ListNode pHead) {
@@ -712,7 +712,7 @@ public ListNode EntryNodeOfLoop(ListNode pHead) {
 }
 ```
 
-## 24. åè½¬é“¾è¡¨
+## 24. ·´×ªÁ´±í
 
 ```java
 public ListNode ReverseList(ListNode head) {
@@ -727,7 +727,7 @@ public ListNode ReverseList(ListNode head) {
 }
 ```
 
-## 25. åˆå¹¶ä¸¤ä¸ªæŽ’åºçš„é“¾è¡¨
+## 25. ºÏ²¢Á½¸öÅÅÐòµÄÁ´±í
 
 ```java
 public ListNode Merge(ListNode list1, ListNode list2) {
@@ -749,7 +749,7 @@ public ListNode Merge(ListNode list1, ListNode list2) {
 }
 ```
 
-## 26. æ ‘çš„å­ç»“æž„
+## 26. Ê÷µÄ×Ó½á¹¹
 
 ```java
 public boolean HasSubtree(TreeNode root1, TreeNode root2) {
@@ -766,9 +766,9 @@ private boolean isSubtree(TreeNode root1, TreeNode root2) {
 }
 ```
 
-# ç¬¬å››ç«  è§£å†³é¢è¯•é¢˜çš„æ€è·¯
+# µÚËÄÕÂ ½â¾öÃæÊÔÌâµÄË¼Â·
 
-## 27. äºŒå‰æ ‘çš„é•œåƒ
+## 27. ¶þ²æÊ÷µÄ¾µÏñ
 
 ```java
 public void Mirror(TreeNode root) {
@@ -781,7 +781,7 @@ public void Mirror(TreeNode root) {
 }
 ```
 
-## 28.1 å¯¹ç§°çš„äºŒå‰æ ‘
+## 28.1 ¶Ô³ÆµÄ¶þ²æÊ÷
 
 ```java
 boolean isSymmetrical(TreeNode pRoot) {
@@ -797,7 +797,7 @@ boolean isSymmetrical(TreeNode t1, TreeNode t2) {
 }
 ```
 
-## 28.2 å¹³è¡¡äºŒå‰æ ‘
+## 28.2 Æ½ºâ¶þ²æÊ÷
 
 ```java
 private boolean isBalanced = true;
@@ -816,7 +816,7 @@ private int height(TreeNode root) {
 }
 ```
 
-## 29. é¡ºæ—¶é’ˆæ‰“å°çŸ©é˜µ
+## 29. Ë³Ê±Õë´òÓ¡¾ØÕó
 
 ```java
 public ArrayList<Integer> printMatrix(int[][] matrix) {
@@ -833,7 +833,7 @@ public ArrayList<Integer> printMatrix(int[][] matrix) {
 }
 ```
 
-## 30. åŒ…å« min å‡½æ•°çš„æ ˆ
+## 30. °üº¬ min º¯ÊýµÄÕ»
 
 ```java
 private Stack<Integer> stack = new Stack<>();
@@ -861,7 +861,7 @@ public int min() {
 }
 ```
 
-## 31. æ ˆçš„åŽ‹å…¥ã€å¼¹å‡ºåºåˆ—
+## 31. Õ»µÄÑ¹Èë¡¢µ¯³öÐòÁÐ
 
 ```java
 public boolean IsPopOrder(int[] pushA, int[] popA) {
@@ -878,7 +878,7 @@ public boolean IsPopOrder(int[] pushA, int[] popA) {
 }
 ```
 
-## 32.1 ä»Žä¸Šå¾€ä¸‹æ‰“å°äºŒå‰æ ‘
+## 32.1 ´ÓÉÏÍùÏÂ´òÓ¡¶þ²æÊ÷
 
 ```java
 public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
@@ -899,7 +899,7 @@ public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
 }
 ```
 
-## 32.3  æŠŠäºŒå‰æ ‘æ‰“å°æˆå¤šè¡Œ
+## 32.3  °Ñ¶þ²æÊ÷´òÓ¡³É¶àÐÐ
 
 ```java
 ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
@@ -922,7 +922,7 @@ ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
 }
 ```
 
-## 32.3 æŒ‰ä¹‹å­—å½¢é¡ºåºæ‰“å°äºŒå‰æ ‘
+## 32.3 °´Ö®×ÖÐÎË³Ðò´òÓ¡¶þ²æÊ÷
 
 ```java
 public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
@@ -953,7 +953,7 @@ public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
 ```
 
 
-## 33. äºŒå‰æœç´¢æ ‘çš„åŽåºéåŽ†åºåˆ—
+## 33. ¶þ²æËÑË÷Ê÷µÄºóÐò±éÀúÐòÁÐ
 
 ```java
 public boolean VerifySquenceOfBST(int[] sequence) {
@@ -976,7 +976,7 @@ private boolean verify(int[] sequence, int start, int end) {
 }
 ```
 
-## 34. äºŒå‰æ ‘ä¸­å’Œä¸ºæŸä¸€å€¼çš„è·¯å¾„
+## 34. ¶þ²æÊ÷ÖÐºÍÎªÄ³Ò»ÖµµÄÂ·¾¶
 
 ```java
 private ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
@@ -1000,21 +1000,21 @@ private void dfs(TreeNode node, int target, int curSum, ArrayList<Integer> path)
 }
 ```
 
-## 35. å¤æ‚é“¾è¡¨çš„å¤åˆ¶
+## 35. ¸´ÔÓÁ´±íµÄ¸´ÖÆ
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¾“å…¥ä¸€ä¸ªå¤æ‚é“¾è¡¨ï¼ˆæ¯ä¸ªèŠ‚ç‚¹ä¸­æœ‰èŠ‚ç‚¹å€¼ï¼Œä»¥åŠä¸¤ä¸ªæŒ‡é’ˆï¼Œä¸€ä¸ªæŒ‡å‘ä¸‹ä¸€ä¸ªèŠ‚ç‚¹ï¼Œå¦ä¸€ä¸ªç‰¹æ®ŠæŒ‡é’ˆæŒ‡å‘ä»»æ„ä¸€ä¸ªèŠ‚ç‚¹ï¼‰ï¼Œè¿”å›žç»“æžœä¸ºå¤åˆ¶åŽå¤æ‚é“¾è¡¨çš„ headã€‚ï¼ˆæ³¨æ„ï¼Œè¾“å‡ºç»“æžœä¸­è¯·ä¸è¦è¿”å›žå‚æ•°ä¸­çš„èŠ‚ç‚¹å¼•ç”¨ï¼Œå¦åˆ™åˆ¤é¢˜ç¨‹åºä¼šç›´æŽ¥è¿”å›žç©ºï¼‰
+ÊäÈëÒ»¸ö¸´ÔÓÁ´±í£¨Ã¿¸ö½ÚµãÖÐÓÐ½ÚµãÖµ£¬ÒÔ¼°Á½¸öÖ¸Õë£¬Ò»¸öÖ¸ÏòÏÂÒ»¸ö½Úµã£¬ÁíÒ»¸öÌØÊâÖ¸ÕëÖ¸ÏòÈÎÒâÒ»¸ö½Úµã£©£¬·µ»Ø½á¹ûÎª¸´ÖÆºó¸´ÔÓÁ´±íµÄ head¡££¨×¢Òâ£¬Êä³ö½á¹ûÖÐÇë²»Òª·µ»Ø²ÎÊýÖÐµÄ½ÚµãÒýÓÃ£¬·ñÔòÅÐÌâ³ÌÐò»áÖ±½Ó·µ»Ø¿Õ£©
 
-ç¬¬ä¸€æ­¥ï¼Œåœ¨æ¯ä¸ªèŠ‚ç‚¹çš„åŽé¢æ’å…¥å¤åˆ¶çš„èŠ‚ç‚¹ã€‚
+µÚÒ»²½£¬ÔÚÃ¿¸ö½ÚµãµÄºóÃæ²åÈë¸´ÖÆµÄ½Úµã¡£
 
 ![](https://github.com/00000H/notes/blob/master/pics/f8b12555-967b-423d-a84e-bc9eff104b8b.jpg)
 
-ç¬¬äºŒæ­¥ï¼Œå¯¹å¤åˆ¶èŠ‚ç‚¹çš„ random é“¾æŽ¥è¿›è¡Œèµ‹å€¼ã€‚
+µÚ¶þ²½£¬¶Ô¸´ÖÆ½ÚµãµÄ random Á´½Ó½øÐÐ¸³Öµ¡£
 
 ![](https://github.com/00000H/notes/blob/master/pics/7b877a2a-8fd1-40d8-a34c-c445827300b8.jpg)
 
-ç¬¬ä¸‰æ­¥ï¼Œæ‹†åˆ†ã€‚
+µÚÈý²½£¬²ð·Ö¡£
 
 ![](https://github.com/00000H/notes/blob/master/pics/b2b6253c-c701-4b30-aff4-bc3c713542a7.jpg)
 
@@ -1022,7 +1022,7 @@ private void dfs(TreeNode node, int target, int curSum, ArrayList<Integer> path)
 ```java
 public RandomListNode Clone(RandomListNode pHead) {
     if (pHead == null) return null;
-    // æ’å…¥æ–°èŠ‚ç‚¹
+    // ²åÈëÐÂ½Úµã
     RandomListNode cur = pHead;
     while (cur != null) {
         RandomListNode node = new RandomListNode(cur.label);
@@ -1030,7 +1030,7 @@ public RandomListNode Clone(RandomListNode pHead) {
         cur.next = node;
         cur = node.next;
     }
-    // å»ºç«‹ random é“¾æŽ¥
+    // ½¨Á¢ random Á´½Ó
     cur = pHead;
     while (cur != null) {
         RandomListNode clone = cur.next;
@@ -1039,7 +1039,7 @@ public RandomListNode Clone(RandomListNode pHead) {
         }
         cur = clone.next;
     }
-    // æ‹†åˆ†
+    // ²ð·Ö
     RandomListNode pCloneHead = pHead.next;
     cur = pHead;
     while (cur.next != null) {
@@ -1051,11 +1051,11 @@ public RandomListNode Clone(RandomListNode pHead) {
 }
 ```
 
-## 36. äºŒå‰æœç´¢æ ‘ä¸ŽåŒå‘é“¾è¡¨
+## 36. ¶þ²æËÑË÷Ê÷ÓëË«ÏòÁ´±í
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¾“å…¥ä¸€æ£µäºŒå‰æœç´¢æ ‘ï¼Œå°†è¯¥äºŒå‰æœç´¢æ ‘è½¬æ¢æˆä¸€ä¸ªæŽ’åºçš„åŒå‘é“¾è¡¨ã€‚è¦æ±‚ä¸èƒ½åˆ›å»ºä»»ä½•æ–°çš„ç»“ç‚¹ï¼Œåªèƒ½è°ƒæ•´æ ‘ä¸­ç»“ç‚¹æŒ‡é’ˆçš„æŒ‡å‘ã€‚
+ÊäÈëÒ»¿Ã¶þ²æËÑË÷Ê÷£¬½«¸Ã¶þ²æËÑË÷Ê÷×ª»»³ÉÒ»¸öÅÅÐòµÄË«ÏòÁ´±í¡£ÒªÇó²»ÄÜ´´½¨ÈÎºÎÐÂµÄ½áµã£¬Ö»ÄÜµ÷ÕûÊ÷ÖÐ½áµãÖ¸ÕëµÄÖ¸Ïò¡£
 
 ```java
 private TreeNode pre = null;
@@ -1076,7 +1076,7 @@ private void inOrder(TreeNode node) {
 }
 ```
 
-## 37. åºåˆ—åŒ–äºŒå‰æ ‘
+## 37. ÐòÁÐ»¯¶þ²æÊ÷
 
 ```java
 private String serizeString = "";
@@ -1109,11 +1109,11 @@ private TreeNode Deserialize() {
 }
 ```
 
-## 38. å­—ç¬¦ä¸²çš„æŽ’åˆ—
+## 38. ×Ö·û´®µÄÅÅÁÐ
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸² , æŒ‰å­—å…¸åºæ‰“å°å‡ºè¯¥å­—ç¬¦ä¸²ä¸­å­—ç¬¦çš„æ‰€æœ‰æŽ’åˆ—ã€‚ä¾‹å¦‚è¾“å…¥å­—ç¬¦ä¸² abc, åˆ™æ‰“å°å‡ºç”±å­—ç¬¦ a, b, c æ‰€èƒ½æŽ’åˆ—å‡ºæ¥çš„æ‰€æœ‰å­—ç¬¦ä¸² abc, acb, bac, bca, cab å’Œ cbaã€‚
+ÊäÈëÒ»¸ö×Ö·û´® , °´×ÖµäÐò´òÓ¡³ö¸Ã×Ö·û´®ÖÐ×Ö·ûµÄËùÓÐÅÅÁÐ¡£ÀýÈçÊäÈë×Ö·û´® abc, Ôò´òÓ¡³öÓÉ×Ö·û a, b, c ËùÄÜÅÅÁÐ³öÀ´µÄËùÓÐ×Ö·û´® abc, acb, bac, bca, cab ºÍ cba¡£
 
 ```java
 private ArrayList<String> ret = new ArrayList<>();
@@ -1133,7 +1133,7 @@ private void backtracking(char[] chars, boolean[] used, String s) {
     }
     for (int i = 0; i < chars.length; i++) {
         if (used[i]) continue;
-        if (i != 0 && chars[i] == chars[i - 1] && !used[i - 1]) continue; // ä¿è¯ä¸é‡å¤
+        if (i != 0 && chars[i] == chars[i - 1] && !used[i - 1]) continue; // ±£Ö¤²»ÖØ¸´
         used[i] = true;
         backtracking(chars, used, s + chars[i]);
         used[i] = false;
@@ -1141,9 +1141,9 @@ private void backtracking(char[] chars, boolean[] used, String s) {
 }
 ```
 
-# ç¬¬äº”ç«  ä¼˜åŒ–æ—¶é—´å’Œç©ºé—´æ•ˆçŽ‡
+# µÚÎåÕÂ ÓÅ»¯Ê±¼äºÍ¿Õ¼äÐ§ÂÊ
 
-## 39. æ•°ç»„ä¸­å‡ºçŽ°æ¬¡æ•°è¶…è¿‡ä¸€åŠçš„æ•°å­—
+## 39. Êý×éÖÐ³öÏÖ´ÎÊý³¬¹ýÒ»°ëµÄÊý×Ö
 
 ```java
 public int MoreThanHalfNum_Solution(int[] array) {
@@ -1165,12 +1165,12 @@ public int MoreThanHalfNum_Solution(int[] array) {
 ```
 
 
-## 40. æœ€å°çš„ K ä¸ªæ•°
+## 40. ×îÐ¡µÄ K ¸öÊý
 
-æž„å»ºå¤§å°ä¸º k çš„å°é¡¶å †ã€‚
+¹¹½¨´óÐ¡Îª k µÄÐ¡¶¥¶Ñ¡£
 
-æ—¶é—´å¤æ‚åº¦ï¼šO(nlgk)
-ç©ºé—´å¤æ‚åº¦ï¼šO(k)
+Ê±¼ä¸´ÔÓ¶È£ºO(nlgk)
+¿Õ¼ä¸´ÔÓ¶È£ºO(k)
 
 ```java
 public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
@@ -1187,10 +1187,10 @@ public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
 }
 ```
 
-åˆ©ç”¨å¿«é€Ÿé€‰æ‹©
+ÀûÓÃ¿ìËÙÑ¡Ôñ
 
-æ—¶é—´å¤æ‚åº¦ï¼šO(n)
-ç©ºé—´å¤æ‚åº¦ï¼šO(1)
+Ê±¼ä¸´ÔÓ¶È£ºO(n)
+¿Õ¼ä¸´ÔÓ¶È£ºO(1)
 
 ```java
 public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
@@ -1245,22 +1245,22 @@ private boolean less(int v, int w) {
 }
 ```
 
-## 41.1 æ•°æ®æµä¸­çš„ä¸­ä½æ•°
+## 41.1 Êý¾ÝÁ÷ÖÐµÄÖÐÎ»Êý
 
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-å¦‚ä½•å¾—åˆ°ä¸€ä¸ªæ•°æ®æµä¸­çš„ä¸­ä½æ•°ï¼Ÿå¦‚æžœä»Žæ•°æ®æµä¸­è¯»å‡ºå¥‡æ•°ä¸ªæ•°å€¼ï¼Œé‚£ä¹ˆä¸­ä½æ•°å°±æ˜¯æ‰€æœ‰æ•°å€¼æŽ’åºä¹‹åŽä½äºŽä¸­é—´çš„æ•°å€¼ã€‚å¦‚æžœä»Žæ•°æ®æµä¸­è¯»å‡ºå¶æ•°ä¸ªæ•°å€¼ï¼Œé‚£ä¹ˆä¸­ä½æ•°å°±æ˜¯æ‰€æœ‰æ•°å€¼æŽ’åºä¹‹åŽä¸­é—´ä¸¤ä¸ªæ•°çš„å¹³å‡å€¼ã€‚
+ÈçºÎµÃµ½Ò»¸öÊý¾ÝÁ÷ÖÐµÄÖÐÎ»Êý£¿Èç¹û´ÓÊý¾ÝÁ÷ÖÐ¶Á³öÆæÊý¸öÊýÖµ£¬ÄÇÃ´ÖÐÎ»Êý¾ÍÊÇËùÓÐÊýÖµÅÅÐòÖ®ºóÎ»ÓÚÖÐ¼äµÄÊýÖµ¡£Èç¹û´ÓÊý¾ÝÁ÷ÖÐ¶Á³öÅ¼Êý¸öÊýÖµ£¬ÄÇÃ´ÖÐÎ»Êý¾ÍÊÇËùÓÐÊýÖµÅÅÐòÖ®ºóÖÐ¼äÁ½¸öÊýµÄÆ½¾ùÖµ¡£
 
 ```java
-private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> o2-o1); // å®žçŽ°å·¦è¾¹éƒ¨åˆ†
-private PriorityQueue<Integer> minHeep = new PriorityQueue<>(); // å®žçŽ°å³è¾¹éƒ¨åˆ†ï¼Œå³è¾¹éƒ¨åˆ†æ‰€æœ‰å…ƒç´ å¤§äºŽå·¦è¾¹éƒ¨åˆ†
+private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> o2-o1); // ÊµÏÖ×ó±ß²¿·Ö
+private PriorityQueue<Integer> minHeep = new PriorityQueue<>(); // ÊµÏÖÓÒ±ß²¿·Ö£¬ÓÒ±ß²¿·ÖËùÓÐÔªËØ´óÓÚ×ó±ß²¿·Ö
 private int cnt = 0;
 
 public void Insert(Integer num) {
-    // æ’å…¥è¦ä¿è¯ä¸¤ä¸ªå †å­˜äºŽå¹³è¡¡çŠ¶æ€
+    // ²åÈëÒª±£Ö¤Á½¸ö¶Ñ´æÓÚÆ½ºâ×´Ì¬
     if(cnt % 2 == 0) { 
-        // ä¸ºå¶æ•°çš„æƒ…å†µä¸‹æ’å…¥åˆ°æœ€å°å †ï¼Œå…ˆç»è¿‡æœ€å¤§å †ç­›é€‰ï¼Œè¿™æ ·å°±èƒ½ä¿è¯æœ€å¤§å †ä¸­çš„å…ƒç´ éƒ½å°äºŽæœ€å°å †ä¸­çš„å…ƒç´ 
+        // ÎªÅ¼ÊýµÄÇé¿öÏÂ²åÈëµ½×îÐ¡¶Ñ£¬ÏÈ¾­¹ý×î´ó¶ÑÉ¸Ñ¡£¬ÕâÑù¾ÍÄÜ±£Ö¤×î´ó¶ÑÖÐµÄÔªËØ¶¼Ð¡ÓÚ×îÐ¡¶ÑÖÐµÄÔªËØ
         maxHeap.add(num);
         minHeep.add(maxHeap.poll());
     } else {
@@ -1279,11 +1279,11 @@ public Double GetMedian() {
 }
 ```
 
-## 14.2 å­—ç¬¦æµä¸­ç¬¬ä¸€ä¸ªä¸é‡å¤çš„å­—ç¬¦
+## 14.2 ×Ö·ûÁ÷ÖÐµÚÒ»¸ö²»ÖØ¸´µÄ×Ö·û
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¯·å®žçŽ°ä¸€ä¸ªå‡½æ•°ç”¨æ¥æ‰¾å‡ºå­—ç¬¦æµä¸­ç¬¬ä¸€ä¸ªåªå‡ºçŽ°ä¸€æ¬¡çš„å­—ç¬¦ã€‚ä¾‹å¦‚ï¼Œå½“ä»Žå­—ç¬¦æµä¸­åªè¯»å‡ºå‰ä¸¤ä¸ªå­—ç¬¦ "go" æ—¶ï¼Œç¬¬ä¸€ä¸ªåªå‡ºçŽ°ä¸€æ¬¡çš„å­—ç¬¦æ˜¯ "g"ã€‚å½“ä»Žè¯¥å­—ç¬¦æµä¸­è¯»å‡ºå‰å…­ä¸ªå­—ç¬¦â€œgoogle" æ—¶ï¼Œç¬¬ä¸€ä¸ªåªå‡ºçŽ°ä¸€æ¬¡çš„å­—ç¬¦æ˜¯ "l"ã€‚
+ÇëÊµÏÖÒ»¸öº¯ÊýÓÃÀ´ÕÒ³ö×Ö·ûÁ÷ÖÐµÚÒ»¸öÖ»³öÏÖÒ»´ÎµÄ×Ö·û¡£ÀýÈç£¬µ±´Ó×Ö·ûÁ÷ÖÐÖ»¶Á³öÇ°Á½¸ö×Ö·û "go" Ê±£¬µÚÒ»¸öÖ»³öÏÖÒ»´ÎµÄ×Ö·ûÊÇ "g"¡£µ±´Ó¸Ã×Ö·ûÁ÷ÖÐ¶Á³öÇ°Áù¸ö×Ö·û¡°google" Ê±£¬µÚÒ»¸öÖ»³öÏÖÒ»´ÎµÄ×Ö·ûÊÇ "l"¡£
 
 ```java
 //Insert one char from stringstream
@@ -1306,7 +1306,7 @@ public char FirstAppearingOnce() {
 ```
 
 
-## 42. è¿žç»­å­æ•°ç»„çš„æœ€å¤§å’Œ
+## 42. Á¬Ðø×ÓÊý×éµÄ×î´óºÍ
 
 ```java
 public int FindGreatestSumOfSubArray(int[] array) {
@@ -1322,9 +1322,9 @@ public int FindGreatestSumOfSubArray(int[] array) {
 }
 ```
 
-## 43. ä»Ž 1 åˆ° n æ•´æ•°ä¸­ 1 å‡ºçŽ°çš„æ¬¡æ•°
+## 43. ´Ó 1 µ½ n ÕûÊýÖÐ 1 ³öÏÖµÄ´ÎÊý
 
-è§£é¢˜å‚è€ƒï¼š[Leetcode : 233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one/discuss/64381/4+-lines-O(log-n)-C++JavaPython)
+½âÌâ²Î¿¼£º[Leetcode : 233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one/discuss/64381/4+-lines-O(log-n)-C++JavaPython)
 
 ```java
 public int NumberOf1Between1AndN_Solution(int n) {
@@ -1337,11 +1337,11 @@ public int NumberOf1Between1AndN_Solution(int n) {
 }
 ```
 
-## 45. æŠŠæ•°ç»„æŽ’æˆæœ€å°çš„æ•°
+## 45. °ÑÊý×éÅÅ³É×îÐ¡µÄÊý
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°æ•°ç»„ï¼ŒæŠŠæ•°ç»„é‡Œæ‰€æœ‰æ•°å­—æ‹¼æŽ¥èµ·æ¥æŽ’æˆä¸€ä¸ªæ•°ï¼Œæ‰“å°èƒ½æ‹¼æŽ¥å‡ºçš„æ‰€æœ‰æ•°å­—ä¸­æœ€å°çš„ä¸€ä¸ªã€‚ä¾‹å¦‚è¾“å…¥æ•°ç»„ {3ï¼Œ32ï¼Œ321}ï¼Œåˆ™æ‰“å°å‡ºè¿™ä¸‰ä¸ªæ•°å­—èƒ½æŽ’æˆçš„æœ€å°æ•°å­—ä¸º 321323ã€‚
+ÊäÈëÒ»¸öÕýÕûÊýÊý×é£¬°ÑÊý×éÀïËùÓÐÊý×ÖÆ´½ÓÆðÀ´ÅÅ³ÉÒ»¸öÊý£¬´òÓ¡ÄÜÆ´½Ó³öµÄËùÓÐÊý×ÖÖÐ×îÐ¡µÄÒ»¸ö¡£ÀýÈçÊäÈëÊý×é {3£¬32£¬321}£¬Ôò´òÓ¡³öÕâÈý¸öÊý×ÖÄÜÅÅ³ÉµÄ×îÐ¡Êý×ÖÎª 321323¡£
 
 ```java
 public String PrintMinNumber(int[] numbers) {
@@ -1355,11 +1355,11 @@ public String PrintMinNumber(int[] numbers) {
 }
 ```
 
-## 49. ä¸‘æ•°
+## 49. ³óÊý
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-æŠŠåªåŒ…å«å› å­ 2ã€3 å’Œ 5 çš„æ•°ç§°ä½œä¸‘æ•°ï¼ˆUgly Numberï¼‰ã€‚ä¾‹å¦‚ 6ã€8 éƒ½æ˜¯ä¸‘æ•°ï¼Œä½† 14 ä¸æ˜¯ï¼Œå› ä¸ºå®ƒåŒ…å«å› å­ 7ã€‚ ä¹ æƒ¯ä¸Šæˆ‘ä»¬æŠŠ 1 å½“åšæ˜¯ç¬¬ä¸€ä¸ªä¸‘æ•°ã€‚æ±‚æŒ‰ä»Žå°åˆ°å¤§çš„é¡ºåºçš„ç¬¬ N ä¸ªä¸‘æ•°ã€‚
+°ÑÖ»°üº¬Òò×Ó 2¡¢3 ºÍ 5 µÄÊý³Æ×÷³óÊý£¨Ugly Number£©¡£ÀýÈç 6¡¢8 ¶¼ÊÇ³óÊý£¬µ« 14 ²»ÊÇ£¬ÒòÎªËü°üº¬Òò×Ó 7¡£ Ï°¹ßÉÏÎÒÃÇ°Ñ 1 µ±×öÊÇµÚÒ»¸ö³óÊý¡£Çó°´´ÓÐ¡µ½´óµÄË³ÐòµÄµÚ N ¸ö³óÊý¡£
 
 ```java
 public int GetUglyNumber_Solution(int index) {
@@ -1380,7 +1380,7 @@ public int GetUglyNumber_Solution(int index) {
 }
 ```
 
-## 50. ç¬¬ä¸€ä¸ªåªå‡ºçŽ°ä¸€æ¬¡çš„å­—ç¬¦ä½ç½®
+## 50. µÚÒ»¸öÖ»³öÏÖÒ»´ÎµÄ×Ö·ûÎ»ÖÃ
 
 ```java
 public int FirstNotRepeatingChar(String str) {
@@ -1391,7 +1391,7 @@ public int FirstNotRepeatingChar(String str) {
 }
 ```
 
-## 51. æ•°ç»„ä¸­çš„é€†åºå¯¹
+## 51. Êý×éÖÐµÄÄæÐò¶Ô
 
 ```java
 private long cnt = 0;
@@ -1418,7 +1418,7 @@ private void merge(int[] a, int start, int mid, int end) {
         else if (a[i] < a[j]) tmp[k] = a[i++];
         else {
             tmp[k] = a[j++];
-            this.cnt += mid - i + 1; // a[i] > a[j] ï¼Œè¯´æ˜Ž a[i...mid] éƒ½å¤§äºŽ a[j]
+            this.cnt += mid - i + 1; // a[i] > a[j] £¬ËµÃ÷ a[i...mid] ¶¼´óÓÚ a[j]
         }
         k++;
     }
@@ -1429,7 +1429,7 @@ private void merge(int[] a, int start, int mid, int end) {
 }
 ```
 
-## 52. ä¸¤ä¸ªé“¾è¡¨çš„ç¬¬ä¸€ä¸ªå…¬å…±ç»“ç‚¹
+## 52. Á½¸öÁ´±íµÄµÚÒ»¸ö¹«¹²½áµã
 
 ```java
 public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
@@ -1444,9 +1444,9 @@ public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
 }
 ```
 
-# ç¬¬å…­ç«  é¢è¯•ä¸­çš„å„é¡¹èƒ½åŠ›
+# µÚÁùÕÂ ÃæÊÔÖÐµÄ¸÷ÏîÄÜÁ¦
 
-## 53 æ•°å­—åœ¨æŽ’åºæ•°ç»„ä¸­å‡ºçŽ°çš„æ¬¡æ•°
+## 53 Êý×ÖÔÚÅÅÐòÊý×éÖÐ³öÏÖµÄ´ÎÊý
 
 
 
@@ -1464,7 +1464,7 @@ public int GetNumberOfK(int[] array, int k) {
 }
 ```
 
-## 54. äºŒå‰æœç´¢æ ‘çš„ç¬¬ k ä¸ªç»“ç‚¹
+## 54. ¶þ²æËÑË÷Ê÷µÄµÚ k ¸ö½áµã
 
 ```java
 TreeNode ret;
@@ -1485,7 +1485,7 @@ private void inorder(TreeNode root, int k) {
 }
 ```
 
-## 55 äºŒå‰æ ‘çš„æ·±åº¦
+## 55 ¶þ²æÊ÷µÄÉî¶È
 
 ```java
 public int TreeDepth(TreeNode root) {
@@ -1494,19 +1494,19 @@ public int TreeDepth(TreeNode root) {
 }
 ```
 
-## 56. æ•°ç»„ä¸­åªå‡ºçŽ°ä¸€æ¬¡çš„æ•°å­—
+## 56. Êý×éÖÐÖ»³öÏÖÒ»´ÎµÄÊý×Ö
 
-ä¸¤ä¸ªä¸ç›¸ç­‰çš„å…ƒç´ åœ¨ä½çº§è¡¨ç¤ºä¸Šå¿…å®šä¼šæœ‰ä¸€ä½å­˜åœ¨ä¸åŒã€‚
+Á½¸ö²»ÏàµÈµÄÔªËØÔÚÎ»¼¶±íÊ¾ÉÏ±Ø¶¨»áÓÐÒ»Î»´æÔÚ²»Í¬¡£
 
-å°†æ•°ç»„çš„æ‰€æœ‰å…ƒç´ å¼‚æˆ–å¾—åˆ°çš„ç»“æžœä¸ºä¸å­˜åœ¨é‡å¤çš„ä¸¤ä¸ªå…ƒç´ å¼‚æˆ–çš„ç»“æžœã€‚
+½«Êý×éµÄËùÓÐÔªËØÒì»òµÃµ½µÄ½á¹ûÎª²»´æÔÚÖØ¸´µÄÁ½¸öÔªËØÒì»òµÄ½á¹û¡£
 
-diff &= -diff å¾—åˆ°å‡º diff æœ€å³ä¾§ä¸ä¸º 0 çš„ä½ï¼Œä¹Ÿå°±æ˜¯ä¸å­˜åœ¨é‡å¤çš„ä¸¤ä¸ªå…ƒç´ åœ¨ä½çº§è¡¨ç¤ºä¸Šæœ€å³ä¾§ä¸åŒçš„é‚£ä¸€ä½ï¼Œåˆ©ç”¨è¿™ä¸€ä½å°±å¯ä»¥å°†ä¸¤ä¸ªå…ƒç´ åŒºåˆ†å¼€æ¥ã€‚
+diff &= -diff µÃµ½³ö diff ×îÓÒ²à²»Îª 0 µÄÎ»£¬Ò²¾ÍÊÇ²»´æÔÚÖØ¸´µÄÁ½¸öÔªËØÔÚÎ»¼¶±íÊ¾ÉÏ×îÓÒ²à²»Í¬µÄÄÇÒ»Î»£¬ÀûÓÃÕâÒ»Î»¾Í¿ÉÒÔ½«Á½¸öÔªËØÇø·Ö¿ªÀ´¡£
 
 ```java
 public void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
     int diff = 0;
     for (int num : array) diff ^= num;
-    // å¾—åˆ°æœ€å³ä¸€ä½
+    // µÃµ½×îÓÒÒ»Î»
     diff &= -diff;
     for (int num : array) {
         if ((num & diff) == 0) num1[0] ^= num;
@@ -1515,7 +1515,7 @@ public void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
 }
 ```
 
-## 57.1 å’Œä¸º S çš„ä¸¤ä¸ªæ•°å­—
+## 57.1 ºÍÎª S µÄÁ½¸öÊý×Ö
 
 ```java
 public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
@@ -1530,7 +1530,7 @@ public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
 }
 ```
 
-## 57.2 å’Œä¸º S çš„è¿žç»­æ­£æ•°åºåˆ—
+## 57.2 ºÍÎª S µÄÁ¬ÐøÕýÊýÐòÁÐ
 
 ```java
 public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
@@ -1561,7 +1561,7 @@ public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
 }
 ```
 
-## 58.1 ç¿»è½¬å•è¯é¡ºåºåˆ—
+## 58.1 ·­×ªµ¥´ÊË³ÐòÁÐ
 
 ```java
 public String ReverseSentence(String str) {
@@ -1591,7 +1591,7 @@ private void reverse(char[] c, int start, int end) {
 }
 ```
 
-## 58.2 å·¦æ—‹è½¬å­—ç¬¦ä¸²
+## 58.2 ×óÐý×ª×Ö·û´®
 
 ```java
 public String LeftRotateString(String str, int n) {
@@ -1614,7 +1614,7 @@ private void reverse(char[] c, int i, int j) {
 }
 ```
 
-## 59. æ»‘åŠ¨çª—å£çš„æœ€å¤§å€¼
+## 59. »¬¶¯´°¿ÚµÄ×î´óÖµ
 
 ```java
 public ArrayList<Integer> maxInWindows(int[] num, int size) {
@@ -1632,7 +1632,7 @@ public ArrayList<Integer> maxInWindows(int[] num, int size) {
 }
 ```
 
-## 61. æ‰‘å…‹ç‰Œé¡ºå­
+## 61. ÆË¿ËÅÆË³×Ó
 
 ```java
 public boolean isContinuous(int[] numbers) {
@@ -1650,15 +1650,15 @@ public boolean isContinuous(int[] numbers) {
 }
 ```
 
-## 62. åœ†åœˆä¸­æœ€åŽå‰©ä¸‹çš„æ•°
+## 62. Ô²È¦ÖÐ×îºóÊ£ÏÂµÄÊý
 
-**é¢˜ç›®æè¿°**
+**ÌâÄ¿ÃèÊö**
 
-è®©å°æœ‹å‹ä»¬å›´æˆä¸€ä¸ªå¤§åœˆã€‚ç„¶åŽ , ä»–éšæœºæŒ‡å®šä¸€ä¸ªæ•° m, è®©ç¼–å·ä¸º 0 çš„å°æœ‹å‹å¼€å§‹æŠ¥æ•°ã€‚æ¯æ¬¡å–Šåˆ° m-1 çš„é‚£ä¸ªå°æœ‹å‹è¦å‡ºåˆ—å”±é¦–æ­Œ , ç„¶åŽå¯ä»¥åœ¨ç¤¼å“ç®±ä¸­ä»»æ„çš„æŒ‘é€‰ç¤¼ç‰© , å¹¶ä¸”ä¸å†å›žåˆ°åœˆä¸­ , ä»Žä»–çš„ä¸‹ä¸€ä¸ªå°æœ‹å‹å¼€å§‹ , ç»§ç»­ 0...m-1 æŠ¥æ•° .... è¿™æ ·ä¸‹åŽ» .... ç›´åˆ°å‰©ä¸‹æœ€åŽä¸€ä¸ªå°æœ‹å‹ , å¯ä»¥ä¸ç”¨è¡¨æ¼” ,
+ÈÃÐ¡ÅóÓÑÃÇÎ§³ÉÒ»¸ö´óÈ¦¡£È»ºó , ËûËæ»úÖ¸¶¨Ò»¸öÊý m, ÈÃ±àºÅÎª 0 µÄÐ¡ÅóÓÑ¿ªÊ¼±¨Êý¡£Ã¿´Îº°µ½ m-1 µÄÄÇ¸öÐ¡ÅóÓÑÒª³öÁÐ³ªÊ×¸è , È»ºó¿ÉÒÔÔÚÀñÆ·ÏäÖÐÈÎÒâµÄÌôÑ¡ÀñÎï , ²¢ÇÒ²»ÔÙ»Øµ½È¦ÖÐ , ´ÓËûµÄÏÂÒ»¸öÐ¡ÅóÓÑ¿ªÊ¼ , ¼ÌÐø 0...m-1 ±¨Êý .... ÕâÑùÏÂÈ¥ .... Ö±µ½Ê£ÏÂ×îºóÒ»¸öÐ¡ÅóÓÑ , ¿ÉÒÔ²»ÓÃ±íÑÝ ,
 
-**è§£é¢˜æ€è·¯**
+**½âÌâË¼Â·**
 
-çº¦ç‘Ÿå¤«çŽ¯
+Ô¼Éª·ò»·
 
 ```java
 public int LastRemaining_Solution(int n, int m) {
@@ -1668,7 +1668,7 @@ public int LastRemaining_Solution(int n, int m) {
 }
 ```
 
-# 63. è‚¡ç¥¨çš„æœ€å¤§åˆ©æ¶¦
+# 63. ¹ÉÆ±µÄ×î´óÀûÈó
 
 ```java
 public int maxProfit(int[] prices) {
@@ -1684,7 +1684,7 @@ public int maxProfit(int[] prices) {
 }
 ```
 
-## 64. æ±‚ 1+2+3+...+n
+## 64. Çó 1+2+3+...+n
 
 ```java
 public int Sum_Solution(int n) {
@@ -1693,9 +1693,9 @@ public int Sum_Solution(int n) {
 }
 ```
 
-## 65. ä¸ç”¨åŠ å‡ä¹˜é™¤åšåŠ æ³•
+## 65. ²»ÓÃ¼Ó¼õ³Ë³ý×ö¼Ó·¨
 
-a ^ b è¡¨ç¤ºæ²¡æœ‰è€ƒè™‘è¿›ä½çš„æƒ…å†µä¸‹ä¸¤æ•°çš„å’Œï¼Œ(a & b) << 1 å°±æ˜¯è¿›ä½ã€‚é€’å½’ä¼šç»ˆæ­¢çš„åŽŸå› æ˜¯ (a & b) << 1 æœ€å³è¾¹ä¼šå¤šä¸€ä¸ª 0ï¼Œé‚£ä¹ˆç»§ç»­é€’å½’ï¼Œè¿›ä½æœ€å³è¾¹çš„ 0 ä¼šæ…¢æ…¢å¢žå¤šï¼Œæœ€åŽè¿›ä½ä¼šå˜ä¸º 0ï¼Œé€’å½’ç»ˆæ­¢ã€‚
+a ^ b ±íÊ¾Ã»ÓÐ¿¼ÂÇ½øÎ»µÄÇé¿öÏÂÁ½ÊýµÄºÍ£¬(a & b) << 1 ¾ÍÊÇ½øÎ»¡£µÝ¹é»áÖÕÖ¹µÄÔ­ÒòÊÇ (a & b) << 1 ×îÓÒ±ß»á¶àÒ»¸ö 0£¬ÄÇÃ´¼ÌÐøµÝ¹é£¬½øÎ»×îÓÒ±ßµÄ 0 »áÂýÂýÔö¶à£¬×îºó½øÎ»»á±äÎª 0£¬µÝ¹éÖÕÖ¹¡£
 
 ```java
 public int Add(int num1, int num2) {
@@ -1704,7 +1704,7 @@ public int Add(int num1, int num2) {
 }
 ```
 
-## 66. æž„å»ºä¹˜ç§¯æ•°ç»„
+## 66. ¹¹½¨³Ë»ýÊý×é
 
 ```java
 public int[] multiply(int[] A) {
@@ -1729,9 +1729,9 @@ public int[] multiply(int[] A) {
 }
 ```
 
-# ç¬¬ä¸ƒç«  ä¸¤ä¸ªé¢è¯•æ¡ˆä¾‹
+# µÚÆßÕÂ Á½¸öÃæÊÔ°¸Àý
 
-## 67. æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆæ•´æ•°
+## 67. °Ñ×Ö·û´®×ª»»³ÉÕûÊý
 
 ```java
 public int StrToInt(String str) {
@@ -1748,7 +1748,7 @@ public int StrToInt(String str) {
 }
 ```
 
-## 68. æ ‘ä¸­ä¸¤ä¸ªèŠ‚ç‚¹çš„æœ€ä½Žå…¬å…±ç¥–å…ˆ
+## 68. Ê÷ÖÐÁ½¸ö½ÚµãµÄ×îµÍ¹«¹²×æÏÈ
 
 ```java
 public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -1757,36 +1757,3 @@ public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     return root;
 }
 ```
- i = 0; i < n; i++) {
-        if (i != 0) B[i] *= dp[0][i - 1];
-        if (i != n - 1) B[i] *= dp[i + 1][n - 1];
-    }
-    return B;
-}
-```
-
-# ç¬¬ä¸ƒç«  ä¸¤ä¸ªé¢è¯•æ¡ˆä¾‹
-
-## 67. æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆæ•´æ•°
-
-```java
-public int StrToInt(String str) {
-    if (str.length() == 0) return 0;
-    char[] chars = str.toCharArray();
-    boolean isNegative = chars[0] == '-';
-    int ret = 0;
-    for (int i = 0; i < chars.length; i++) {
-        if (i == 0 && (chars[i] == '+' || chars[i] == '-')) continue;
-        if (chars[i] < '0' || chars[i] > '9') return 0;
-        ret = ret * 10 + (chars[i] - '0');
-    }
-    return isNegative ? -ret : ret;
-}
-```
-
-## 68. æ ‘ä¸­ä¸¤ä¸ªèŠ‚ç‚¹çš„æœ€ä½Žå…¬å…±ç¥–å…ˆ
-
-```java
-public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-    if(root.val > p.val && root.val > q.val) return lowestCommonAncestor(root.left, p, q);
-    if(root.val < p.val && root.val
