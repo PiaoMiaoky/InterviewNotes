@@ -22,7 +22,7 @@
 
 > [计算机网络](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/计算机网络.md)
 
-整理自《计算机网络 第七版》
+整理自《计算机网络 第七版》，重点内容在标题后面已经加了 * 号。
 
 > [HTTP](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/HTTP.md)
 
