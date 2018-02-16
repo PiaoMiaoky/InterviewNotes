@@ -4892,3 +4892,9 @@ public int maxProduct(String[] words) {
 - 算法
 - 王道论坛计算机考研机试指南
 
+�思路：本题主要问题是判断两个字符串是否含相同字符，由于字符串只含有小写字符，总共 26 位，因此可以用一个 32 位的整数来存储每个字符是否出现过。
+
+```java
+public int maxProduct(String[] words) {
+    int n = words.length;
+    if 

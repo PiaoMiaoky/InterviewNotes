@@ -1757,3 +1757,36 @@ public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     return root;
 }
 ```
+ i = 0; i < n; i++) {
+        if (i != 0) B[i] *= dp[0][i - 1];
+        if (i != n - 1) B[i] *= dp[i + 1][n - 1];
+    }
+    return B;
+}
+```
+
+# 第七章 两个面试案例
+
+## 67. 把字符串转换成整数
+
+```java
+public int StrToInt(String str) {
+    if (str.length() == 0) return 0;
+    char[] chars = str.toCharArray();
+    boolean isNegative = chars[0] == '-';
+    int ret = 0;
+    for (int i = 0; i < chars.length; i++) {
+        if (i == 0 && (chars[i] == '+' || chars[i] == '-')) continue;
+        if (chars[i] < '0' || chars[i] > '9') return 0;
+        ret = ret * 10 + (chars[i] - '0');
+    }
+    return isNegative ? -ret : ret;
+}
+```
+
+## 68. 树中两个节点的最低公共祖先
+
+```java
+public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    if(root.val > p.val && root.val > q.val) return lowestCommonAncestor(root.left, p, q);
+    if(root.val < p.val && root.val
