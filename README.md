@@ -18,12 +18,6 @@
 
 未完成
 
-# 设计模式
-
-> [设计模式](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/设计模式.md)
-
-整理自《Head First 设计模式》，这本书内容废话太多，笔记内容提取了重点部分。
-
 # 网络
 
 > [计算机网络](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/计算机网络.md)
@@ -43,6 +37,16 @@
 > [Linux](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Linux.md)
 
 整理自《鸟哥的 Linux 私房菜》
+
+# 面向对象
+
+> [设计模式](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/设计模式.md)
+
+整理自《Head First 设计模式》，这本书内容废话太多，笔记内容提取了重点部分。
+
+> [面向对象思想](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/面向对象思想.md)
+
+一些面向对象思想和原则
 
 # 资料下载
 
