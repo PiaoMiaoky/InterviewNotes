@@ -48,6 +48,12 @@
 
 一些面向对象思想和原则
 
+# Java
+
+> [JVM](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/JVM.md)
+
+整理自《深入理解 Java 虚拟机》，包括内存模型、垃圾回收和类加载机制。
+
 # 资料下载
 
 > [百度网盘](https://pan.baidu.com/s/1o9oD1s2#list/path=%2F)
