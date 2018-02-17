@@ -56,7 +56,7 @@
 
 > [Java IO](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Java%20IO.md)
 
-File、InputStream 和 OutputStream、Reader 和 Writer、Serializable、Socket 和 NIO
+File、InputStream 和 OutputStream、Reader 和 Writer、Serializable、Socket 以及 NIO
 
 # 资料下载
 
