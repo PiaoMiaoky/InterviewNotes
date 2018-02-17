@@ -50,10 +50,6 @@
 
 # Java
 
-> [Java 基础语法](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Java%20基础语法.md)
-
-只整理了一些比较常见的知识点。
-
 > [JVM](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/JVM.md)
 
 整理自《深入理解 Java 虚拟机》，包括内存模型、垃圾回收和类加载机制。
