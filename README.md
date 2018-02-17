@@ -56,12 +56,7 @@
 
 > [Java IO](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Java%20IO.md)
 
-1. 磁盘操作：File
-2. 字节操作：InputStream 和 OutputStream
-3. 字符操作：Reader 和 Writer
-4. 对象操作：Serializable
-5. 网络操作：Socket
-6. 非阻塞式 IO：NIO
+File、InputStream 和 OutputStream、Reader 和 Writer、Serializable、Socket 和 NIO
 
 # 资料下载
 
