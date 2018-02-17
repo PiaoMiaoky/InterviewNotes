@@ -1,29 +1,49 @@
 <!-- GFM-TOC -->
-* [1. ÄÚ´æÄ£ÐÍ](#1-ÄÚ´æÄ£ÐÍ)
-    * [1.1 ³ÌÐò¼ÆÊýÆ÷](#11-³ÌÐò¼ÆÊýÆ÷)
-    * [1.2 Java ÐéÄâ»úÕ»](#12-java-ÐéÄâ»úÕ»)
-    * [1.3 ±¾µØ·½·¨Õ»](#13-±¾µØ·½·¨Õ»)
-    * [1.4 Java ¶Ñ](#14-java-¶Ñ)
-    * [1.5 ·½·¨Çø](#15-·½·¨Çø)
-    * [1.6 ÔËÐÐÊ±³£Á¿³Ø](#16-ÔËÐÐÊ±³£Á¿³Ø)
-    * [1.7 Ö±½ÓÄÚ´æ](#17-Ö±½ÓÄÚ´æ)
-* [2. À¬»øÊÕ¼¯](#2-À¬»øÊÕ¼¯)
-    * [2.1 ÅÐ¶ÏÒ»¸ö¶ÔÏóÊÇ·ñ¿É»ØÊÕ](#21-ÅÐ¶ÏÒ»¸ö¶ÔÏóÊÇ·ñ¿É»ØÊÕ)
-    * [2.2 À¬»øÊÕ¼¯Ëã·¨](#22-À¬»øÊÕ¼¯Ëã·¨)
-        * [2.2.1 ±ê¼Ç-Çå³ýËã·¨](#221-±ê¼Ç-Çå³ýËã·¨)
-        * [2.2.2 ¸´ÖÆËã·¨](#222-¸´ÖÆËã·¨)
-        * [2.2.3 ±ê¼Ç-ÕûÀíËã·¨](#223-±ê¼Ç-ÕûÀíËã·¨)
-        * [2.2.4 ·Ö´úÊÕ¼¯Ëã·¨](#224-·Ö´úÊÕ¼¯Ëã·¨)
-    * [2.3 À¬»øÊÕ¼¯Æ÷](#23-À¬»øÊÕ¼¯Æ÷)
-        * [2.3.1 Serial ÊÕ¼¯Æ÷](#231-serial-ÊÕ¼¯Æ÷)
-        * [2.3.2 ParNew ÊÕ¼¯Æ÷](#232-parnew-ÊÕ¼¯Æ÷)
-        * [2.3.3 Parallel Scavenge ÊÕ¼¯Æ÷](#233-parallel-scavenge-ÊÕ¼¯Æ÷)
-        * [2.3.4 Serial Old ÊÕ¼¯Æ÷](#234-serial-old-ÊÕ¼¯Æ÷)
-        * [2.3.5 Parallel Old ÊÕ¼¯Æ÷](#235-parallel-old-ÊÕ¼¯Æ÷)
-        * [2.3.6 CMS ÊÕ¼¯Æ÷](#236-cms-ÊÕ¼¯Æ÷)
-        * [2.3.7 G1 ÊÕ¼¯Æ÷](#237-g1-ÊÕ¼¯Æ÷)
-        * [2.3.8 ÆßÖÖÀ¬»øÊÕ¼¯Æ÷µÄ±È½Ï](#238-ÆßÖÖÀ¬»øÊÕ¼¯Æ÷µÄ±È½Ï)
-    * [2.4 ÄÚ´æ·ÖÅäÓë»ØÊÕ²ßÂÔ](#24-ÄÚ´æ·ÖÅäÓë»ØÊÕ²ßÂÔ)
+* [ÄÚ´æÄ£ÐÍ](#ÄÚ´æÄ£ÐÍ)
+    * [1. ³ÌÐò¼ÆÊýÆ÷](#1-³ÌÐò¼ÆÊýÆ÷)
+    * [2. Java ÐéÄâ»úÕ»](#2-java-ÐéÄâ»úÕ»)
+    * [3. ±¾µØ·½·¨Õ»](#3-±¾µØ·½·¨Õ»)
+    * [4. Java ¶Ñ](#4-java-¶Ñ)
+    * [5. ·½·¨Çø](#5-·½·¨Çø)
+    * [6. ÔËÐÐÊ±³£Á¿³Ø](#6-ÔËÐÐÊ±³£Á¿³Ø)
+    * [7. Ö±½ÓÄÚ´æ](#7-Ö±½ÓÄÚ´æ)
+* [À¬»øÊÕ¼¯](#À¬»øÊÕ¼¯)
+    * [1. ÅÐ¶ÏÒ»¸ö¶ÔÏóÊÇ·ñ¿É»ØÊÕ](#1-ÅÐ¶ÏÒ»¸ö¶ÔÏóÊÇ·ñ¿É»ØÊÕ)
+        * [1.1 ÒýÓÃ¼ÆÊý](#11-ÒýÓÃ¼ÆÊý)
+        * [1.2 ¿É´ïÐÔ](#12-¿É´ïÐÔ)
+        * [1.3 ÒýÓÃÀàÐÍ](#13-ÒýÓÃÀàÐÍ)
+            * [1.3.1 Ç¿ÒýÓÃ](#131-Ç¿ÒýÓÃ)
+            * [1.3.2 ÈíÒýÓÃ](#132-ÈíÒýÓÃ)
+            * [1.3.3 ÈõÒýÓÃ](#133-ÈõÒýÓÃ)
+            * [1.3.4 ÐéÒýÓÃ](#134-ÐéÒýÓÃ)
+        * [1.3 ·½·¨ÇøµÄ»ØÊÕ](#13-·½·¨ÇøµÄ»ØÊÕ)
+        * [1.4 finalize()](#14-finalize)
+    * [2. À¬»øÊÕ¼¯Ëã·¨](#2-À¬»øÊÕ¼¯Ëã·¨)
+        * [2.1 ±ê¼Ç - Çå³ýËã·¨](#21-±ê¼Ç---Çå³ýËã·¨)
+        * [2.2 ¸´ÖÆËã·¨](#22-¸´ÖÆËã·¨)
+        * [2.3 ±ê¼Ç - ÕûÀíËã·¨](#23-±ê¼Ç---ÕûÀíËã·¨)
+        * [2.4 ·Ö´úÊÕ¼¯Ëã·¨](#24-·Ö´úÊÕ¼¯Ëã·¨)
+    * [3. À¬»øÊÕ¼¯Æ÷](#3-À¬»øÊÕ¼¯Æ÷)
+        * [3.1 Serial ÊÕ¼¯Æ÷](#31-serial-ÊÕ¼¯Æ÷)
+        * [3.2 ParNew ÊÕ¼¯Æ÷](#32-parnew-ÊÕ¼¯Æ÷)
+        * [3.3 Parallel Scavenge ÊÕ¼¯Æ÷](#33-parallel-scavenge-ÊÕ¼¯Æ÷)
+        * [3.4 Serial Old ÊÕ¼¯Æ÷](#34-serial-old-ÊÕ¼¯Æ÷)
+        * [3.5 Parallel Old ÊÕ¼¯Æ÷](#35-parallel-old-ÊÕ¼¯Æ÷)
+        * [3.6 CMS ÊÕ¼¯Æ÷](#36-cms-ÊÕ¼¯Æ÷)
+        * [3.7 G1 ÊÕ¼¯Æ÷](#37-g1-ÊÕ¼¯Æ÷)
+        * [3.8 ÆßÖÖÀ¬»øÊÕ¼¯Æ÷µÄ±È½Ï](#38-ÆßÖÖÀ¬»øÊÕ¼¯Æ÷µÄ±È½Ï)
+    * [4. ÄÚ´æ·ÖÅäÓë»ØÊÕ²ßÂÔ](#4-ÄÚ´æ·ÖÅäÓë»ØÊÕ²ßÂÔ)
+        * [4.1 ÓÅÏÈÔÚ Eden ·ÖÅä](#41-ÓÅÏÈÔÚ-eden-·ÖÅä)
+        * [4.2 ´ó¶ÔÏóÖ±½Ó½øÈëÀÏÄê´ú](#42-´ó¶ÔÏóÖ±½Ó½øÈëÀÏÄê´ú)
+        * [4.3 ³¤ÆÚ´æ»îµÄ¶ÔÏó½øÈëÀÏÄê´ú](#43-³¤ÆÚ´æ»îµÄ¶ÔÏó½øÈëÀÏÄê´ú)
+        * [4.4 ¶¯Ì¬¶ÔÏóÄêÁäÅÐ¶¨](#44-¶¯Ì¬¶ÔÏóÄêÁäÅÐ¶¨)
+        * [4.5 ¿Õ¼ä·ÖÅäµ£±£](#45-¿Õ¼ä·ÖÅäµ£±£)
+    * [4.6 Full GC µÄ´¥·¢Ìõ¼þ](#46-full-gc-µÄ´¥·¢Ìõ¼þ)
+        * [4.6.1 µ÷ÓÃ System.gc()](#461-µ÷ÓÃ-systemgc)
+        * [4.6.2 ÀÏÄê´ú¿Õ¼ä²»×ã](#462-ÀÏÄê´ú¿Õ¼ä²»×ã)
+        * [4.6.3 ¿Õ¼ä·ÖÅäµ£±£Ê§°Ü](#463-¿Õ¼ä·ÖÅäµ£±£Ê§°Ü)
+        * [4.6.4 JDK 1.7 ¼°ÒÔÇ°µÄÓÀ¾Ã´ú¿Õ¼ä²»×ã](#464-jdk-17-¼°ÒÔÇ°µÄÓÀ¾Ã´ú¿Õ¼ä²»×ã)
+        * [4.6.5 Concurrent Mode Failure](#465-concurrent-mode-failure)
 * [Àà¼ÓÔØ»úÖÆ](#Àà¼ÓÔØ»úÖÆ)
     * [1 ÀàµÄÉúÃüÖÜÆÚ](#1-ÀàµÄÉúÃüÖÜÆÚ)
     * [2. Àà³õÊ¼»¯Ê±»ú](#2-Àà³õÊ¼»¯Ê±»ú)
@@ -34,57 +54,54 @@
         * [3.4 ½âÎö](#34-½âÎö)
         * [3.5 ³õÊ¼»¯](#35-³õÊ¼»¯)
     * [4. Àà¼ÓÔØÆ÷](#4-Àà¼ÓÔØÆ÷)
+        * [4.1 ÀàÓëÀà¼ÓÔØÆ÷](#41-ÀàÓëÀà¼ÓÔØÆ÷)
+        * [4.2 Àà¼ÓÔØÆ÷·ÖÀà](#42-Àà¼ÓÔØÆ÷·ÖÀà)
+        * [4.3 Ë«Ç×Î¯ÅÉÄ£ÐÍ](#43-Ë«Ç×Î¯ÅÉÄ£ÐÍ)
 * [JVM ²ÎÊý](#jvm-²ÎÊý)
+    * [GC ÓÅ»¯ÅäÖÃ](#gc-ÓÅ»¯ÅäÖÃ)
+    * [GC ÀàÐÍÉèÖÃ](#gc-ÀàÐÍÉèÖÃ)
 <!-- GFM-TOC -->
 
-# 1. ÄÚ´æÄ£ÐÍ
+# ÄÚ´æÄ£ÐÍ
 
 ![](https://github.com/00000H/notes/blob/master/pics/dc695f48-4189-4fc7-b950-ed25f6c80f82.jpg)
 
 ×¢£º°×É«ÇøÓòÎªÏß³ÌË½ÓÐµÄ£¬À¶É«ÇøÓòÎªÏß³Ì¹²ÏíµÄ¡£
 
-## 1.1 ³ÌÐò¼ÆÊýÆ÷
+## 1. ³ÌÐò¼ÆÊýÆ÷
 
 ¼ÇÂ¼ÕýÔÚÖ´ÐÐµÄÐéÄâ»ú×Ö½ÚÂëÖ¸ÁîµÄµØÖ·£¨Èç¹ûÕýÔÚÖ´ÐÐµÄÊÇ Native ·½·¨ÔòÎª¿Õ£©¡£
 
-³ÌÐò¼ÆÊýÆ÷ÊÇÏß³ÌË½ÓÐµÄ¡£
-
-## 1.2 Java ÐéÄâ»úÕ»
+## 2. Java ÐéÄâ»úÕ»
 
 Ã¿¸ö Java ·½·¨ÔÚÖ´ÐÐµÄÍ¬Ê±»á´´½¨Ò»¸öÕ»Ö¡ÓÃÓÚ´æ´¢¾Ö²¿±äÁ¿±í¡¢²Ù×÷ÊýÕ»¡¢¶¯Ì¬Á´½Ó¡¢·½·¨³ö¿ÚµÈÐÅÏ¢¡£Ã¿Ò»¸ö·½·¨´Óµ÷ÓÃÖ±ÖÁÖ´ÐÐÍê³ÉµÄ¹ý³Ì£¬¾Í¶ÔÓ¦×ÅÒ»¸öÕ»Ö¡ÔÚ Java ÐéÄâ»úÕ»ÖÐÈëÕ»ºÍ³öÕ»µÄ¹ý³Ì¡£
 
-Java ÐéÄâ»úÕ»ÊÇÏß³ÌË½ÓÐµÄ¡£
-
 ¸ÃÇøÓò¿ÉÄÜÅ×³öÒÔÏÂÒì³££º
 
-1.  µ±Ïß³ÌÇëÇóµÄÕ»Éî¶È³¬¹ý×î´óÖµ£¬»áÅ×³ö StackOverflowError Òì³££»
-2.  ¶¯Ì¬À©Õ¹Ê±ÎÞ·¨ÉêÇëµ¼×ã¹»ÄÚ´æ£¬Å×³ö OutOfMemoryError Òì³£¡£
+1. µ±Ïß³ÌÇëÇóµÄÕ»Éî¶È³¬¹ý×î´óÖµ£¬»áÅ×³ö StackOverflowError Òì³££»
+2. Õ»½øÐÐ¶¯Ì¬À©Õ¹Ê±Èç¹ûÎÞ·¨ÉêÇëµ¼×ã¹»ÄÚ´æ£¬»áÅ×³ö OutOfMemoryError Òì³£¡£
 
-## 1.3 ±¾µØ·½·¨Õ»
+## 3. ±¾µØ·½·¨Õ»
 
 Óë Java ÐéÄâ»úÕ»ÀàËÆ£¬ËüÃÇÖ®¼äµÄÇø±ðÖ»²»¹ýÊÇ±¾µØ·½·¨Õ»Îª±¾µØ·½·¨·þÎñ¡£
 
-## 1.4 Java ¶Ñ
+## 4. Java ¶Ñ
 
 ËùÓÐ¶ÔÏóÊµÀý¶¼ÔÚÕâÀï·ÖÅäÄÚ´æ¡£
 
-Java ¶ÑÊÇËùÓÐÏß³Ì¹²ÏíµÄ¡£
-
-Õâ¿éÇøÓòÒ²ÊÇÀ¬»øÊÕ¼¯Æ÷¹ÜÀíµÄÖ÷ÒªÇøÓò£¨"GC¶Ñ"£©¡£ÏÖÔÚÊÕ¼¯Æ÷»ù±¾¶¼ÊÇ²ÉÓÃ·Ö´úÊÕ¼¯Ëã·¨¡£ËùÒÔ£¬Java ¶Ñ»¹¿ÉÒÔ·Ö³É£ºÐÂÉú´úºÍÀÏÄê´ú£¨ÐÂÉú´ú»¹¿ÉÒÔ·Ö³É Eden ¿Õ¼ä¡¢From Survivor ¿Õ¼ä¡¢To Survivor ¿Õ¼äµÈ£©¡£
+Õâ¿éÇøÓòÊÇÀ¬»øÊÕ¼¯Æ÷¹ÜÀíµÄÖ÷ÒªÇøÓò£¨"GC ¶Ñ "£©¡£ÏÖÔÚÊÕ¼¯Æ÷»ù±¾¶¼ÊÇ²ÉÓÃ·Ö´úÊÕ¼¯Ëã·¨£¬Java ¶Ñ»¹¿ÉÒÔ·Ö³É£ºÐÂÉú´úºÍÀÏÄê´ú£¨ÐÂÉú´ú»¹¿ÉÒÔ·Ö³É Eden ¿Õ¼ä¡¢From Survivor ¿Õ¼ä¡¢To Survivor ¿Õ¼äµÈ£©¡£
 
 ²»ÐèÒªÁ¬ÐøÄÚ´æ£¬¿ÉÒÔÍ¨¹ý -Xmx ºÍ -Xms À´¿ØÖÆ¶¯Ì¬À©Õ¹ÄÚ´æ´óÐ¡£¬Èç¹û¶¯Ì¬À©Õ¹Ê§°Ü»áÅ×³ö OutOfMemoryError Òì³£¡£
 
-## 1.5 ·½·¨Çø
+## 5. ·½·¨Çø
 
 ÓÃÓÚ´æ·ÅÒÑ±»ÐéÄâ»ú¼ÓÔØµÄÀàÐÅÏ¢¡¢³£Á¿¡¢¾²Ì¬±äÁ¿¡¢¼´Ê±±àÒëÆ÷±àÒëºóµÄ´úÂëµÈÊý¾Ý¡£
 
-·½·¨ÇøÊÇËùÓÐÏß³Ì¹²ÏíµÄ¡£
-
 ºÍ Java ¶ÑÒ»Ñù²»ÐèÒªÁ¬ÐøµÄÄÚ´æ£¬²¢ÇÒ¿ÉÒÔ¶¯Ì¬À©Õ¹£¬¶¯Ì¬À©Õ¹Ê§°ÜÒ»Ñù»áÅ×³ö OutOfMemoryError Òì³£¡£
 
-¶ÔÕâ¿éÇøÓò½øÐÐÀ¬»ø»ØÊÕµÄÖ÷ÒªÄ¿±êÊÇ¶Ô³£Á¿³ØµÄ»ØÊÕºÍ¶ÔÀàµÄÐ¶ÔØ£¬µ«ÊÇÒ»°ã±È½ÏÄÑÊµÏÖ¡£HotSpot ÐéÄâ»ú°ÑËüµ±³ÉÓÀ¾Ã´ú¡£
+¶ÔÕâ¿éÇøÓò½øÐÐÀ¬»ø»ØÊÕµÄÖ÷ÒªÄ¿±êÊÇ¶Ô³£Á¿³ØµÄ»ØÊÕºÍ¶ÔÀàµÄÐ¶ÔØ£¬µ«ÊÇÒ»°ã±È½ÏÄÑÊµÏÖ£¬HotSpot ÐéÄâ»ú°ÑËüµ±³ÉÓÀ¾Ã´úÀ´½øÐÐÀ¬»ø»ØÊÕ¡£
 
-## 1.6 ÔËÐÐÊ±³£Á¿³Ø
+## 6. ÔËÐÐÊ±³£Á¿³Ø
 
 ÔËÐÐÊ±³£Á¿³ØÊÇ·½·¨ÇøµÄÒ»²¿·Ö¡£
 
@@ -92,36 +109,34 @@ Java ¶ÑÊÇËùÓÐÏß³Ì¹²ÏíµÄ¡£
 
 ÔÚÔËÐÐÆÚ¼äÒ²¿ÉÒÔÓÃ¹ý String ÀàµÄ intern() ·½·¨½«ÐÂµÄ³£Á¿·ÅÈë¸ÃÇøÓò¡£
 
-## 1.7 Ö±½ÓÄÚ´æ
+## 7. Ö±½ÓÄÚ´æ
 
-ÔÚ JDK 1.4 ÖÐÐÂ¼ÓÈëÁË NIO Àà£¬ÒýÈëÁËÒ»ÖÖ»ùÓÚÍ¨µÀ(Channel)Óë»º³åÇø(Buffer)µÄ I/O ·½Ê½£¬Ëü¿ÉÒÔÊ¹ÓÃ Native º¯Êý¿âÖ±½Ó·ÖÅä¶ÑÍâÄÚ´æ£¬È»ºóÍ¨¹ýÒ»¸ö´æ´¢ÔÚ Java ¶ÑÀïµÄ DirectByteBuffer ¶ÔÏó×÷ÎªÕâ¿éÄÚ´æµÄÒýÓÃ½øÐÐ²Ù×÷¡£ÕâÑùÄÜÔÚÒ»Ð©³¡¾°ÖÐÏÔÖøÌá¸ßÐÔÄÜ£¬ÒòÎª±ÜÃâÁËÔÚ Java ¶ÑºÍ Native ¶ÑÖÐÀ´»Ø¸´ÖÆÊý¾Ý¡£
+ÔÚ JDK 1.4 ÖÐÐÂ¼ÓÈëÁË NIO Àà£¬ÒýÈëÁËÒ»ÖÖ»ùÓÚÍ¨µÀ£¨Channel£©Óë»º³åÇø£¨Buffer£©µÄ I/O ·½Ê½£¬Ëü¿ÉÒÔÊ¹ÓÃ Native º¯Êý¿âÖ±½Ó·ÖÅä¶ÑÍâÄÚ´æ£¬È»ºóÍ¨¹ýÒ»¸ö´æ´¢ÔÚ Java ¶ÑÀïµÄ DirectByteBuffer ¶ÔÏó×÷ÎªÕâ¿éÄÚ´æµÄÒýÓÃ½øÐÐ²Ù×÷¡£ÕâÑùÄÜÔÚÒ»Ð©³¡¾°ÖÐÏÔÖøÌá¸ßÐÔÄÜ£¬ÒòÎª±ÜÃâÁËÔÚ Java ¶ÑºÍ Native ¶ÑÖÐÀ´»Ø¸´ÖÆÊý¾Ý¡£
 
-# 2. À¬»øÊÕ¼¯
+# À¬»øÊÕ¼¯
 
 ³ÌÐò¼ÆÊýÆ÷¡¢ÐéÄâ»úÕ»ºÍ±¾µØ·½·¨Õ»ÕâÈý¸öÇøÓòÊôÓÚÏß³ÌË½ÓÐµÄ£¬Ö»´æÔÚÓÚÏß³ÌµÄÉúÃüÖÜÆÚÄÚ£¬Ïß³Ì½áÊøÖ®ºóÒ²»áÏûÊ§£¬Òò´Ë²»ÐèÒª¶ÔÕâÈý¸öÇøÓò½øÐÐÀ¬»ø»ØÊÕ¡£
 
 À¬»ø»ØÊÕÖ÷ÒªÊÇÕë¶Ô Java ¶ÑºÍ·½·¨Çø½øÐÐ¡£
 
-## 2.1 ÅÐ¶ÏÒ»¸ö¶ÔÏóÊÇ·ñ¿É»ØÊÕ
+## 1. ÅÐ¶ÏÒ»¸ö¶ÔÏóÊÇ·ñ¿É»ØÊÕ
 
-**2.1.1 ÒýÓÃ¼ÆÊý**
+### 1.1 ÒýÓÃ¼ÆÊý
 
 ¸ø¶ÔÏóÌí¼ÓÒ»¸öÒýÓÃ¼ÆÊýÆ÷£¬µ±¶ÔÏóÔö¼ÓÒ»¸öÒýÓÃÊ±¼ÆÊýÆ÷¼Ó 1£¬ÒýÓÃÊ§Ð§Ê±¼ÆÊýÆ÷¼õ 1¡£
 
 ÒýÓÃ¼ÆÊýÎª 0 µÄ¶ÔÏó¿É±»»ØÊÕ¡£
 
-Á½¸ö¶ÔÏó»á³öÏÖÑ­»·ÒýÓÃÎÊÌâ£¬ÒýÓÃ¼ÆÊýÆ÷ÓÀÔ¶²»Îª 0£¬µ¼ÖÂ GC ÊÕ¼¯Æ÷ÎÞ·¨»ØÊÕ¡£
+Á½¸ö¶ÔÏó»á³öÏÖÑ­»·ÒýÓÃÎÊÌâ£¬´ËÊ±ÒýÓÃ¼ÆÊýÆ÷ÓÀÔ¶²»Îª 0£¬µ¼ÖÂ GC ÊÕ¼¯Æ÷ÎÞ·¨»ØÊÕ¡£
 
 ```java
 objA.instance = objB;
 objB.instance = objA;
 ```
 
-**2.1.2 ¿É´ïÐÔ**
+### 1.2 ¿É´ïÐÔ
 
-Í¨¹ý GC Roots ×÷ÎªÆðÊ¼µã½øÐÐËÑË÷£¬ÄÜ¹»µ½´ïµ½µÄ¶ÔÏó¶¼ÊÇ¶¼ÊÇ¿ÉÓÃµÄ¡£
-
-²»¿É´ïµÄ¶ÔÏó¿É±»»ØÊÕ¡£
+Í¨¹ý GC Roots ×÷ÎªÆðÊ¼µã½øÐÐËÑË÷£¬ÄÜ¹»µ½´ïµ½µÄ¶ÔÏó¶¼ÊÇ¶¼ÊÇ¿ÉÓÃµÄ£¬²»¿É´ïµÄ¶ÔÏó¿É±»»ØÊÕ¡£
 
 GC Roots Ò»°ã°üº¬ÒÔÏÂÄÚÈÝ£º
 
@@ -130,9 +145,62 @@ GC Roots Ò»°ã°üº¬ÒÔÏÂÄÚÈÝ£º
 3. ·½·¨ÇøÖÐµÄ³£Á¿ÒýÓÃµÄ¶ÔÏó
 4. ±¾µØ·½·¨Õ»ÖÐÒýÓÃµÄ¶ÔÏó
 
-**2.1.3 ·½·¨ÇøµÄ»ØÊÕ**
+### 1.3 ÒýÓÃÀàÐÍ
 
-Ö÷ÒªÊÇ¶Ô³£Á¿³ØµÄ»ØÊÕºÍ¶ÔÀàµÄÐ¶ÔØ¡£
+ÎÞÂÛÊÇÍ¨¹ýÒýÓÃ¼ÆËãËã·¨ÅÐ¶Ï¶ÔÏóµÄÒýÓÃÊýÁ¿£¬»¹ÊÇÍ¨¹ý¿É´ïÐÔ·ÖÎöËã·¨ÅÐ¶Ï¶ÔÏóµÄÒýÓÃÁ´ÊÇ·ñ¿É´ï£¬ÅÐ¶¨¶ÀÏíÊÇ·ñ´æ»î¶¼Óë¡°ÒýÓÃ¡±ÓÐ¹Ø¡£
+
+#### 1.3.1 Ç¿ÒýÓÃ
+
+Ö»ÒªÇ¿ÒýÓÃ´æÔÚ£¬À¬»ø»ØÊÕÆ÷ÓÀÔ¶²»»á»ØÊÕµ÷µô±»ÒýÓÃµÄ¶ÔÏó¡£
+
+```java
+Object obj = new Object();
+```
+
+#### 1.3.2 ÈíÒýÓÃ
+
+
+·Ç±ØÐëÒýÓÃ£¬ÄÚ´æÒç³öÖ®Ç°½øÐÐ»ØÊÕ¡£
+
+```java
+Object obj = new Object();
+SoftReference<Object> sf = new SoftReference<Object>(obj);
+obj = null;
+sf.get();
+```
+
+sf ÊÇ¶Ô obj µÄÒ»¸öÈíÒýÓÃ£¬Í¨¹ý sf.get() ·½·¨¿ÉÒÔÈ¡µ½Õâ¸ö¶ÔÏó£¬µ±È»£¬µ±Õâ¸ö¶ÔÏó±»±ê¼ÇÎªÐèÒª»ØÊÕµÄ¶ÔÏóÊ±£¬Ôò·µ»Ø null£»
+
+ÈíÒýÓÃÖ÷ÒªÓÃ»§ÊµÏÖÀàËÆ»º´æµÄ¹¦ÄÜ£¬ÔÚÄÚ´æ×ã¹»µÄÇé¿öÏÂÖ±½ÓÍ¨¹ýÈíÒýÓÃÈ¡Öµ£¬ÎÞÐè´Ó·±Ã¦µÄÕæÊµÀ´Ô´²éÑ¯Êý¾Ý£¬ÌáÉýËÙ¶È£»µ±ÄÚ´æ²»×ãÊ±£¬×Ô¶¯É¾³ýÕâ²¿·Ö»º´æÊý¾Ý£¬´ÓÕæÕýµÄÀ´Ô´²éÑ¯ÕâÐ©Êý¾Ý¡£
+
+
+#### 1.3.3 ÈõÒýÓÃ
+
+Ö»ÄÜÉú´æµ½ÏÂÒ»´ÎÀ¬»øÊÕ¼¯·¢ÉúÖ®Ç°£¬µ±À¬»øÊÕ¼¯Æ÷¹¤×÷Ê±£¬ÎÞÂÛµ±Ç°ÄÚ´æÊÇ·ñÖí¹·£¬¶¼»á±»»ØÊÕ¡£
+
+```java
+Object obj = new Object();
+WeakReference<Object> wf = new WeakReference<Object>(obj);
+obj = null;
+wf.get();
+wf.isEnQueued();
+```
+
+#### 1.3.4 ÐéÒýÓÃ
+
+ÓÖ³ÆÎªÓÄÁéÒýÓÃ»òÕß»ÃÓ°ÒýÓÃ£¬Ò»¸ö¶ÔÏóÊÇ·ñÓÐÐòÒýÓÃµÄ´æÔÚ£¬ÍêÈ«²»»á¶ÔÆäÉú´æÊ±¼ä¹¹³ÉÓ°Ïì£¬Ò²ÎÞ·¨Í¨¹ýÐéÒýÓÃÈ¡µÃÒ»¸ö¶ÔÏóÊµÀý¡£ÎªÒ»¸ö¶ÔÏóÉèÖÃÐéÒýÓÃ¹ØÁªµÄÎ¨Ò»Ä¿µÄ¾ÍÊÇÄÜÔÚÕâ¸ö¶ÔÏó±»ÊÕ¼¯Æ÷»ØÊÕÊ±ÊÕµ½Ò»¸öÏµÍ³Í¨Öª¡£
+
+```java
+Object obj = new Object();
+PhantomReference<Object> pf = new PhantomReference<Object>(obj);
+obj=null;
+pf.get();
+pf.isEnQueued();
+```
+
+### 1.3 ·½·¨ÇøµÄ»ØÊÕ
+
+ÔÚ·½·¨ÇøÖ÷ÒªÊÇ¶Ô³£Á¿³ØµÄ»ØÊÕºÍ¶ÔÀàµÄÐ¶ÔØ¡£
 
 ³£Á¿³ØµÄ»ØÊÕºÍ¶ÑÖÐ¶ÔÏó»ØÊÕÀàËÆ¡£
 
@@ -140,62 +208,65 @@ GC Roots Ò»°ã°üº¬ÒÔÏÂÄÚÈÝ£º
 
 1. ¸ÃÀàËùÓÐµÄÊµÀý¶¼ÒÑ¾­±»»ØÊÕ£¬Ò²¾ÍÊÇ Java ¶ÑÖÐ²»´æÔÚ¸ÃÀàµÄÈÎºÎÊµÀý¡£
 2. ¼ÓÔØ¸ÃÀàµÄ ClassLoader ÒÑ¾­±»»ØÊÕ¡£
-3. ¸ÃÀà¶ÔÓ¦µÄ java.lang.Class ¶ÔÏóÃ»ÓÐÔÚÈÎºÎµØ·½±»ÒýÓÃ£¬ÎÞ·¨ÔÚÈÎºÎµØ·½Í¨¹ý·´Éä·ÃÎÊ¸ÃÀà·½·¨¡£
+3. ¸ÃÀà¶ÔÓ¦µÄ java.lang.Class ¶ÔÏóÃ»ÓÐÔÚÈÎºÎµØ·½±»ÒýÓÃ£¬Ò²¾ÍÎÞ·¨ÔÚÈÎºÎµØ·½Í¨¹ý·´Éä·ÃÎÊ¸ÃÀà·½·¨¡£
 
 ¿ÉÒÔÍ¨¹ý -Xnoclassgc ²ÎÊýÀ´¿ØÖÆÊÇ·ñ¶ÔÀà½øÐÐÐ¶ÔØ¡£
 
 ÔÚ´óÁ¿Ê¹ÓÃ·´Éä¡¢¶¯Ì¬´úÀí¡¢CGLib µÈ ByteCode ¿ò¼Ü¡¢¶¯Ì¬Éú³É JSP ÒÔ¼° OSGo ÕâÀàÆµ·±×Ô¶¨Òå ClassLoader µÄ³¡¾°¶¼ÐèÒªÐéÄâ»ú¾ß±¸ÀàÐ¶ÔØ¹¦ÄÜ£¬ÒÔ±£Ö¤²»»á³öÏÖÄÚ´æÒç³ö¡£
 
-**2.1.4 finalize()**
+### 1.4 finalize()
 
-µ±Ò»¸ö¶ÔÏó¿É±»»ØÊÕÊ±£¬Èç¹û¸Ã¶ÔÏóÓÐ±ØÒªÖ´ÐÐ finalize() ·½·¨£¬ÄÇÃ´¶ÔÏó»¹ÓÐ¿ÉÄÜ×Ô¾È¡£
+µ±Ò»¸ö¶ÔÏó¿É±»»ØÊÕÊ±£¬Èç¹û¸Ã¶ÔÏóÓÐ±ØÒªÖ´ÐÐ finalize() ·½·¨£¬ÄÇÃ´¾ÍÓÐ¿ÉÄÜ¿ÉÄÜÍ¨¹ýÔÚ¸Ã·½·¨ÖÐÈÃ¶ÔÏóÖØÐÂ±»ÒýÓÃ£¬´Ó¶øÊµÏÖ×Ô¾È¡£
 
 finalize() ÀàËÆ C++ µÄÐé¹¹º¯Êý£¬ÓÃÀ´×ö¹Ø±ÕÍâ²¿×ÊÔ´µÈ¹¤×÷¡£µ«ÊÇ try-finally µÈ·½Ê½¿ÉÒÔ×öµÄ¸üºÃ£¬²¢ÇÒ¸Ã·½·¨ÔËÐÐ´ú¼Û¸ß°º£¬²»È·¶¨ÐÔ´ó£¬ÎÞ·¨±£Ö¤¸÷¸ö¶ÔÏóµÄµ÷ÓÃË³Ðò£¬Òò´Ë×îºÃ²»ÒªÊ¹ÓÃ¡£
 
-## 2.2 À¬»øÊÕ¼¯Ëã·¨
+## 2. À¬»øÊÕ¼¯Ëã·¨
 
-### 2.2.1 ±ê¼Ç-Çå³ýËã·¨
+### 2.1 ±ê¼Ç - Çå³ýËã·¨
 
-![](https://github.com/00000H/notes/blob/master/pics/5e94e5cd-c8e9-4796-bf90-27d5bd9c9726.png)
+![](https://github.com/00000H/notes/blob/master/pics/a4248c4b-6c1d-4fb8-a557-86da92d3a294.jpg)
 
 ½«ÐèÒª»ØÊÕµÄ¶ÔÏó½øÐÐ±ê¼Ç£¬È»ºóÇå³ý¡£
 
-Ö÷ÒªÓÐÁ½¸ö²»×ã£º±ê¼ÇºÍÇå³ý¹ý³ÌÐ§ÂÊ¶¼²»¸ß£»»á²úÉú´óÁ¿ËéÆ¬¡£
+²»×ã£º
+
+1. ±ê¼ÇºÍÇå³ý¹ý³ÌÐ§ÂÊ¶¼²»¸ß
+2. »á²úÉú´óÁ¿ËéÆ¬
 
 Ö®ºóµÄËã·¨¶¼ÊÇ»ùÓÚ¸ÃËã·¨½øÐÐ¸Ä½ø¡£
 
-### 2.2.2 ¸´ÖÆËã·¨
+### 2.2 ¸´ÖÆËã·¨
 
-![](https://github.com/00000H/notes/blob/master/pics/38addbee-49a8-4769-9057-2b4dd431e4bc.jpg)
+![](https://github.com/00000H/notes/blob/master/pics/e6b733ad-606d-4028-b3e8-83c3a73a3797.jpg)
 
 ½«ÄÚ´æ»®·ÖÎª´óÐ¡ÏàµÈµÄÁ½¿é£¬Ã¿´ÎÖ»Ê¹ÓÃÆäÖÐÒ»¿é£¬µ±ÕâÒ»¿éÄÚ´æÓÃÍêÁË¾Í½«»¹´æ»îµÄ¶ÔÏó¸´ÖÆµ½ÁíÒ»¿éÉÏÃæ£¬È»ºóÔÙ°ÑÊ¹ÓÃ¹ýµÄÄÚ´æ¿Õ¼ä½øÐÐÒ»´ÎÇåÀí¡£
 
-Ö÷Òª²»×ãÊÇÖ»Ê¹ÓÃÁËÄÚ´æµÄÒ»°ã¡£
+Ö÷Òª²»×ãÊÇÖ»Ê¹ÓÃÁËÄÚ´æµÄÒ»°ë¡£
 
-ÏÖÔÚµÄÉÌÒµÐéÄâ»ú¶¼²ÉÓÃÕâÖÖÊÕ¼¯Ëã·¨À´»ØÊÕÐÂÉú´ú£¬µ«ÊÇ²¢²»ÊÇ½«ÄÚ´æ»®·ÖÎª´óÐ¡ÏàµÈµÄÁ½¿é£¬¶øÊÇ·ÖÎªÒ»¿é½Ï´óµÄ Eden ¿Õ¼äºÍÁ½¿é½ÏÐ¡µÄ Survior ¿Õ¼ä£¬Ã¿´ÎÊ¹ÓÃ Eden ¿Õ¼äºÍÆäÖÐÒ»¿é Survivor¡£ÔÚ»ØÊÕÊ±£¬½« Eden ºÍ Survivor ÖÐ»¹´æ»î×ÅµÄ¶ÔÏóÒ»´ÎÐÔ¸´ÖÆµ½ÁíÒ»¿é Survivor ¿Õ¼äÉÏ£¬×îºóÇåÀí Eden ºÍ Survivor¡£HotSpot ÐéÄâ»úÄ¬ÈÏ Eden ºÍ Survivor µÄ´óÐ¡±ÈÀýÊÇ 8:1£¬±£Ö¤ÁËÄÚ´æµÄÀûÓÃÂÊÎª 90 %¡£Èç¹ûÃ¿´Î»ØÊÕÓÐ¶àÓÚ 10% µÄ¶ÔÏó´æ»î£¬ÄÇÃ´Ò»¿é Survivor ¿Õ¼ä¾Í²»¹»ÓÃÁË£¬ÐèÒªÒÀÀµÓÚÀÏÄê´ú½øÐÐ·ÖÅäµ£±£¡£
+ÏÖÔÚµÄÉÌÒµÐéÄâ»ú¶¼²ÉÓÃÕâÖÖÊÕ¼¯Ëã·¨À´»ØÊÕÐÂÉú´ú£¬µ«ÊÇ²¢²»ÊÇ½«ÄÚ´æ»®·ÖÎª´óÐ¡ÏàµÈµÄÁ½¿é£¬¶øÊÇ·ÖÎªÒ»¿é½Ï´óµÄ Eden ¿Õ¼äºÍÁ½¿é½ÏÐ¡µÄ Survior ¿Õ¼ä£¬Ã¿´ÎÊ¹ÓÃ Eden ¿Õ¼äºÍÆäÖÐÒ»¿é Survivor¡£ÔÚ»ØÊÕÊ±£¬½« Eden ºÍ Survivor ÖÐ»¹´æ»î×ÅµÄ¶ÔÏóÒ»´ÎÐÔ¸´ÖÆµ½ÁíÒ»¿é Survivor ¿Õ¼äÉÏ£¬×îºóÇåÀí Eden ºÍ Survivor¡£HotSpot ÐéÄâ»úµÄ Eden ºÍ Survivor µÄ´óÐ¡±ÈÀýÄ¬ÈÏÎª 8:1£¬±£Ö¤ÁËÄÚ´æµÄÀûÓÃÂÊ´ïµ½ 90 %¡£Èç¹ûÃ¿´Î»ØÊÕÓÐ¶àÓÚ 10% µÄ¶ÔÏó´æ»î£¬ÄÇÃ´Ò»¿é Survivor ¿Õ¼ä¾Í²»¹»ÓÃÁË£¬ÐèÒªÒÀÀµÓÚÀÏÄê´ú½øÐÐ·ÖÅäµ£±££¬Ò²¾ÍÊÇ½èÓÃÀÏÄê´úµÄ¿Õ¼ä¡£
 
-### 2.2.3 ±ê¼Ç-ÕûÀíËã·¨
+### 2.3 ±ê¼Ç - ÕûÀíËã·¨
 
-![](https://github.com/00000H/notes/blob/master/pics/e171793b-118f-4f67-bf85-eccd517f7e5b.png)
+![](https://github.com/00000H/notes/blob/master/pics/902b83ab-8054-4bd2-898f-9a4a0fe52830.jpg)
 
 ÈÃËùÓÐ´æ»îµÄ¶ÔÏó¶¼ÏòÒ»¶ÎÒÆ¶¯£¬È»ºóÖ±½ÓÇåÀíµô¶Ë±ß½çÒÔÍâµÄÄÚ´æ¡£
 
-### 2.2.4 ·Ö´úÊÕ¼¯Ëã·¨
+### 2.4 ·Ö´úÊÕ¼¯Ëã·¨
 
 ÏÖÔÚµÄÉÌÒµÐéÄâ»ú²ÉÓÃ·Ö´úÊÕ¼¯Ëã·¨£¬ËüÊ¹ÓÃÁËÇ°Ãæ½éÉÜµÄ¼¸ÖÖÊÕ¼¯Ëã·¨£¬¸ù¾Ý¶ÔÏó´æ»îÖÜÆÚ½«ÄÚ´æ»®·ÖÎª¼¸¿é£¬²»Í¬¿é²ÉÓÃÊÊµ±µÄÊÕ¼¯Ëã·¨¡£
 
 Ò»°ã½« Java ¶Ñ·ÖÎªÐÂÉú´úºÍÀÏÄê´ú¡£
 
 1. ÐÂÉú´úÊ¹ÓÃ£º¸´ÖÆËã·¨
-2. ÀÏÄê´úÊ¹ÓÃ£º±ê¼Ç-ÇåÀí »òÕß ±ê¼Ç-ÕûÀí Ëã·¨¡£
+2. ÀÏÄê´úÊ¹ÓÃ£º±ê¼Ç - ÇåÀí »òÕß ±ê¼Ç - ÕûÀí Ëã·¨¡£
 
-## 2.3 À¬»øÊÕ¼¯Æ÷
+## 3. À¬»øÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/c625baa0-dde6-449e-93df-c3a67f2f430f.jpg)
 
 ÒÔÉÏÊÇ HotSpot ÐéÄâ»úÖÐµÄ 7 ¸öÀ¬»øÊÕ¼¯Æ÷£¬Á¬Ïß±íÊ¾À¬»øÊÕ¼¯Æ÷¿ÉÒÔÅäºÏÊ¹ÓÃ¡£
 
-### 2.3.1 Serial ÊÕ¼¯Æ÷
+### 3.1 Serial ÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/22fda4ae-4dd5-489d-ab10-9ebfdad22ae0.jpg)
 
@@ -203,9 +274,9 @@ finalize() ÀàËÆ C++ µÄÐé¹¹º¯Êý£¬ÓÃÀ´×ö¹Ø±ÕÍâ²¿×ÊÔ´µÈ¹¤×÷¡£µ«ÊÇ try-finally µÈ·½Ê
 
 ËüµÄÓÅµãÊÇ¼òµ¥¸ßÐ§£¬¶ÔÓÚµ¥¸ö CPU »·¾³À´Ëµ£¬ÓÉÓÚÃ»ÓÐÏß³Ì½»»¥µÄ¿ªÏú£¬Òò´ËÓµÓÐ×î¸ßµÄµ¥Ïß³ÌÊÕ¼¯Ð§ÂÊ¡£
 
-ÔÚ Client Ó¦ÓÃ³¡¾°ÖÐ£¬·ÖÅä¸øÐéÄâ»ú¹ÜÀíµÄÄÚ´æÒ»°ãÀ´Ëµ²»»áºÜ´ó£¬ÊÕ¼¯¼¸Ê®Õ×ÉõÖÁÒ»Á½°ÙÕ×µÄÐÂÉú´úÍ£¶ÙÊ±¼ä¿ÉÒÔ¿ØÖÆÔÚÒ»°Ù¶àºÁÃëÒÔÄÚ£¬Ö»Òª²»ÊÇÌ«Æµ·±£¬ÕâµãÍ£¶ÙÊÇ¿ÉÒÔ½ÓÊÜµÄ¡£
+ÔÚ Client Ó¦ÓÃ³¡¾°ÖÐ£¬·ÖÅä¸øÐéÄâ»ú¹ÜÀíµÄÄÚ´æÒ»°ãÀ´Ëµ²»»áºÜ´ó£¬¸ÃÊÕ¼¯Æ÷ÊÕ¼¯¼¸Ê®Õ×ÉõÖÁÒ»Á½°ÙÕ×µÄÐÂÉú´úÍ£¶ÙÊ±¼ä¿ÉÒÔ¿ØÖÆÔÚÒ»°Ù¶àºÁÃëÒÔÄÚ£¬Ö»Òª²»ÊÇÌ«Æµ·±£¬ÕâµãÍ£¶ÙÊÇ¿ÉÒÔ½ÓÊÜµÄ¡£
 
-### 2.3.2 ParNew ÊÕ¼¯Æ÷
+### 3.2 ParNew ÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/81538cd5-1bcf-4e31-86e5-e198df1e013b.jpg)
 
@@ -215,7 +286,7 @@ finalize() ÀàËÆ C++ µÄÐé¹¹º¯Êý£¬ÓÃÀ´×ö¹Ø±ÕÍâ²¿×ÊÔ´µÈ¹¤×÷¡£µ«ÊÇ try-finally µÈ·½Ê
 
 Ä¬ÈÏ¿ªÊ¼µÄÏß³ÌÊýÁ¿Óë CPU ÊýÁ¿ÏàÍ¬£¬¿ÉÒÔÊ¹ÓÃ -XX:ParallelGCThreads ²ÎÊýÀ´ÉèÖÃÏß³ÌÊý¡£
 
-### 2.3.3 Parallel Scavenge ÊÕ¼¯Æ÷
+### 3.3 Parallel Scavenge ÊÕ¼¯Æ÷
 
 ÊÇ²¢ÐÐµÄ¶àÏß³ÌÊÕ¼¯Æ÷¡£
 
@@ -223,20 +294,20 @@ finalize() ÀàËÆ C++ µÄÐé¹¹º¯Êý£¬ÓÃÀ´×ö¹Ø±ÕÍâ²¿×ÊÔ´µÈ¹¤×÷¡£µ«ÊÇ try-finally µÈ·½Ê
 
 Í£¶ÙÊ±¼äÔ½¶Ì¾ÍÔ½ÊÊºÏÐèÒªÓëÓÃ»§½»»¥µÄ³ÌÐò£¬Á¼ºÃµÄÏìÓ¦ËÙ¶ÈÄÜÌáÉýÓÃ»§ÌåÑé¡£¶ø¸ßÍÌÍÂÁ¿Ôò¿ÉÒÔ¸ßÐ§ÂÊµØÀûÓÃ CPU Ê±¼ä£¬¾¡¿ìÍê³É³ÌÐòµÄÔËËãÈÎÎñ£¬Ö÷ÒªÊÊºÏÔÚºóÌ¨ÔËËã¶ø²»ÐèÒªÌ«¶à½»»¥µÄÈÎÎñ¡£
 
-Ìá¹©ÁËÁ½¸ö²ÎÊýÓÃÓÚ¾«È·¿ØÖÆÍÌÍÂÁ¿£¬·Ö±ðÊÇ¿ØÖÆ×î´óÀ¬»øÊÕ¼¯Í£¶ÙÊ±¼ä -XX:MaxGCPauseMillis ²ÎÊýÒÔ¼°Ö±½ÓÉèÖÃÍÌÍÂÁ¿´óÐ¡µÄ -XX:GCTimeRatio ²ÎÊý£¨ÖµÎª´óÓÚ 0 ÇÒÐ¡ÓÚ 100 µÄÕûÊý£©¡£Ëõ¶ÌÍ£¶ÙÊ±¼äÊÇÒÔÎþÉüÍÌÍÂÁ¿ºÍÐÂÉú´ú¿Õ¼äÀ´»»È¡µÄ£ºÐÂÉú´ú±äµÍ£¬²¢ÇÒÀ¬»ø»ØÊÕ±äµÃÆµ·±£¬µ¼ÖÂÍÌÍÂÁ¿ÏÂ½µ¡£
+Ìá¹©ÁËÁ½¸ö²ÎÊýÓÃÓÚ¾«È·¿ØÖÆÍÌÍÂÁ¿£¬·Ö±ðÊÇ¿ØÖÆ×î´óÀ¬»øÊÕ¼¯Í£¶ÙÊ±¼ä -XX:MaxGCPauseMillis ²ÎÊýÒÔ¼°Ö±½ÓÉèÖÃÍÌÍÂÁ¿´óÐ¡µÄ -XX:GCTimeRatio ²ÎÊý£¨ÖµÎª´óÓÚ 0 ÇÒÐ¡ÓÚ 100 µÄÕûÊý£©¡£Ëõ¶ÌÍ£¶ÙÊ±¼äÊÇÒÔÎþÉüÍÌÍÂÁ¿ºÍÐÂÉú´ú¿Õ¼äÀ´»»È¡µÄ£ºÐÂÉú´ú¿Õ¼ä±äÐ¡£¬À¬»ø»ØÊÕ±äµÃÆµ·±£¬µ¼ÖÂÍÌÍÂÁ¿ÏÂ½µ¡£
 
-»¹Ìá¹©ÁËÒ»¸ö²ÎÊý -XX:+UseAdaptiveSizePolicy£¬ÕâÊÇÒ»¸ö¿ª¹Ø²ÎÊý£¬´ò¿ª²ÎÊýºó£¬¾Í²»ÐèÒªÊÖ¹¤Ö¸¶¨ÐÂÉú´úµÄ´óÐ¡£¨-Xmn£©¡¢Eden ºÍ Survivor ÇøµÄ±ÈÀý£¨-XX:SurvivorRatio£©¡¢½úÉýÀÏÄê´ú¶ÔÏóÄêÁä£¨-XX:PretenureSizeThreshold£©µÈÏ¸½Ú²ÎÊýÁË£¬ÐéÄâ»ú»á¸ù¾Ýµ±Ç°ÏµÍ³µÄÔËÐÐÇé¿öÊÕ¼¯ÐÔÄÜ¼à¿ØÐÅÏ¢£¬¶¯Ì¬µ÷ÕûÕâÐ©²ÎÊýÒÔÌá¹©×îºÏÊÊµÄÍ£¶ÙÊ±¼ä»òÕß×î´óµÄÍÌÍÂÁ¿£¬ÕâÖÖ·½Ê½³ÆÎªGC×ÔÊÊÓ¦µÄµ÷½Ú²ßÂÔ£¨GC Ergonomics£©¡£×ÔÊÊÓ¦µ÷½Ú²ßÂÔÒ²ÊÇËüÓë ParNew ÊÕ¼¯Æ÷µÄÒ»¸öÖØÒªÇø±ð¡£
+»¹Ìá¹©ÁËÒ»¸ö²ÎÊý -XX:+UseAdaptiveSizePolicy£¬ÕâÊÇÒ»¸ö¿ª¹Ø²ÎÊý£¬´ò¿ª²ÎÊýºó£¬¾Í²»ÐèÒªÊÖ¹¤Ö¸¶¨ÐÂÉú´úµÄ´óÐ¡£¨-Xmn£©¡¢Eden ºÍ Survivor ÇøµÄ±ÈÀý£¨-XX:SurvivorRatio£©¡¢½úÉýÀÏÄê´ú¶ÔÏóÄêÁä£¨-XX:PretenureSizeThreshold£©µÈÏ¸½Ú²ÎÊýÁË£¬ÐéÄâ»ú»á¸ù¾Ýµ±Ç°ÏµÍ³µÄÔËÐÐÇé¿öÊÕ¼¯ÐÔÄÜ¼à¿ØÐÅÏ¢£¬¶¯Ì¬µ÷ÕûÕâÐ©²ÎÊýÒÔÌá¹©×îºÏÊÊµÄÍ£¶ÙÊ±¼ä»òÕß×î´óµÄÍÌÍÂÁ¿£¬ÕâÖÖ·½Ê½³ÆÎª GC ×ÔÊÊÓ¦µÄµ÷½Ú²ßÂÔ£¨GC Ergonomics£©¡£×ÔÊÊÓ¦µ÷½Ú²ßÂÔÒ²ÊÇËüÓë ParNew ÊÕ¼¯Æ÷µÄÒ»¸öÖØÒªÇø±ð¡£
 
-### 2.3.4 Serial Old ÊÕ¼¯Æ÷
+### 3.4 Serial Old ÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/08f32fd3-f736-4a67-81ca-295b2a7972f2.jpg)
 
-Serial Old ÊÇ Serial ÊÕ¼¯Æ÷µÄÀÏÄê´ú°æ±¾£¬Ö÷ÒªÒ²ÊÇÔÚÓÚ¸ø Client Ä£Ê½ÏÂµÄÐéÄâ»úÊ¹ÓÃ¡£Èç¹ûÔÚ Server Ä£Ê½ÏÂ£¬Ëü»¹ÓÐÁ½´óÓÃÍ¾£º
+Serial Old ÊÇ Serial ÊÕ¼¯Æ÷µÄÀÏÄê´ú°æ±¾£¬Ò²ÊÇ¸ø Client Ä£Ê½ÏÂµÄÐéÄâ»úÊ¹ÓÃ¡£Èç¹ûÓÃÔÚ Server Ä£Ê½ÏÂ£¬ËüÓÐÁ½´óÓÃÍ¾£º
 
 1. ÔÚ JDK 1.5 ÒÔ¼°Ö®Ç°°æ±¾£¨Parallel Old µ®ÉúÒÔÇ°£©ÖÐÓë Parallel Scavenge ÊÕ¼¯Æ÷´îÅäÊ¹ÓÃ¡£
 2. ×÷Îª CMS ÊÕ¼¯Æ÷µÄºó±¸Ô¤°¸£¬ÔÚ²¢·¢ÊÕ¼¯·¢Éú Concurrent Mode Failure Ê±Ê¹ÓÃ¡£
 
-### 2.3.5 Parallel Old ÊÕ¼¯Æ÷
+### 3.5 Parallel Old ÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/278fe431-af88-4a95-a895-9c3b80117de3.jpg)
 
@@ -244,47 +315,47 @@ Serial Old ÊÇ Serial ÊÕ¼¯Æ÷µÄÀÏÄê´ú°æ±¾£¬Ö÷ÒªÒ²ÊÇÔÚÓÚ¸ø Client Ä£Ê½ÏÂµÄÐéÄâ»úÊ¹Ó
 
 ÔÚ×¢ÖØÍÌÍÂÁ¿ÒÔ¼° CPU ×ÊÔ´Ãô¸ÐµÄ³¡ºÏ£¬¶¼¿ÉÒÔÓÅÏÈ¿¼ÂÇ Parallel Scavenge ¼Ó Parallel Old ÊÕ¼¯Æ÷¡£
 
-### 2.3.6 CMS ÊÕ¼¯Æ÷
+### 3.6 CMS ÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/62e77997-6957-4b68-8d12-bfd609bb2c68.jpg)
 
-CMS£¨Concurrent Mark Sweep£©£¬´Ó Mark Sweep ¿ÉÒÔÖªµÀËüÊÇ»ùÓÚ ±ê¼Ç-Çå³ý Ëã·¨ÊµÏÖµÄ¡£
+CMS£¨Concurrent Mark Sweep£©£¬´Ó Mark Sweep ¿ÉÒÔÖªµÀËüÊÇ»ùÓÚ ±ê¼Ç - Çå³ý Ëã·¨ÊµÏÖµÄ¡£
 
-²¢·¢ÊÕ¼¯¡¢µÍÍ£¶Ù¡£
+ÌØµã£º²¢·¢ÊÕ¼¯¡¢µÍÍ£¶Ù¡£
 
 ·ÖÎªÒÔÏÂËÄ¸öÁ÷³Ì£º
 
 1. ³õÊ¼±ê¼Ç£º½ö½öÖ»ÊÇ±ê¼ÇÒ»ÏÂ GC Roots ÄÜÖ±½Ó¹ØÁªµ½µÄ¶ÔÏó£¬ËÙ¶ÈºÜ¿ì£¬ÐèÒªÍ£¶Ù¡£
-2. ²¢·¢±ê¼Ç£º½øÐÐ GC Roots Tracing µÄ¹ý³Ì£¬ÔÚÕû¸ö¹ý³ÌÖÐºÄÊ±×î³¤¡£
+2. ²¢·¢±ê¼Ç£º½øÐÐ GC Roots Tracing µÄ¹ý³Ì£¬ËüÔÚÕû¸ö»ØÊÕ¹ý³ÌÖÐºÄÊ±×î³¤£¬²»ÐèÒªÍ£¶Ù¡£
 3. ÖØÐÂ±ê¼Ç£ºÎªÁËÐÞÕý²¢·¢±ê¼ÇÆÚ¼äÒòÓÃ»§³ÌÐò¼ÌÐøÔË×÷¶øµ¼ÖÂ±ê¼Ç²úÉú±ä¶¯µÄÄÇÒ»²¿·Ö¶ÔÏóµÄ±ê¼Ç¼ÇÂ¼£¬ÐèÒªÍ£¶Ù¡£
-4. ²¢·¢Çå³ý
+4. ²¢·¢Çå³ý£º²»ÐèÒªÍ£¶Ù¡£
 
-Õû¸ö¹ý³ÌÖÐºÄÊ±×î³¤µÄ²¢·¢±ê¼ÇºÍ²¢·¢Çå³ý¹ý³ÌÊÕ¼¯Æ÷Ïß³Ì¶¼¿ÉÒÔÓëÓÃ»§Ïß³ÌÒ»Æð¹¤×÷¡£
+ÔÚÕû¸ö¹ý³ÌÖÐºÄÊ±×î³¤µÄ²¢·¢±ê¼ÇºÍ²¢·¢Çå³ý¹ý³ÌÖÐ£¬ÊÕ¼¯Æ÷Ïß³Ì¶¼¿ÉÒÔÓëÓÃ»§Ïß³ÌÒ»Æð¹¤×÷£¬²»ÐèÒª½øÐÐÍ£¶Ù¡£
 
 ¾ßÓÐÒÔÏÂÈ±µã£º
 
-1. ¶Ô CPU ×ÊÔ´Ãô¸Ð¡£CMS Ä¬ÈÏÆô¶¯µÄ»ØÊÕÏß³ÌÊýÊÇ (CPUÊýÁ¿ + 3) / 4£¬µ± CPU ²»×ã4¸öÊ±£¬CMS ¶ÔÓÃ»§³ÌÐòµÄÓ°Ïì¾Í¿ÉÄÜ±äµÃºÜ´ó£¬Èç¹û±¾À´ CPU ¸ºÔØ¾Í±È½Ï´ó£¬»¹Òª·Ö³öÒ»°ëµÄÔËËãÄÜÁ¦È¥Ö´ÐÐÊÕ¼¯Æ÷Ïß³Ì£¬¾Í¿ÉÄÜµ¼ÖÂÓÃ»§³ÌÐòµÄÖ´ÐÐËÙ¶ÈºöÈ»½µµÍÁË 50%£¬ÆäÊµÒ²ÈÃÈËÎÞ·¨½ÓÊÜ¡£²¢ÇÒµÍÍ£¶ÙÊ±¼äÊÇÒÔÎþÉüÍÌÍÂÁ¿Îª´ú¼ÛµÄ£¬µ¼ÖÂ CPU ÀûÓÃÂÊ±äµÍ¡£
+1. ¶Ô CPU ×ÊÔ´Ãô¸Ð¡£CMS Ä¬ÈÏÆô¶¯µÄ»ØÊÕÏß³ÌÊýÊÇ (CPU ÊýÁ¿ + 3) / 4£¬µ± CPU ²»×ã 4 ¸öÊ±£¬CMS ¶ÔÓÃ»§³ÌÐòµÄÓ°Ïì¾Í¿ÉÄÜ±äµÃºÜ´ó£¬Èç¹û±¾À´ CPU ¸ºÔØ¾Í±È½Ï´ó£¬»¹Òª·Ö³öÒ»°ëµÄÔËËãÄÜÁ¦È¥Ö´ÐÐÊÕ¼¯Æ÷Ïß³Ì£¬¾Í¿ÉÄÜµ¼ÖÂÓÃ»§³ÌÐòµÄÖ´ÐÐËÙ¶ÈºöÈ»½µµÍÁË 50%£¬ÆäÊµÒ²ÈÃÈËÎÞ·¨½ÓÊÜ¡£²¢ÇÒµÍÍ£¶ÙÊ±¼äÊÇÒÔÎþÉüÍÌÍÂÁ¿Îª´ú¼ÛµÄ£¬µ¼ÖÂ CPU ÀûÓÃÂÊ±äµÍ¡£
 
 2. ÎÞ·¨´¦Àí¸¡¶¯À¬»ø¡£ÓÉÓÚ²¢·¢ÇåÀí½×¶ÎÓÃ»§Ïß³Ì»¹ÔÚÔËÐÐ×Å£¬°éËæ³ÌÐòÔËÐÐ×ÔÈ»¾Í»¹»áÓÐÐÂµÄÀ¬»ø²»¶Ï²úÉú¡£ÕâÒ»²¿·ÖÀ¬»ø³öÏÖÔÚ±ê¼Ç¹ý³ÌÖ®ºó£¬CMS ÎÞ·¨ÔÚµ±´ÎÊÕ¼¯ÖÐ´¦ÀíµôËüÃÇ£¬Ö»ºÃÁôµ½ÏÂÒ»´Î GC Ê±ÔÙÇåÀíµô£¬ÕâÒ»²¿·ÖÀ¬»ø¾Í±»³ÆÎª¡°¸¡¶¯À¬»ø¡±¡£Ò²ÊÇÓÉÓÚÔÚÀ¬»øÊÕ¼¯½×¶ÎÓÃ»§Ïß³Ì»¹ÐèÒªÔËÐÐ£¬ÄÇÒ²¾Í»¹ÐèÒªÔ¤ÁôÓÐ×ã¹»µÄÄÚ´æ¿Õ¼ä¸øÓÃ»§Ïß³ÌÊ¹ÓÃ£¬Òò´ËËü²»ÄÜÏñÆäËûÊÕ¼¯Æ÷ÄÇÑùµÈµ½ÀÏÄê´ú¼¸ºõÍêÈ«±»ÌîÂúÁËÔÙ½øÐÐÊÕ¼¯£¬ÐèÒªÔ¤ÁôÒ»²¿·Ö¿Õ¼äÌá¹©²¢·¢ÊÕ¼¯Ê±µÄ³ÌÐòÔË×÷Ê¹ÓÃ¡£¿ÉÒÔÊ¹ÓÃ -XX:CMSInitiatingOccupancyFraction µÄÖµÀ´¸Ä±ä´¥·¢ÊÕ¼¯Æ÷¹¤×÷µÄÄÚ´æÕ¼ÓÃ°Ù·Ö±È£¬JDK 1.5 Ä¬ÈÏÉèÖÃÏÂ¸ÃÖµÎª 68£¬Ò²¾ÍÊÇµ±ÀÏÄê´úÊ¹ÓÃÁË 68% µÄ¿Õ¼äÖ®ºó»á´¥·¢ÊÕ¼¯Æ÷¹¤×÷¡£Èç¹û¸ÃÖµÉèÖÃµÄÌ«¸ß£¬µ¼ÖÂ¸¡¶¯À¬»øÎÞ·¨±£´æ£¬ÄÇÃ´¾Í»á³öÏÖ Concurrent Mode Failure£¬´ËÊ±ÐéÄâ»ú½«Æô¶¯ºó±¸Ô¤°¸£ºÁÙÊ±ÆôÓÃ Serial Old ÊÕ¼¯Æ÷À´ÖØÐÂ½øÐÐÀÏÄê´úµÄÀ¬»øÊÕ¼¯¡£
 
-3. ±ê¼Ç-Çå³ýËã·¨µ¼ÖÂµÄ¿Õ¼äËéÆ¬£¬¸ø´ó¶ÔÏó·ÖÅä´øÀ´ºÜ´óÂé·³£¬ÍùÍù³öÏÖÀÏÄê´ú¿Õ¼äÊ£Óà£¬µ«ÎÞ·¨ÕÒµ½×ã¹»´óÁ¬Ðø¿Õ¼äÀ´·ÖÅäµ±Ç°¶ÔÏó£¬²»µÃ²»ÌáÇ°³ö·¢Ò»´Î Full GC¡£
+3. ±ê¼Ç - Çå³ýËã·¨µ¼ÖÂµÄ¿Õ¼äËéÆ¬£¬¸ø´ó¶ÔÏó·ÖÅä´øÀ´ºÜ´óÂé·³£¬ÍùÍù³öÏÖÀÏÄê´ú¿Õ¼äÊ£Óà£¬µ«ÎÞ·¨ÕÒµ½×ã¹»´óÁ¬Ðø¿Õ¼äÀ´·ÖÅäµ±Ç°¶ÔÏó£¬²»µÃ²»ÌáÇ°³ö·¢Ò»´Î Full GC¡£
 
-### 2.3.7 G1 ÊÕ¼¯Æ÷
+### 3.7 G1 ÊÕ¼¯Æ÷
 
 ![](https://github.com/00000H/notes/blob/master/pics/f99ee771-c56f-47fb-9148-c0036695b5fe.jpg)
 
-G1£¨Garbage-First£©ÊÕ¼¯Æ÷ÊÇµ±½ñÊÕ¼¯Æ÷¼¼Êõ·¢Õ¹×îÇ°ÑØµÄ³É¹ûÖ®Ò»£¬ËüÊÇÒ»¿îÃæÏò·þÎñ¶ËÓ¦ÓÃµÄÀ¬»øÊÕ¼¯Æ÷£¬HotSpot¿ª·¢ÍÅ¶Ó¸³ÓèËüµÄÊ¹ÃüÊÇ£¨ÔÚ±È½Ï³¤ÆÚµÄ£©Î´À´¿ÉÒÔÌæ»»µô JDK 1.5 ÖÐ·¢²¼µÄ CMS ÊÕ¼¯Æ÷¡£
+G1£¨Garbage-First£©ÊÕ¼¯Æ÷ÊÇµ±½ñÊÕ¼¯Æ÷¼¼Êõ·¢Õ¹×îÇ°ÑØµÄ³É¹ûÖ®Ò»£¬ËüÊÇÒ»¿îÃæÏò·þÎñ¶ËÓ¦ÓÃµÄÀ¬»øÊÕ¼¯Æ÷£¬HotSpot ¿ª·¢ÍÅ¶Ó¸³ÓèËüµÄÊ¹ÃüÊÇ£¨ÔÚ±È½Ï³¤ÆÚµÄ£©Î´À´¿ÉÒÔÌæ»»µô JDK 1.5 ÖÐ·¢²¼µÄ CMS ÊÕ¼¯Æ÷¡£
 
 ¾ß±¸ÈçÏÂÌØµã£º
 
-- ²¢ÐÐÓë²¢·¢£ºÄÜ³ä·ÖÀûÓÃ¶à CPU »·¾³ÏÂµÄÓ²¼þÓÅÊÆ£¬Ê¹ÓÃ¶à¸öCPUÀ´Ëõ¶ÌÍ£¶ÙÊ±¼ä£»
+- ²¢ÐÐÓë²¢·¢£ºÄÜ³ä·ÖÀûÓÃ¶à CPU »·¾³ÏÂµÄÓ²¼þÓÅÊÆ£¬Ê¹ÓÃ¶à¸ö CPU À´Ëõ¶ÌÍ£¶ÙÊ±¼ä£»
 - ·Ö´úÊÕ¼¯£º·Ö´ú¸ÅÄîÒÀÈ»µÃÒÔ±£Áô£¬ËäÈ»Ëü²»ÐèÒªÆäËüÊÕ¼¯Æ÷ÅäºÏ¾ÍÄÜ¶ÀÁ¢¹ÜÀíÕû¸ö GC ¶Ñ£¬µ«ËüÄÜ¹»²ÉÓÃ²»Í¬·½Ê½È¥´¦ÀíÐÂ´´½¨µÄ¶ÔÏóºÍÒÑ´æ»îÒ»¶ÎÊ±¼ä¡¢°¾¹ý¶à´Î GC µÄ¾É¶ÔÏóÀ´»ñÈ¡¸üºÃµÄÊÕ¼¯Ð§¹û¡£
-- ¿Õ¼äÕûºÏ£ºÕûÌåÀ´¿´ÊÇ»ùÓÚ¡°±ê¼Ç-ÕûÀí¡±Ëã·¨ÊµÏÖµÄÊÕ¼¯Æ÷£¬´Ó¾Ö²¿£¨Á½¸öRegionÖ®¼ä£©ÉÏÀ´¿´ÊÇ»ùÓÚ¡°¸´ÖÆ¡±Ëã·¨ÊµÏÖµÄ£¬ÕâÒâÎ¶×ÅÔËÐÐÆÚ¼ä²»»á²úÉúÄÚ´æ¿Õ¼äËéÆ¬¡£
+- ¿Õ¼äÕûºÏ£ºÕûÌåÀ´¿´ÊÇ»ùÓÚ¡°±ê¼Ç - ÕûÀí¡±Ëã·¨ÊµÏÖµÄÊÕ¼¯Æ÷£¬´Ó¾Ö²¿£¨Á½¸ö Region Ö®¼ä£©ÉÏÀ´¿´ÊÇ»ùÓÚ¡°¸´ÖÆ¡±Ëã·¨ÊµÏÖµÄ£¬ÕâÒâÎ¶×ÅÔËÐÐÆÚ¼ä²»»á²úÉúÄÚ´æ¿Õ¼äËéÆ¬¡£
 - ¿ÉÔ¤²âµÄÍ£¶Ù£ºÕâÊÇËüÏà¶Ô CMS µÄÒ»´óÓÅÊÆ£¬½µµÍÍ£¶ÙÊ±¼äÊÇ G1 ºÍ CMS ¹²Í¬µÄ¹Ø×¢µã£¬µ« G1 ³ýÁË½µµÍÍ£¶ÙÍâ£¬»¹ÄÜ½¨Á¢¿ÉÔ¤²âµÄÍ£¶ÙÊ±¼äÄ£ÐÍ£¬ÄÜÈÃÊ¹ÓÃÕßÃ÷È·Ö¸¶¨ÔÚÒ»¸ö³¤¶ÈÎª M ºÁÃëµÄÊ±¼äÆ¬¶ÎÄÚ£¬ÏûºÄÔÚ GC ÉÏµÄÊ±¼ä²»µÃ³¬¹ý N ºÁÃë£¬Õâ¼¸ºõÒÑ¾­ÊÇÊµÊ± Java£¨RTSJ£©µÄÀ¬»øÊÕ¼¯Æ÷µÄÌØÕ÷ÁË¡£
 
-ÔÚ G1 Ö®Ç°µÄÆäËûÊÕ¼¯Æ÷½øÐÐÊÕ¼¯µÄ·¶Î§¶¼ÊÇÕû¸öÐÂÉú´ú»òÕßÀÏÉú´ú£¬¶ø G1 ²»ÔÙÊÇÕâÑù£¬Java ¶ÑµÄÄÚ´æ²¼¾ÖÓëÆäËûÊÕ¼¯Æ÷ÓÐºÜ´óÇø±ð£¬½«Õû¸ö Java ¶Ñ»®·ÖÎª¶à¸ö´óÐ¡ÏàµÈµÄ¶ÀÁ¢ÇøÓò£¨Region£©£¬ËäÈ»»¹±£ÁôÐÂÉú´úºÍÀÏÄê´úµÄ¸ÅÄî£¬µ«ÐÂÉú´úºÍÀÏÄê´ú²»ÔÙÊÇÎïÀí¸ôÀëµÄÁË£¬¶ø¶¼ÊÇÒ»²¿·Ö Region£¨²»ÐèÒªÁ¬Ðø£©µÄ¼¯ºÏ¡£
+ÔÚ G1 Ö®Ç°µÄÆäËûÊÕ¼¯Æ÷½øÐÐÊÕ¼¯µÄ·¶Î§¶¼ÊÇÕû¸öÐÂÉú´ú»òÕßÀÏÉú´ú£¬¶ø G1 ²»ÔÙÊÇÕâÑù£¬Java ¶ÑµÄÄÚ´æ²¼¾ÖÓëÆäËûÊÕ¼¯Æ÷ÓÐºÜ´óÇø±ð£¬½«Õû¸ö Java ¶Ñ»®·ÖÎª¶à¸ö´óÐ¡ÏàµÈµÄ¶ÀÁ¢ÇøÓò£¨Region£©¡£ËäÈ»»¹±£ÁôÐÂÉú´úºÍÀÏÄê´úµÄ¸ÅÄî£¬µ«ÐÂÉú´úºÍÀÏÄê´ú²»ÔÙÊÇÎïÀí¸ôÀëµÄÁË£¬¶ø¶¼ÊÇÒ»²¿·Ö Region£¨²»ÐèÒªÁ¬Ðø£©µÄ¼¯ºÏ¡£
 
-Ö®ËùÒÔÄÜ½¨Á¢¿ÉÔ¤²âµÄÍ£¶ÙÊ±¼äÄ£ÐÍ£¬ÊÇÒòÎªËü¿ÉÒÔÓÐ¼Æ»®µØ±ÜÃâÔÚÕû¸ö Java ¶ÑÖÐ½øÐÐÈ«ÇøÓòµÄÀ¬»øÊÕ¼¯¡£Ëü¸ú×Ù¸÷¸ö Region ÀïÃæµÄÀ¬»ø¶Ñ»ýµÄ¼ÛÖµ´óÐ¡£¨»ØÊÕËù»ñµÃµÄ¿Õ¼ä´óÐ¡ÒÔ¼°»ØÊÕËùÐèÊ±¼äµÄ¾­ÑéÖµ£©£¬ÔÚºóÌ¨Î¬»¤Ò»¸öÓÅÏÈÁÐ±í£¬Ã¿´Î¸ù¾ÝÔÊÐíµÄÊÕ¼¯Ê±¼ä£¬ÓÅÏÈ»ØÊÕ¼ÛÖµ×î´óµÄRegion£¨ÕâÒ²¾ÍÊÇ Garbage-First Ãû³ÆµÄÀ´ÓÉ£©¡£ÕâÖÖÊ¹ÓÃ Region »®·ÖÄÚ´æ¿Õ¼äÒÔ¼°ÓÐÓÅÏÈ¼¶µÄÇøÓò»ØÊÕ·½Ê½£¬±£Ö¤ÁËËüÔÚÓÐÏÞµÄÊ±¼äÄÚ¿ÉÒÔ»ñÈ¡¾¡¿ÉÄÜ¸ßµÄÊÕ¼¯Ð§ÂÊ¡£
+Ö®ËùÒÔÄÜ½¨Á¢¿ÉÔ¤²âµÄÍ£¶ÙÊ±¼äÄ£ÐÍ£¬ÊÇÒòÎªËü¿ÉÒÔÓÐ¼Æ»®µØ±ÜÃâÔÚÕû¸ö Java ¶ÑÖÐ½øÐÐÈ«ÇøÓòµÄÀ¬»øÊÕ¼¯¡£Ëü¸ú×Ù¸÷¸ö Region ÀïÃæµÄÀ¬»ø¶Ñ»ýµÄ¼ÛÖµ´óÐ¡£¨»ØÊÕËù»ñµÃµÄ¿Õ¼ä´óÐ¡ÒÔ¼°»ØÊÕËùÐèÊ±¼äµÄ¾­ÑéÖµ£©£¬ÔÚºóÌ¨Î¬»¤Ò»¸öÓÅÏÈÁÐ±í£¬Ã¿´Î¸ù¾ÝÔÊÐíµÄÊÕ¼¯Ê±¼ä£¬ÓÅÏÈ»ØÊÕ¼ÛÖµ×î´óµÄ Region£¨ÕâÒ²¾ÍÊÇ Garbage-First Ãû³ÆµÄÀ´ÓÉ£©¡£ÕâÖÖÊ¹ÓÃ Region »®·ÖÄÚ´æ¿Õ¼äÒÔ¼°ÓÐÓÅÏÈ¼¶µÄÇøÓò»ØÊÕ·½Ê½£¬±£Ö¤ÁËËüÔÚÓÐÏÞµÄÊ±¼äÄÚ¿ÉÒÔ»ñÈ¡¾¡¿ÉÄÜ¸ßµÄÊÕ¼¯Ð§ÂÊ¡£
 
 Region ²»¿ÉÄÜÊÇ¹ÂÁ¢µÄ£¬Ò»¸ö¶ÔÏó·ÖÅäÔÚÄ³¸ö Region ÖÐ£¬¿ÉÒÔÓëÕû¸ö Java ¶ÑÈÎÒâµÄ¶ÔÏó·¢ÉúÒýÓÃ¹ØÏµ¡£ÔÚ×ö¿É´ïÐÔ·ÖÎöÈ·¶¨¶ÔÏóÊÇ·ñ´æ»îµÄÊ±ºò£¬ÐèÒªÉ¨ÃèÕû¸ö Java ¶Ñ²ÅÄÜ±£Ö¤×¼È·ÐÔ£¬ÕâÏÔÈ»ÊÇ¶Ô GC Ð§ÂÊµÄ¼«´óÉËº¦¡£ÎªÁË±ÜÃâÈ«¶ÑÉ¨ÃèµÄ·¢Éú£¬Ã¿¸ö Region ¶¼Î¬»¤ÁËÒ»¸öÓëÖ®¶ÔÓ¦µÄ Remembered Set¡£ÐéÄâ»ú·¢ÏÖ³ÌÐòÔÚ¶Ô Reference ÀàÐÍµÄÊý¾Ý½øÐÐÐ´²Ù×÷Ê±£¬»á²úÉúÒ»¸ö Write Barrier ÔÝÊ±ÖÐ¶ÏÐ´²Ù×÷£¬¼ì²é Reference ÒýÓÃµÄ¶ÔÏóÊÇ·ñ´¦ÓÚ²»Í¬µÄ Region Ö®ÖÐ£¬Èç¹ûÊÇ£¬±ãÍ¨¹ý CardTable °ÑÏà¹ØÒýÓÃÐÅÏ¢¼ÇÂ¼µ½±»ÒýÓÃ¶ÔÏóËùÊôµÄ Region µÄ Remembered Set Ö®ÖÐ¡£µ±½øÐÐÄÚ´æ»ØÊÕÊ±£¬ÔÚ GC ¸ù½ÚµãµÄÃ¶¾Ù·¶Î§ÖÐ¼ÓÈë Remembered Set ¼´¿É±£Ö¤²»¶ÔÈ«¶ÑÉ¨ÃèÒ²²»»áÓÐÒÅÂ©¡£
 
@@ -292,28 +363,68 @@ Region ²»¿ÉÄÜÊÇ¹ÂÁ¢µÄ£¬Ò»¸ö¶ÔÏó·ÖÅäÔÚÄ³¸ö Region ÖÐ£¬¿ÉÒÔÓëÕû¸ö Java ¶ÑÈÎÒâµÄ¶ÔÏ
 
 1. ³õÊ¼±ê¼Ç
 2. ²¢·¢±ê¼Ç
-3. ×îÖÕ±ê¼Ç£ºÎªÁËÐÞÕýÔÚ²¢·¢±ê¼ÇÆÚ¼äÒòÓÃ»§³ÌÐò¼ÌÐøÔË×÷¶øµ¼ÖÂ±ê¼Ç²úÉú±ä¶¯µÄÄÇÒ»²¿·Ö±ê¼Ç¼ÇÂ¼£¬ÐéÄâ»ú½«Õâ¶ÎÊ±¼ä¶ÔÏó±ä»¯¼ÇÂ¼ÔÚÏß³ÌµÄ Remembered Set Logs ÀïÃæ£¬×îÖÕ±ê¼Ç½×¶ÎÐèÒª°Ñ Remembered Set Logs µÄÊý¾ÝºÏ²¢µ½ Remembered Set ÖÐ£¬Õâ½×¶ÎÐèÒªÍ£¶ÙÏß³Ì£¬µ«ÊÇ¿É²¢ÐÐÖ´ÐÐ¡£
+3. ×îÖÕ±ê¼Ç£ºÎªÁËÐÞÕýÔÚ²¢·¢±ê¼ÇÆÚ¼äÒòÓÃ»§³ÌÐò¼ÌÐøÔË×÷¶øµ¼ÖÂ±ê¼Ç²úÉú±ä¶¯µÄÄÇÒ»²¿·Ö±ê¼Ç¼ÇÂ¼£¬ÐéÄâ»ú½«Õâ¶ÎÊ±¼ä¶ÔÏó±ä»¯¼ÇÂ¼ÔÚÏß³ÌµÄ Remembered Set Logs ÀïÃæ£¬×îÖÕ±ê¼Ç½×¶ÎÐèÒª°Ñ Remembered Set Logs µÄÊý¾ÝºÏ²¢µ½ Remembered Set ÖÐ¡£Õâ½×¶ÎÐèÒªÍ£¶ÙÏß³Ì£¬µ«ÊÇ¿É²¢ÐÐÖ´ÐÐ¡£
 4. É¸Ñ¡»ØÊÕ£ºÊ×ÏÈ¶Ô¸÷¸ö Region ÖÐµÄ»ØÊÕ¼ÛÖµºÍ³É±¾½øÐÐÅÅÐò£¬¸ù¾ÝÓÃ»§ËùÆÚÍûµÄ GC Í£¶ÙÊÇÊ±¼äÀ´ÖÆ¶¨»ØÊÕ¼Æ»®¡£´Ë½×¶ÎÆäÊµÒ²¿ÉÒÔ×öµ½ÓëÓÃ»§³ÌÐòÒ»Æð²¢·¢Ö´ÐÐ£¬µ«ÊÇÒòÎªÖ»»ØÊÕÒ»²¿·Ö Region£¬Ê±¼äÊÇÓÃ»§¿É¿ØÖÆµÄ£¬¶øÇÒÍ£¶ÙÓÃ»§Ïß³Ì½«´ó·ù¶ÈÌá¸ßÊÕ¼¯Ð§ÂÊ¡£
 
-### 2.3.8 ÆßÖÖÀ¬»øÊÕ¼¯Æ÷µÄ±È½Ï
+### 3.8 ÆßÖÖÀ¬»øÊÕ¼¯Æ÷µÄ±È½Ï
 
- ÊÕ¼¯Æ÷ | ´®ÐÐ¡¢²¢ÐÐor²¢·¢ | ÐÂÉú´ú/ÀÏÄê´ú | Ëã·¨ | Ä¿±ê | ÊÊÓÃ³¡¾° 
+ ÊÕ¼¯Æ÷ | ´®ÐÐ¡¢²¢ÐÐ or ²¢·¢ | ÐÂÉú´ú / ÀÏÄê´ú | Ëã·¨ | Ä¿±ê | ÊÊÓÃ³¡¾° 
  --- | --- | --- | --- | --- | --- 
- **Serial** | ´®ÐÐ | ÐÂÉú´ú | ¸´ÖÆËã·¨ | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | µ¥CPU»·¾³ÏÂµÄClientÄ£Ê½ 
- **Serial Old** | ´®ÐÐ | ÀÏÄê´ú | ±ê¼Ç-ÕûÀí | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | µ¥CPU»·¾³ÏÂµÄClientÄ£Ê½¡¢CMSµÄºó±¸Ô¤°¸ 
- **ParNew** | ²¢ÐÐ | ÐÂÉú´ú | ¸´ÖÆËã·¨ | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | ¶àCPU»·¾³Ê±ÔÚServerÄ£Ê½ÏÂÓëCMSÅäºÏ 
+ **Serial** | ´®ÐÐ | ÐÂÉú´ú | ¸´ÖÆËã·¨ | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | µ¥ CPU »·¾³ÏÂµÄ Client Ä£Ê½ 
+ **Serial Old** | ´®ÐÐ | ÀÏÄê´ú | ±ê¼Ç - ÕûÀí | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | µ¥ CPU »·¾³ÏÂµÄ Client Ä£Ê½¡¢CMS µÄºó±¸Ô¤°¸ 
+ **ParNew** | ²¢ÐÐ | ÐÂÉú´ú | ¸´ÖÆËã·¨ | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | ¶à CPU »·¾³Ê±ÔÚ Server Ä£Ê½ÏÂÓë CMS ÅäºÏ 
  **Parallel Scavenge** | ²¢ÐÐ | ÐÂÉú´ú | ¸´ÖÆËã·¨ | ÍÌÍÂÁ¿ÓÅÏÈ | ÔÚºóÌ¨ÔËËã¶ø²»ÐèÒªÌ«¶à½»»¥µÄÈÎÎñ 
- **Parallel Old** | ²¢ÐÐ | ÀÏÄê´ú | ±ê¼Ç-ÕûÀí | ÍÌÍÂÁ¿ÓÅÏÈ | ÔÚºóÌ¨ÔËËã¶ø²»ÐèÒªÌ«¶à½»»¥µÄÈÎÎñ 
- **CMS** | ²¢·¢ | ÀÏÄê´ú | ±ê¼Ç-Çå³ý | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | ¼¯ÖÐÔÚ»¥ÁªÍøÕ¾»òB/SÏµÍ³·þÎñ¶ËÉÏµÄJavaÓ¦ÓÃ 
- **G1** | ²¢·¢ | both | ±ê¼Ç-ÕûÀí+¸´ÖÆËã·¨ | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | ÃæÏò·þÎñ¶ËÓ¦ÓÃ£¬½«À´Ìæ»»CMS 
+ **Parallel Old** | ²¢ÐÐ | ÀÏÄê´ú | ±ê¼Ç - ÕûÀí | ÍÌÍÂÁ¿ÓÅÏÈ | ÔÚºóÌ¨ÔËËã¶ø²»ÐèÒªÌ«¶à½»»¥µÄÈÎÎñ 
+ **CMS** | ²¢·¢ | ÀÏÄê´ú | ±ê¼Ç - Çå³ý | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | ¼¯ÖÐÔÚ»¥ÁªÍøÕ¾»ò B/S ÏµÍ³·þÎñ¶ËÉÏµÄ Java Ó¦ÓÃ 
+ **G1** | ²¢·¢ | both | ±ê¼Ç - ÕûÀí + ¸´ÖÆËã·¨ | ÏìÓ¦ËÙ¶ÈÓÅÏÈ | ÃæÏò·þÎñ¶ËÓ¦ÓÃ£¬½«À´Ìæ»» CMS 
 
-## 2.4 ÄÚ´æ·ÖÅäÓë»ØÊÕ²ßÂÔ
+## 4. ÄÚ´æ·ÖÅäÓë»ØÊÕ²ßÂÔ
 
-1.  **ÓÅÏÈÔÚ Eden ·ÖÅä**£º´ó¶àÊýÇé¿öÏÂ£¬¶ÔÏóÔÚÐÂÉú´ú Eden Çø·ÖÅä£¬µ± Eden Çø¿Õ¼ä²»¹»Ê±£¬·¢Æð Minor GC£»
-2.  **´ó¶ÔÏóÖ±½Ó½øÈëÀÏÄê´ú**£ºÌá¹© -XX:PretenureSizeThreshold ²ÎÊý£¬´óÓÚ´ËÖµµÄ¶ÔÏóÖ±½ÓÔÚÀÏÄê´ú·ÖÅä£¬±ÜÃâÔÚ Eden ÇøºÍ Survivor ÇøÖ®¼ä´óÁ¿ÄÚ´æ¸´ÖÆ£»
-3.  **³¤ÆÚ´æ»îµÄ¶ÔÏó½øÈëÀÏÄê´ú**£ºJVM Îª¶ÔÏó¶¨ÒåÄêÁä¼ÆÊýÆ÷£¬¾­¹ý Minor GC ÒÀÈ»´æ»îÇÒ±» Survivor ÇøÈÝÄÉµÄ£¬ÒÆ¶¯µ½ Survivor Çø£¬ÄêÁä¼Ó 1£¬Ã¿¾­ÀúÒ»´Î Minor GC ²»±»ÇåÀíÔòÄêÁä¼Ó 1£¬Ôö¼Óµ½Ò»¶¨ÄêÁäÔòÒÆ¶¯µ½ÀÏÄêÇø£¨Ä¬ÈÏ 15 Ëê£¬Í¨¹ý -XX:MaxTenuringThreshold ÉèÖÃ£©£»
-4.  **¶¯Ì¬¶ÔÏóÄêÁäÅÐ¶¨**£ºÈô Survivor ÇøÖÐÍ¬ÄêÁäËùÓÐ¶ÔÏó´óÐ¡×ÜºÍ´óÓÚ Survivor ¿Õ¼äÒ»°ë£¬ÔòÄêÁä´óÓÚµÈÓÚ¸ÃÄêÁäµÄ¶ÔÏó¿ÉÒÔÖ±½Ó½øÈëÀÏÄê´ú£»
-5.  **¿Õ¼ä·ÖÅäµ£±£**£ºMinor GC Ö®Ç°£¬JVM ¼ì²éÀÏÄê´ú×î´ó¿ÉÓÃÁ¬Ðø¿Õ¼ä´óÓÚÐÂÉú´úËùÓÐ¶ÔÏó×Ü¿Õ¼ä£¬³ÉÁ¢µÄ»° Minor GC È·ÈÏÊÇ°²È«µÄ£»·ñÔò¼ì²éÀÏÄê´ú×î´ó¿ÉÓÃÁ¬Ðø¿Õ¼ä´óÓÚÀú´Î½úÉýµ½ÀÏÄê´ú¶ÔÏóµÄÆ½¾ù´óÐ¡£¬´óÓÚµÄ»°½øÐÐ Minor GC£»Ð¡ÓÚµÄ»°½øÐÐ Full GC¡£
+### 4.1 ÓÅÏÈÔÚ Eden ·ÖÅä
+
+´ó¶àÊýÇé¿öÏÂ£¬¶ÔÏóÔÚÐÂÉú´ú Eden Çø·ÖÅä£¬µ± Eden Çø¿Õ¼ä²»¹»Ê±£¬·¢Æð Minor GC£»
+
+### 4.2 ´ó¶ÔÏóÖ±½Ó½øÈëÀÏÄê´ú
+
+Ìá¹© -XX:PretenureSizeThreshold ²ÎÊý£¬´óÓÚ´ËÖµµÄ¶ÔÏóÖ±½ÓÔÚÀÏÄê´ú·ÖÅä£¬±ÜÃâÔÚ Eden ÇøºÍ Survivor ÇøÖ®¼äµÄ´óÁ¿ÄÚ´æ¸´ÖÆ£»
+### 4.3 ³¤ÆÚ´æ»îµÄ¶ÔÏó½øÈëÀÏÄê´ú
+
+JVM Îª¶ÔÏó¶¨ÒåÄêÁä¼ÆÊýÆ÷£¬¾­¹ý Minor GC ÒÀÈ»´æ»îÇÒ±» Survivor ÇøÈÝÄÉµÄ£¬ÒÆ¶¯µ½ Survivor Çø£¬ÄêÁä¼Ó 1£¬Ã¿¾­ÀúÒ»´Î Minor GC ²»±»ÇåÀíÔòÄêÁä¼Ó 1£¬Ôö¼Óµ½Ò»¶¨ÄêÁäÔòÒÆ¶¯µ½ÀÏÄêÇø£¨Ä¬ÈÏ 15 Ëê£¬Í¨¹ý -XX:MaxTenuringThreshold ÉèÖÃ£©£»
+
+
+### 4.4 ¶¯Ì¬¶ÔÏóÄêÁäÅÐ¶¨
+
+Èô Survivor ÇøÖÐÍ¬ÄêÁäËùÓÐ¶ÔÏó´óÐ¡×ÜºÍ´óÓÚ Survivor ¿Õ¼äÒ»°ë£¬ÔòÄêÁä´óÓÚµÈÓÚ¸ÃÄêÁäµÄ¶ÔÏó¿ÉÒÔÖ±½Ó½øÈëÀÏÄê´ú£»
+
+### 4.5 ¿Õ¼ä·ÖÅäµ£±£
+
+ÔÚ·¢Éú Minor GC Ö®Ç°£¬JVM ÏÈ¼ì²éÀÏÄê´ú×î´ó¿ÉÓÃÁ¬Ðø¿Õ¼äÊÇ·ñ´óÓÚÐÂÉú´úËùÓÐ¶ÔÏó×Ü¿Õ¼ä£¬³ÉÁ¢µÄ»° Minor GC È·ÈÏÊÇ°²È«µÄ£»·ñÔò¼ÌÐø¼ì²éÀÏÄê´ú×î´ó¿ÉÓÃÁ¬Ðø¿Õ¼äÊÇ·ñ´óÓÚÀú´Î½úÉýµ½ÀÏÄê´ú¶ÔÏóµÄÆ½¾ù´óÐ¡£¬´óÓÚµÄ»°½øÐÐ Minor GC£¬Ð¡ÓÚµÄ»°½øÐÐ Full GC¡£
+
+## 4.6 Full GC µÄ´¥·¢Ìõ¼þ
+
+¶ÔÓÚ Minor GC£¬Æä´¥·¢Ìõ¼þ·Ç³£¼òµ¥£¬µ± Eden Çø¿Õ¼äÂúÊ±£¬¾Í½«´¥·¢Ò»´Î Minor GC¡£¶ø Full GC ÔòÏà¶Ô¸´ÔÓ£¬ÓÐÒÔÏÂÌõ¼þ£º
+
+### 4.6.1 µ÷ÓÃ System.gc()
+
+´Ë·½·¨µÄµ÷ÓÃÊÇ½¨Òé JVM ½øÐÐ Full GC£¬ËäÈ»Ö»ÊÇ½¨Òé¶ø·ÇÒ»¶¨£¬µ«ºÜ¶àÇé¿öÏÂËü»á´¥·¢ Full GC£¬´Ó¶øÔö¼Ó Full GC µÄÆµÂÊ£¬Ò²¼´Ôö¼ÓÁË¼äÐªÐÔÍ£¶ÙµÄ´ÎÊý¡£Òò´ËÇ¿ÁÒ½¨ÒéÄÜ²»Ê¹ÓÃ´Ë·½·¨¾Í²»ÒªÊ¹ÓÃ£¬ÈÃÐéÄâ»ú×Ô¼ºÈ¥¹ÜÀíËüµÄÄÚ´æ£¬¿ÉÍ¨¹ý -XX:+ DisableExplicitGC À´½ûÖ¹ RMI µ÷ÓÃ System.gc()¡£
+
+### 4.6.2 ÀÏÄê´ú¿Õ¼ä²»×ã
+
+ÀÏÄê´ú¿Õ¼ä²»×ãµÄ³£¼û³¡¾°ÎªÇ°ÎÄËù½²µÄ´ó¶ÔÏóÖ±½Ó½øÈëÀÏÄê´ú¡¢³¤ÆÚ´æ»îµÄ¶ÔÏó½øÈëÀÏÄê´úµÈ£¬µ±Ö´ÐÐ Full GC ºó¿Õ¼äÈÔÈ»²»×ã£¬ÔòÅ×³öÈçÏÂ´íÎó£º Java.lang.OutOfMemoryError: Java heap space Îª±ÜÃâÒÔÉÏÁ½ÖÖ×´¿öÒýÆðµÄ Full GC£¬µ÷ÓÅÊ±Ó¦¾¡Á¿×öµ½ÈÃ¶ÔÏóÔÚ Minor GC ½×¶Î±»»ØÊÕ¡¢ÈÃ¶ÔÏóÔÚÐÂÉú´ú¶à´æ»îÒ»¶ÎÊ±¼ä¼°²»Òª´´½¨¹ý´óµÄ¶ÔÏó¼°Êý×é¡£
+
+### 4.6.3 ¿Õ¼ä·ÖÅäµ£±£Ê§°Ü
+
+Ê¹ÓÃ¸´ÖÆËã·¨µÄ Minor GC ÐèÒªÀÏÄê´úµÄÄÚ´æ¿Õ¼ä×÷µ£±££¬Èç¹û³öÏÖÁË HandlePromotionFailure µ£±£Ê§°Ü£¬Ôò»á´¥·¢ Full GC¡£
+
+### 4.6.4 JDK 1.7 ¼°ÒÔÇ°µÄÓÀ¾Ã´ú¿Õ¼ä²»×ã
+
+ÔÚ JDK 1.7 ¼°ÒÔÇ°£¬HotSpot ÐéÄâ»úÖÐµÄ·½·¨ÇøÊÇÓÃÓÀ¾Ã´úÊµÏÖµÄ£¬ÓÀ¾Ã´úÖÐ´æ·ÅµÄÎªÒ»Ð© class µÄÐÅÏ¢¡¢³£Á¿¡¢¾²Ì¬±äÁ¿µÈÊý¾Ý£¬µ±ÏµÍ³ÖÐÒª¼ÓÔØµÄÀà¡¢·´ÉäµÄÀàºÍµ÷ÓÃµÄ·½·¨½Ï¶àÊ±£¬Permanet Generation ¿ÉÄÜ»á±»Õ¼Âú£¬ÔÚÎ´ÅäÖÃÎª²ÉÓÃ CMS GC µÄÇé¿öÏÂÒ²»áÖ´ÐÐ Full GC¡£Èç¹û¾­¹ý Full GC ÈÔÈ»»ØÊÕ²»ÁË£¬ÄÇÃ´ JVM »áÅ×³öÈçÏÂ´íÎóÐÅÏ¢£ºjava.lang.OutOfMemoryError: PermGen space Îª±ÜÃâ PermGen Õ¼ÂúÔì³É Full GC ÏÖÏó£¬¿É²ÉÓÃµÄ·½·¨ÎªÔö´ó PermGen ¿Õ¼ä»ò×ªÎªÊ¹ÓÃ CMS GC¡£
+
+ÔÚ JDK 1.8 ÖÐÓÃÔª¿Õ¼äÌæ»»ÁËÓÀ¾Ã´ú×÷Îª·½·¨ÇøµÄÊµÏÖ£¬Ôª¿Õ¼äÊÇ±¾µØÄÚ´æ£¬Òò´Ë¼õÉÙÁËÒ»ÖÖ Full GC ´¥·¢µÄ¿ÉÄÜÐÔ¡£
+
+### 4.6.5 Concurrent Mode Failure
+
+Ö´ÐÐ CMS GC µÄ¹ý³ÌÖÐÍ¬Ê±ÓÐ¶ÔÏóÒª·ÅÈëÀÏÄê´ú£¬¶ø´ËÊ±ÀÏÄê´ú¿Õ¼ä²»×ã£¨ÓÐÊ±ºò¡°¿Õ¼ä²»×ã¡±ÊÇ CMS GC Ê±µ±Ç°µÄ¸¡¶¯À¬»ø¹ý¶àµ¼ÖÂÔÝÊ±ÐÔµÄ¿Õ¼ä²»×ã´¥·¢ Full GC£©£¬±ã»á±¨ Concurrent Mode Failure ´íÎó£¬²¢´¥·¢ Full GC¡£
 
 # Àà¼ÓÔØ»úÖÆ
 
@@ -337,7 +448,7 @@ Region ²»¿ÉÄÜÊÇ¹ÂÁ¢µÄ£¬Ò»¸ö¶ÔÏó·ÖÅäÔÚÄ³¸ö Region ÖÐ£¬¿ÉÒÔÓëÕû¸ö Java ¶ÑÈÎÒâµÄ¶ÔÏ
 
 ## 2. Àà³õÊ¼»¯Ê±»ú
 
-ÐéÄâ»ú¹æ·¶ÖÐ²¢Ã»ÓÐ½øÐÐÇ¿ÖÆÔ¼ÊøºÎÊ±½øÐÐ¼ÓÔØ£¬µ«ÊÇ¹æ·¶ÑÏ¸ñ¹æ¶¨ÁËÓÐÇÒÖ»ÓÐÏÂÁÐÎåÖÖÖÖÇé¿ö±ØÐë¶ÔÀà½øÐÐ³õÊ¼»¯£º(¼ÓÔØ¡¢ÑéÖ¤¡¢×¼±¸¶¼»áËæ×Å·¢Éú)
+ÐéÄâ»ú¹æ·¶ÖÐ²¢Ã»ÓÐÇ¿ÖÆÔ¼ÊøºÎÊ±½øÐÐ¼ÓÔØ£¬µ«ÊÇ¹æ·¶ÑÏ¸ñ¹æ¶¨ÁËÓÐÇÒÖ»ÓÐÏÂÁÐÎåÖÖÇé¿ö±ØÐë¶ÔÀà½øÐÐ³õÊ¼»¯£º( ¼ÓÔØ¡¢ÑéÖ¤¡¢×¼±¸¶¼»áËæ×Å·¢Éú )
 
 1. Óöµ½ new¡¢getstatic¡¢putstatic¡¢invokestatic ÕâËÄÌõ×Ö½ÚÂëÖ¸ÁîÊ±£¬Èç¹ûÀàÃ»ÓÐ½øÐÐ¹ý³õÊ¼»¯£¬Ôò±ØÐëÏÈ´¥·¢Æä³õÊ¼»¯¡£×î³£¼ûµÄÉú³ÉÕâ 4 ÌõÖ¸ÁîµÄ³¡¾°ÊÇ£ºÊ¹ÓÃ new ¹Ø¼ü×ÖÊµÀý»¯¶ÔÏóµÄÊ±ºò£»¶ÁÈ¡»òÉèÖÃÒ»¸öÀàµÄ¾²Ì¬×Ö¶Î£¨±» final ÐÞÊÎ¡¢ÒÑÔÚ±àÒëÆ÷°Ñ½á¹û·ÅÈë³£Á¿³ØµÄ¾²Ì¬×Ö¶Î³ýÍâ£©µÄÊ±ºò£»ÒÔ¼°µ÷ÓÃÒ»¸öÀàµÄ¾²Ì¬·½·¨µÄÊ±ºò¡£
 
@@ -347,7 +458,7 @@ Region ²»¿ÉÄÜÊÇ¹ÂÁ¢µÄ£¬Ò»¸ö¶ÔÏó·ÖÅäÔÚÄ³¸ö Region ÖÐ£¬¿ÉÒÔÓëÕû¸ö Java ¶ÑÈÎÒâµÄ¶ÔÏ
 
 4. µ±ÐéÄâ»úÆô¶¯Ê±£¬ÓÃ»§ÐèÒªÖ¸¶¨Ò»¸öÒªÖ´ÐÐµÄÖ÷Àà£¨°üº¬ main() ·½·¨µÄÄÇ¸öÀà£©£¬ÐéÄâ»ú»áÏÈ³õÊ¼»¯Õâ¸öÖ÷Àà£»
 
-5. µ±Ê¹ÓÃ jdk1.7 µÄ¶¯Ì¬ÓïÑÔÖ§³ÖÊ±£¬Èç¹ûÒ»¸ö java.lang.invoke.MethodHandle ÊµÀý×îºóµÄ½âÎö½á¹ûREF_getStatic, REF_putStatic, REF_invokeStatic µÄ·½·¨¾ä±ú£¬²¢ÇÒÕâ¸ö·½·¨¾ä±úËù¶ÔÓ¦µÄÀàÃ»ÓÐ½øÐÐ¹ý³õÊ¼»¯£¬ÔòÐèÒªÏÈ´¥·¢Æä³õÊ¼»¯£»
+5. µ±Ê¹ÓÃ jdk1.7 µÄ¶¯Ì¬ÓïÑÔÖ§³ÖÊ±£¬Èç¹ûÒ»¸ö java.lang.invoke.MethodHandle ÊµÀý×îºóµÄ½âÎö½á¹ûÎª REF_getStatic, REF_putStatic, REF_invokeStatic µÄ·½·¨¾ä±ú£¬²¢ÇÒÕâ¸ö·½·¨¾ä±úËù¶ÔÓ¦µÄÀàÃ»ÓÐ½øÐÐ¹ý³õÊ¼»¯£¬ÔòÐèÒªÏÈ´¥·¢Æä³õÊ¼»¯£»
 
 ÒÔÉÏ 5 ÖÖ³¡¾°ÖÐµÄÐÐÎª³ÆÎª¶ÔÒ»¸öÀà½øÐÐÖ÷¶¯ÒýÓÃ¡£³ý´ËÖ®Íâ£¬ËùÓÐÒýÓÃÀàµÄ·½Ê½¶¼²»»á´¥·¢³õÊ¼»¯£¬³ÆÎª±»¶¯ÒýÓÃ¡£±»¶¯ÒýÓÃµÄ³£¼ûÀý×Ó°üÀ¨£º
 
@@ -375,7 +486,7 @@ System.out.println(ConstClass.HELLOWORLD);
 
 ### 3.1 ¼ÓÔØ
 
-¼ÓÔØÊ±Àà¼ÓÔØµÄÒ»¸ö½×¶Î£¬×¢Òâ²»Òª»ìÏý¡£
+¼ÓÔØÊÇÀà¼ÓÔØµÄÒ»¸ö½×¶Î£¬×¢Òâ²»Òª»ìÏý¡£
 
 ¼ÓÔØ¹ý³ÌÍê³ÉÒÔÏÂÈý¼þÊÂ£º
 
@@ -387,9 +498,9 @@ System.out.println(ConstClass.HELLOWORLD);
 
 - ´Ó ZIP °ü¶ÁÈ¡£¬ÕâºÜ³£¼û£¬×îÖÕ³ÉÎªÈÕºó JAR¡¢EAR¡¢WAR ¸ñÊ½µÄ»ù´¡¡£
 - ´ÓÍøÂçÖÐ»ñÈ¡£¬ÕâÖÖ³¡¾°×îµäÐÍµÄÓ¦ÓÃÊÇ Applet¡£
-ÔËÐÐÊ±¼ÆËãÉú³É£¬ÕâÖÖ³¡¾°Ê¹ÓÃµÃ×î¶àµÃ¾ÍÊÇ¶¯Ì¬´úÀí¼¼Êõ£¬ÔÚjava.lang.reflect.ProxyÖÐ£¬¾ÍÊÇÓÃÁËProxyGenerator.generateProxyClassµÄ´úÀíÀàµÄ¶þ½øÖÆ×Ö½ÚÁ÷¡£
-ÓÉÆäËûÎÄ¼þÉú³É£¬µäÐÍ³¡¾°ÊÇJSPÓ¦ÓÃ£¬¼´ÓÉJSPÎÄ¼þÉú³É¶ÔÓ¦µÄClassÀà¡£
-´ÓÊý¾Ý¿â¶ÁÈ¡£¬ÕâÖÖ³¡¾°Ïà¶ÔÉÙ¼û£¬ÀýÈçÓÐÐ©ÖÐ¼ä¼þ·þÎñÆ÷£¨ÈçSAP Netweaver£©¿ÉÒÔÑ¡Ôñ°Ñ³ÌÐò°²×°µ½Êý¾Ý¿âÖÐÀ´Íê³É³ÌÐò´úÂëÔÚ¼¯Èº¼äµÄ·Ö·¢¡£
+- ÔËÐÐÊ±¼ÆËãÉú³É£¬ÕâÖÖ³¡¾°Ê¹ÓÃµÃ×î¶àµÃ¾ÍÊÇ¶¯Ì¬´úÀí¼¼Êõ£¬ÔÚ java.lang.reflect.Proxy ÖÐ£¬¾ÍÊÇÓÃÁË ProxyGenerator.generateProxyClass µÄ´úÀíÀàµÄ¶þ½øÖÆ×Ö½ÚÁ÷¡£
+- ÓÉÆäËûÎÄ¼þÉú³É£¬µäÐÍ³¡¾°ÊÇ JSP Ó¦ÓÃ£¬¼´ÓÉ JSP ÎÄ¼þÉú³É¶ÔÓ¦µÄ Class Àà¡£
+- ´ÓÊý¾Ý¿â¶ÁÈ¡£¬ÕâÖÖ³¡¾°Ïà¶ÔÉÙ¼û£¬ÀýÈçÓÐÐ©ÖÐ¼ä¼þ·þÎñÆ÷£¨Èç SAP Netweaver£©¿ÉÒÔÑ¡Ôñ°Ñ³ÌÐò°²×°µ½Êý¾Ý¿âÖÐÀ´Íê³É³ÌÐò´úÂëÔÚ¼¯Èº¼äµÄ·Ö·¢¡£
 ...
 
 ### 3.2 ÑéÖ¤
@@ -405,9 +516,9 @@ System.out.println(ConstClass.HELLOWORLD);
 
 ### 3.3 ×¼±¸
 
-ÎªÀà±äÁ¿·ÖÅäÄÚ´æ²¢ÉèÖÃ³õÊ¼Öµ¡£
+Àà±äÁ¿ÊÇ±» static ÐÞÊÎµÄ±äÁ¿£¬×¼±¸½×¶ÎÎªÀà±äÁ¿·ÖÅäÄÚ´æ²¢ÉèÖÃ³õÊ¼Öµ£¬Ê¹ÓÃµÄÊÇ·½·¨ÇøµÄÄÚ´æ¡£
 
-Àà±äÁ¿ÊÇ±» static ÐÞÊÎµÄ±äÁ¿¡£ÀàµÄÊµÀý±äÁ¿²»»áÔÚÕâ½×¶Î·ÖÅäÄÚ´æ£¬Ëü½«»áÔÚ¶ÔÏóÊµÀý»¯Ê±Ëæ×Å¶ÔÏóÒ»Æð·ÖÅäÔÚ Java ¶ÑÖÐ¡£
+ÊµÀý±äÁ¿²»»áÔÚÕâ½×¶Î·ÖÅäÄÚ´æ£¬Ëü½«»áÔÚ¶ÔÏóÊµÀý»¯Ê±Ëæ×Å¶ÔÏóÒ»Æð·ÖÅäÔÚ Java ¶ÑÖÐ¡£
 
 ³õÊ¼ÖµÒ»°ãÎª 0 Öµ£¬ÀýÈçÏÂÃæµÄÀà±äÁ¿ value ±»³õÊ¼»¯Îª 0 ¶ø²»ÊÇ 123¡£
 
@@ -429,11 +540,11 @@ public static final int value = 123;
 
 ³õÊ¼»¯½×¶Î¼´ÐéÄâ»úÖ´ÐÐÀà¹¹ÔìÆ÷ &lt;clinit>() ·½·¨µÄ¹ý³Ì¡£
 
-ÔÚ×¼±¸½×¶Î£¬±äÁ¿ÒÑ¾­¸³¹ýÒ»´ÎÏµÍ³ÒªÇóµÄ³õÊ¼Öµ£¬¶øÔÚ³õÊ¼»¯½×¶Î£¬¸ù¾Ý³ÌÐòÔ±Í¨¹ý³ÌÐòÖÆ¶¨µÄÖ÷¹Û¼Æ»®È¥³õÊ¼»¯Àà±äÁ¿ºÍÆäËü×ÊÔ´¡£
+ÔÚ×¼±¸½×¶Î£¬Àà±äÁ¿ÒÑ¾­¸³¹ýÒ»´ÎÏµÍ³ÒªÇóµÄ³õÊ¼Öµ£¬¶øÔÚ³õÊ¼»¯½×¶Î£¬¸ù¾Ý³ÌÐòÔ±Í¨¹ý³ÌÐòÖÆ¶¨µÄÖ÷¹Û¼Æ»®È¥³õÊ¼»¯Àà±äÁ¿ºÍÆäËü×ÊÔ´¡£
 
 &lt;clinit>() ·½·¨¾ßÓÐÒÔÏÂÌØµã£º
 
-- ÊÇÓÉ±àÒëÆ÷×Ô¶¯ÊÕ¼¯ÀàÖÐËùÓÐÀà±äÁ¿µÄ¸³Öµ¶¯×÷ºÍ¾²Ì¬Óï¾ä¿é£¨ static{} ¿é£©ÖÐµÄÓï¾äºÏ²¢²úÉúµÄ£¬±àÒëÆ÷ÊÕ¼¯µÄË³ÐòÓÉÓï¾äÔÚÔ´ÎÄ¼þÖÐ³öÏÖµÄË³Ðò¾ö¶¨¡£ÌØ±ð×¢ÒâµÄÊÇ£¬¾²Ì¬Óï¾ä¿éÖ»ÄÜ·ÃÎÊµ½¶¨ÒåÔÚËüÖ®Ç°µÄÀà±äÁ¿£¬¶¨ÒåÔÚËüÖ®ºóµÄÀà±äÁ¿Ö»ÄÜ¸³Öµ£¬²»ÄÜ·ÃÎÊ¡£ÀýÈçÒÔÏÂ´úÂë£º
+- ÊÇÓÉ±àÒëÆ÷×Ô¶¯ÊÕ¼¯ÀàÖÐËùÓÐÀà±äÁ¿µÄ¸³Öµ¶¯×÷ºÍ¾²Ì¬Óï¾ä¿é£¨static{} ¿é£©ÖÐµÄÓï¾äºÏ²¢²úÉúµÄ£¬±àÒëÆ÷ÊÕ¼¯µÄË³ÐòÓÉÓï¾äÔÚÔ´ÎÄ¼þÖÐ³öÏÖµÄË³Ðò¾ö¶¨¡£ÌØ±ð×¢ÒâµÄÊÇ£¬¾²Ì¬Óï¾ä¿éÖ»ÄÜ·ÃÎÊµ½¶¨ÒåÔÚËüÖ®Ç°µÄÀà±äÁ¿£¬¶¨ÒåÔÚËüÖ®ºóµÄÀà±äÁ¿Ö»ÄÜ¸³Öµ£¬²»ÄÜ·ÃÎÊ¡£ÀýÈçÒÔÏÂ´úÂë£º
 
 ```java
 public class Test {
@@ -445,7 +556,7 @@ public class Test {
 }
 ```
 
-- ÓëÀàµÄ¹¹Ôìº¯Êý£¨ÊµÀý¹¹ÔìÆ÷ &lt;init>()£©²»Í¬£¬²»ÐèÒªÏÔÊ½µÄµ÷ÓÃ¸¸ÀàµÄ¹¹ÔìÆ÷¡£ÐéÄâ»ú»á×Ô¶¯±£Ö¤ÔÚ×ÓÀàµÄ &lt;clinit>() ·½·¨ÔËÐÐÖ®Ç°£¬¸¸ÀàµÄ &lt;clinit>() ·½·¨ÒÑ¾­Ö´ÐÐ½áÊø¡£Òò´ËÐéÄâ»úÖÐµÚÒ»¸öÖ´ÐÐ &lt;clinit>() ·½·¨µÄÀà¿Ï¶¨Îª java.lang.Object¡£
+- ÓëÀàµÄ¹¹Ôìº¯Êý£¨»òÕßËµÊµÀý¹¹ÔìÆ÷ &lt;init>()£©²»Í¬£¬²»ÐèÒªÏÔÊ½µÄµ÷ÓÃ¸¸ÀàµÄ¹¹ÔìÆ÷¡£ÐéÄâ»ú»á×Ô¶¯±£Ö¤ÔÚ×ÓÀàµÄ &lt;clinit>() ·½·¨ÔËÐÐÖ®Ç°£¬¸¸ÀàµÄ &lt;clinit>() ·½·¨ÒÑ¾­Ö´ÐÐ½áÊø¡£Òò´ËÐéÄâ»úÖÐµÚÒ»¸öÖ´ÐÐ &lt;clinit>() ·½·¨µÄÀà¿Ï¶¨Îª java.lang.Object¡£
 
 - ÓÉÓÚ¸¸ÀàµÄ &lt;clinit>() ·½·¨ÏÈÖ´ÐÐ£¬Ò²¾ÍÒâÎ¶×Å¸¸ÀàÖÐ¶¨ÒåµÄ¾²Ì¬Óï¾ä¿éÒªÓÅÓÚ×ÓÀàµÄ±äÁ¿¸³Öµ²Ù×÷¡£ÀýÈçÒÔÏÂ´úÂë£º
 
@@ -462,11 +573,11 @@ static class Sub extends Parent {
 }
 
 public static void main(String[] args) {
-        System.out.println(Sub.B);  // Êä³ö½á¹ûÊÇ¸¸ÀàÖÐµÄ¾²Ì¬±äÁ¿Öµ A£¬Ò²¾ÍÊÇ2
+        System.out.println(Sub.B);  // Êä³ö½á¹ûÊÇ¸¸ÀàÖÐµÄ¾²Ì¬±äÁ¿Öµ A£¬Ò²¾ÍÊÇ 2
 }
 ```
 
-- ¶ÔÓÚÀà»ò½Ó¿Ú²»ÊÇ±ØÐëµÄ£¬Èç¹ûÒ»¸öÀàÖÐ²»°üº¬¾²Ì¬Óï¾ä¿é£¬Ò²Ã»ÓÐ¶ÔÀà±äÁ¿µÄ¸³Öµ²Ù×÷£¬±àÒëÆ÷¿ÉÒÔ²»Îª¸ÃÀàÉú³É &lt;clinit>() ·½·¨¡£
+- &lt;clinit>() ·½·¨¶ÔÓÚÀà»ò½Ó¿Ú²»ÊÇ±ØÐëµÄ£¬Èç¹ûÒ»¸öÀàÖÐ²»°üº¬¾²Ì¬Óï¾ä¿é£¬Ò²Ã»ÓÐ¶ÔÀà±äÁ¿µÄ¸³Öµ²Ù×÷£¬±àÒëÆ÷¿ÉÒÔ²»Îª¸ÃÀàÉú³É &lt;clinit>() ·½·¨¡£
 
 - ½Ó¿ÚÖÐ²»¿ÉÒÔÊ¹ÓÃ¾²Ì¬Óï¾ä¿é£¬µ«ÈÔÈ»ÓÐÀà±äÁ¿³õÊ¼»¯µÄ¸³Öµ²Ù×÷£¬Òò´Ë½Ó¿ÚÓëÀàÒ»Ñù¶¼»áÉú³É &lt;clinit>() ·½·¨¡£µ«½Ó¿ÚÓëÀà²»Í¬µÄÊÇ£¬Ö´ÐÐ½Ó¿ÚµÄ &lt;clinit>() ·½·¨²»ÐèÒªÏÈÖ´ÐÐ¸¸½Ó¿ÚµÄ &lt;clinit>() ·½·¨¡£Ö»ÓÐµ±¸¸½Ó¿ÚÖÐ¶¨ÒåµÄ±äÁ¿Ê¹ÓÃÊ±£¬¸¸½Ó¿Ú²Å»á³õÊ¼»¯¡£ÁíÍâ£¬½Ó¿ÚµÄÊµÏÖÀàÔÚ³õÊ¼»¯Ê±Ò²Ò»Ñù²»»áÖ´ÐÐ½Ó¿ÚµÄ &lt;clinit>() ·½·¨¡£
 
@@ -474,11 +585,70 @@ public static void main(String[] args) {
 
 ## 4. Àà¼ÓÔØÆ÷
 
-https://crowhawk.github.io/2017/08/21/jvm_6/
+ÐéÄâ»úÉè¼ÆÍÅ¶Ó°ÑÀà¼ÓÔØ½×¶ÎÖÐµÄ¡°Í¨¹ýÒ»¸öÀàµÄÈ«ÏÞ¶¨ÃûÀ´»ñÈ¡ÃèÊö´ËÀàµÄ¶þ½øÖÆ×Ö½ÚÁ÷ ( ¼´×Ö½ÚÂë )¡±Õâ¸ö¶¯×÷·Åµ½ Java ÐéÄâ»úÍâ²¿È¥ÊµÏÖ£¬ÒÔ±ãÈÃÓ¦ÓÃ³ÌÐò×Ô¼º¾ö¶¨ÈçºÎÈ¥»ñÈ¡ËùÐèÒªµÄÀà¡£ÊµÏÖÕâ¸ö¶¯×÷µÄ´úÂëÄ£¿é³ÆÎª¡°Àà¼ÓÔØÆ÷¡±¡£
+
+### 4.1 ÀàÓëÀà¼ÓÔØÆ÷
+
+¶ÔÓÚÈÎÒâÒ»¸öÀà£¬¶¼ÐèÒªÓÉ¼ÓÔØËüµÄÀà¼ÓÔØÆ÷ºÍÕâ¸öÀà±¾ÉíÒ»Í¬È·Á¢ÆäÔÚ Java ÐéÄâ»úÖÐµÄÎ¨Ò»ÐÔ£¬Ã¿Ò»¸öÀà¼ÓÔØÆ÷£¬¶¼ÓµÓÐÒ»¸ö¶ÀÁ¢µÄÀàÃû³Æ¿Õ¼ä¡£Í¨Ë×¶øÑÔ£º±È½ÏÁ½¸öÀàÊÇ·ñ¡°ÏàµÈ¡±£¨ÕâÀïËùÖ¸µÄ¡°ÏàµÈ¡±£¬°üÀ¨ÀàµÄ Class ¶ÔÏóµÄ equals() ·½·¨¡¢isAssignableFrom() ·½·¨¡¢isInstance() ·½·¨µÄ·µ»Ø½á¹û£¬Ò²°üÀ¨Ê¹ÓÃ instanceof() ¹Ø¼ü×Ö¶Ô×ö¶ÔÏóËùÊô¹ØÏµÅÐ¶¨µÈÇé¿ö£©£¬Ö»ÓÐÔÚÕâÁ½¸öÀàÊ±ÓÉÍ¬Ò»¸öÀà¼ÓÔØÆ÷¼ÓÔØµÄÇ°ÌáÏÂ²ÅÓÐÒâÒå£¬·ñÔò£¬¼´Ê¹ÕâÁ½¸öÀàÀ´Ô´ÓÚÍ¬Ò»¸ö Class ÎÄ¼þ£¬±»Í¬Ò»¸öÐéÄâ»ú¼ÓÔØ£¬Ö»Òª¼ÓÔØËüÃÇµÄÀà¼ÓÔØÆ÷²»Í¬£¬ÄÇÕâÁ½¸öÀà¾Í±Ø¶¨²»ÏàµÈ¡£
+
+### 4.2 Àà¼ÓÔØÆ÷·ÖÀà
+
+´Ó Java ÐéÄâ»úµÄ½Ç¶ÈÀ´½²£¬Ö»´æÔÚÒÔÏÂÁ½ÖÖ²»Í¬µÄÀà¼ÓÔØÆ÷£º
+
+Ò»ÖÖÊÇÆô¶¯Àà¼ÓÔØÆ÷£¨Bootstrap ClassLoader£©£¬Õâ¸öÀà¼ÓÔØÆ÷ÓÃ C++ ÊµÏÖ£¬ÊÇÐéÄâ»ú×ÔÉíµÄÒ»²¿·Ö£»ÁíÒ»ÖÖ¾ÍÊÇËùÓÐÆäËûÀàµÄ¼ÓÔØÆ÷£¬ÕâÐ©ÀàÓÉ Java ÊµÏÖ£¬¶ÀÁ¢ÓÚÐéÄâ»úÍâ²¿£¬²¢ÇÒÈ«¶¼¼Ì³Ð×Ô³éÏóÀà java.lang.ClassLoader¡£
+
+´Ó Java ¿ª·¢ÈËÔ±µÄ½Ç¶È¿´£¬Àà¼ÓÔØÆ÷¿ÉÒÔ»®·ÖµÃ¸üÏ¸ÖÂÒ»Ð©£º
+
+- Æô¶¯Àà¼ÓÔØÆ÷£¨Bootstrap ClassLoader£© ´ËÀà¼ÓÔØÆ÷¸ºÔð½«´æ·ÅÔÚ <JAVA_HOME>\lib Ä¿Â¼ÖÐµÄ£¬»òÕß±» -Xbootclasspath ²ÎÊýËùÖ¸¶¨µÄÂ·¾¶ÖÐµÄ£¬²¢ÇÒÊÇÐéÄâ»úÊ¶±ðµÄ£¨½ö°´ÕÕÎÄ¼þÃûÊ¶±ð£¬Èç rt.jar£¬Ãû×Ö²»·ûºÏµÄÀà¿â¼´Ê¹·ÅÔÚ lib Ä¿Â¼ÖÐÒ²²»»á±»¼ÓÔØ£©Àà¿â¼ÓÔØµ½ÐéÄâ»úÄÚ´æÖÐ¡£ Æô¶¯Àà¼ÓÔØÆ÷ÎÞ·¨±» Java ³ÌÐòÖ±½ÓÒýÓÃ£¬ÓÃ»§ÔÚ±àÐ´×Ô¶¨ÒåÀà¼ÓÔØÆ÷Ê±£¬Èç¹ûÐèÒª°Ñ¼ÓÔØÇëÇóÎ¯ÅÉ¸øÒýµ¼Àà¼ÓÔØÆ÷£¬Ö±½ÓÊ¹ÓÃ null ´úÌæ¼´¿É¡£
+
+- À©Õ¹Àà¼ÓÔØÆ÷£¨Extension ClassLoader£© Õâ¸öÀà¼ÓÔØÆ÷ÊÇÓÉ ExtClassLoader£¨sun.misc.Launcher$ExtClassLoader£©ÊµÏÖµÄ¡£Ëü¸ºÔð½« <Java_Home>/lib/ext »òÕß±» java.ext.dir ÏµÍ³±äÁ¿ËùÖ¸¶¨Â·¾¶ÖÐµÄËùÓÐÀà¿â¼ÓÔØµ½ÄÚ´æÖÐ£¬¿ª·¢Õß¿ÉÒÔÖ±½ÓÊ¹ÓÃÀ©Õ¹Àà¼ÓÔØÆ÷¡£
+
+- Ó¦ÓÃ³ÌÐòÀà¼ÓÔØÆ÷£¨Application ClassLoader£© Õâ¸öÀà¼ÓÔØÆ÷ÊÇÓÉ AppClassLoader£¨sun.misc.Launcher$AppClassLoader£©ÊµÏÖµÄ¡£ÓÉÓÚÕâ¸öÀà¼ÓÔØÆ÷ÊÇ ClassLoader ÖÐµÄ getSystemClassLoader() ·½·¨µÄ·µ»ØÖµ£¬Òò´ËÒ»°ã³ÆÎªÏµÍ³Àà¼ÓÔØÆ÷¡£Ëü¸ºÔð¼ÓÔØÓÃ»§ÀàÂ·¾¶£¨ClassPath£©ÉÏËùÖ¸¶¨µÄÀà¿â£¬¿ª·¢Õß¿ÉÒÔÖ±½ÓÊ¹ÓÃÕâ¸öÀà¼ÓÔØÆ÷£¬Èç¹ûÓ¦ÓÃ³ÌÐòÖÐÃ»ÓÐ×Ô¶¨Òå¹ý×Ô¼ºµÄÀà¼ÓÔØÆ÷£¬Ò»°ãÇé¿öÏÂÕâ¸ö¾ÍÊÇ³ÌÐòÖÐÄ¬ÈÏµÄÀà¼ÓÔØÆ÷¡£
+
+### 4.3 Ë«Ç×Î¯ÅÉÄ£ÐÍ
+
+Ó¦ÓÃ³ÌÐò¶¼ÊÇÓÉÈýÖÖÀà¼ÓÔØÆ÷Ïà»¥ÅäºÏ½øÐÐ¼ÓÔØµÄ£¬Èç¹ûÓÐ±ØÒª£¬»¹¿ÉÒÔ¼ÓÈë×Ô¼º¶¨ÒåµÄÀà¼ÓÔØÆ÷¡£ÏÂÍ¼Õ¹Ê¾µÄÀà¼ÓÔØÆ÷Ö®¼äµÄ²ã´Î¹ØÏµ£¬³ÆÎªÀà¼ÓÔØÆ÷µÄË«Ç×Î¯ÅÉÄ£ÐÍ£¨Parents Delegation Model£©¡£¸ÃÄ£ÐÍÒªÇó³ýÁË¶¥²ãµÄÆô¶¯Àà¼ÓÔØÆ÷Íâ£¬ÆäÓàµÄÀà¼ÓÔØÆ÷¶¼Ó¦ÓÐ×Ô¼ºµÄ¸¸Àà¼ÓÔØÆ÷£¬ÕâÀïÀà¼ÓÔØÆ÷Ö®¼äµÄ¸¸×Ó¹ØÏµÒ»°ãÍ¨¹ý×éºÏ£¨Composition£©¹ØÏµÀ´ÊµÏÖ£¬¶ø²»ÊÇÍ¨¹ý¼Ì³Ð£¨Inheritance£©µÄ¹ØÏµÊµÏÖ¡£
+
+![](https://github.com/00000H/notes/blob/master/pics/2cdc3ce2-fa82-4c22-baaa-000c07d10473.jpg)
+
+**¹¤×÷¹ý³Ì**
+
+Èç¹ûÒ»¸öÀà¼ÓÔØÆ÷ÊÕµ½ÁËÀà¼ÓÔØµÄÇëÇó£¬ËüÊ×ÏÈ²»»á×Ô¼ºÈ¥³¢ÊÔ¼ÓÔØ£¬¶øÊÇ°ÑÕâ¸öÇëÇóÎ¯ÅÉ¸ø¸¸Àà¼ÓÔØÆ÷£¬Ã¿Ò»¸ö²ã´ÎµÄ¼ÓÔØÆ÷¶¼ÊÇÈç´Ë£¬ÒÀ´ÎµÝ¹é£¬Òò´ËËùÓÐµÄ¼ÓÔØÇëÇó×îÖÕ¶¼Ó¦¸Ã´«ËÍµ½¶¥²ãµÄÆô¶¯Àà¼ÓÔØÆ÷ÖÐ£¬Ö»ÓÐµ±¸¸¼ÓÔØÆ÷·´À¡×Ô¼ºÎÞ·¨Íê³É´Ë¼ÓÔØÇëÇó£¨ËüËÑË÷·¶Î§ÖÐÃ»ÓÐÕÒµ½ËùÐèÀà£©Ê±£¬×Ó¼ÓÔØÆ÷²Å»á³¢ÊÔ×Ô¼º¼ÓÔØ¡£
+
+**ºÃ´¦**
+
+Ê¹ÓÃË«Ç×Î¯ÅÉÄ£ÐÍÀ´×éÖ¯Àà¼ÓÔØÆ÷Ö®¼äµÄ¹ØÏµ£¬Ê¹µÃ Java ÀàËæ×ÅËüµÄÀà¼ÓÔØÆ÷Ò»Æð¾ß±¸ÁËÒ»ÖÖ´øÓÐÓÅÏÈ¼¶µÄ²ã´Î¹ØÏµ¡£ÀýÈçÀà java.lang.Object£¬Ëü´æ·ÅÔÙ rt.jar ÖÐ£¬ÎÞÂÛÄÄ¸öÀà¼ÓÔØÆ÷Òª¼ÓÔØÕâ¸öÀà£¬×îÖÕ¶¼ÊÇÎ¯ÅÉ¸ø´¦ÓÚÄ£ÐÍ×î¶¥¶ËµÄÆô¶¯Àà¼ÓÔØÆ÷½øÐÐ¼ÓÔØ£¬Òò´Ë Object ÀàÔÚ³ÌÐòµÄ¸÷ÖÖÀà¼ÓÔØÆ÷»·¾³ÖÐ¶¼ÊÇÍ¬Ò»¸öÀà¡£Ïà·´£¬Èç¹ûÃ»ÓÐË«Ç×Î¯ÅÉÄ£ÐÍ£¬ÓÉ¸÷¸öÀà¼ÓÔØÆ÷×ÔÐÐ¼ÓÔØµÄ»°£¬Èç¹ûÓÃ»§±àÐ´ÁËÒ»¸ö³ÆÎª£àjava.lang.Object µÄÀà£¬²¢·ÅÔÚ³ÌÐòµÄ ClassPath ÖÐ£¬ÄÇÏµÍ³ÖÐ½«»á³öÏÖ¶à¸ö²»Í¬µÄ Object Àà£¬³ÌÐò½«±äµÃÒ»Æ¬»ìÂÒ¡£Èç¹û¿ª·¢Õß³¢ÊÔ±àÐ´Ò»¸öÓë rt.jar Àà¿âÖÐÒÑÓÐÀàÖØÃûµÄ Java Àà£¬½«»á·¢ÏÖ¿ÉÒÔÕý³£±àÒë£¬µ«ÊÇÓÀÔ¶ÎÞ·¨±»¼ÓÔØÔËÐÐ¡£
+
+**ÊµÏÖ**
+
+```java
+protected synchronized Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException{
+    //check the class has been loaded or not
+    Class c = findLoadedClass(name);
+    if(c == null) {
+        try{
+            if(parent != null) {
+                c = parent.loadClass(name, false);
+            } else{
+                c = findBootstrapClassOrNull(name);
+            }
+        } catch(ClassNotFoundException e) {
+            //if throws the exception , the father can not complete the load
+        }
+        if(c == null) {
+            c = findClass(name);
+        }
+    }
+    if(resolve) {
+        resolveClass(c);
+    }
+    return c;
+}
+```
 
 # JVM ²ÎÊý
 
-**GC µÄÓÅ»¯ÅäÖÃ**
+## GC ÓÅ»¯ÅäÖÃ
 
  ÅäÖÃ | ÃèÊö 
  --- | --- 
@@ -488,15 +658,15 @@ https://crowhawk.github.io/2017/08/21/jvm_6/
  -XX:PermSize | ³õÊ¼»¯ÓÀ¾Ã´ú´óÐ¡ 
  -XX:MaxPermSize | ÓÀ¾Ã´ú×î´óÈÝÁ¿ 
 
-**ÔËÐÐµÄÀ¬»ø»ØÊÕÆ÷ÀàÐÍ**
+## GC ÀàÐÍÉèÖÃ
 
  ÅäÖÃ | ÃèÊö 
  --- | --- 
  -XX:+UseSerialGC | ´®ÐÐÀ¬»ø»ØÊÕÆ÷ 
  -XX:+UseParallelGC | ²¢ÐÐÀ¬»ø»ØÊÕÆ÷ 
  -XX:+UseConcMarkSweepGC | ²¢·¢±ê¼ÇÉ¨ÃèÀ¬»ø»ØÊÕÆ÷ 
- -XX:ParallelCMSThreads= | ²¢·¢±ê¼ÇÉ¨ÃèÀ¬»ø»ØÊÕÆ÷ =ÎªÊ¹ÓÃµÄÏß³ÌÊýÁ¿ 
- -XX:+UseG1GC | G1À¬»ø»ØÊÕÆ÷ 
+ -XX:ParallelCMSThreads= | ²¢·¢±ê¼ÇÉ¨ÃèÀ¬»ø»ØÊÕÆ÷ = ÎªÊ¹ÓÃµÄÏß³ÌÊýÁ¿ 
+ -XX:+UseG1GC | G1 À¬»ø»ØÊÕÆ÷ 
 
 ```java
 java -Xmx12m -Xms3m -Xmn1m -XX:PermSize=20m -XX:MaxPermSize=20m -XX:+UseSerialGC -jar java-application.jar
