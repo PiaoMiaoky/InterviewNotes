@@ -2,11 +2,11 @@
 
 > [算法](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/算法.md)
 
-整理自《算法 第四版》
+整理自《算法 第四版》，主要是排序和树。
 
 > [Leetcode 题解](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Leetcode%20题解.md)
 
-对题目做了一个分类，并对每种题型的解题思想做了总结。
+对题目做了一个分类，并对每种题型的解题思想做了总结，适合按照这个里面的题目顺序来刷题。
 
 已经整理了 300+ 的题目，基本涵盖所有经典题目，持续整理中。
 
@@ -46,7 +46,7 @@
 
 > [面向对象思想](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/面向对象思想.md)
 
-一些面向对象思想和原则
+一些面向对象思想和原则。
 
 # Java
 
@@ -57,6 +57,16 @@
 > [Java IO](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Java%20IO.md)
 
 File、InputStream 和 OutputStream、Reader 和 Writer、Serializable、Socket 以及 NIO
+
+# 数据库
+
+> [SQL 语法](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/SQL%20语法.md)
+
+整理自《SQL 必知必会》，比较系统。
+
+> [MySQL](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/MySQL.md)
+
+整理自《高性能 MySQL》，重点整理。
 
 # 资料下载
 
