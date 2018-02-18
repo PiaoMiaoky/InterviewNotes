@@ -62,7 +62,7 @@
 
 > [SQL 语法](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/SQL%20语法.md)
 
-整理自《SQL 必知必会》，原书内容也不多，不过整理的笔记也原书更加精简。
+整理自《SQL 必知必会》，原书内容不多，不过整理的笔记比原书更加精简。
 
 > [MySQL](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/MySQL.md)
 
