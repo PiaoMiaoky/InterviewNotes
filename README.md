@@ -56,13 +56,13 @@
 
 > [Java IO](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/Java%20IO.md)
 
-File、InputStream 和 OutputStream、Reader 和 Writer、Serializable、Socket 以及 NIO
+磁盘操作、字节操作、字符操作、对象操作、网络操作、NIO
 
 # 数据库
 
 > [SQL 语法](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/SQL%20语法.md)
 
-整理自《SQL 必知必会》，比较系统。
+整理自《SQL 必知必会》，原书内容也不多，不过整理的笔记也原书更加精简。
 
 > [MySQL](https://github.com/CyC2018/InnterviewNotes/blob/master/notes/MySQL.md)
 
