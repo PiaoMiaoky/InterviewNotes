@@ -1,3 +1,0 @@
-# 外部排序
-
-- [外部排序思想](http://blog.csdn.net/jeason29/article/details/50474772)
