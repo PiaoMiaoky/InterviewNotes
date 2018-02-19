@@ -80,7 +80,7 @@
 
 # 前言
 
-里面的很多题目都在 Leetcode 中出现过，所以一些解题思路就不在这里重复提了。可以看《剑指 Offer》书本上面的解题思路，或者看 [Leetcode 题解](https://github.com/CyC2018/InterviewNotes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3.md)。比较推荐先看 Leetcode 题解，因为比较系统，看完之后再看这里面的题目就很简单了。
+里面的很多题目都在 Leetcode 中出现过，所以一些解题思路就不在这里重复提了。可以看《剑指 Offer》书本上面的解题思路，或者看 [Leetcode 题解 ](https://github.com/CyC2018/InterviewNotes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3.md)。比较推荐先看 Leetcode 题解，因为比较系统，看完之后再看这里面的题目就很简单了。
 
 # 第二章 面试需要的基础知识
 
@@ -1530,7 +1530,7 @@ public void FindNumsAppearOnce(int[] array, int num1[], int num2[]) {
 
 **题目描述**
 
-输入一个递增排序的数组和一个数字S，在数组中查找两个数，是的他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。
+输入一个递增排序的数组和一个数字 S，在数组中查找两个数，是的他们的和正好是 S，如果有多对数字的和等于 S，输出两个数的乘积最小的。
 
 ```java
 public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
@@ -1549,7 +1549,7 @@ public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
 
 **题目描述**
 
-和为 100 的连续序列有 18,19,20,21,22
+和为 100 的连续序列有 18, 19, 20, 21, 22
 
 ```java
 public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
@@ -1620,7 +1620,7 @@ private void reverse(char[] c, int start, int end) {
 
 **题目描述**
 
-对于一个给定的字符序列S，请你把其循环左移K位后的序列输出。例如，字符序列S=”abcXYZdef”,要求输出循环左移3位后的结果，即“XYZdefabc”。
+对于一个给定的字符序列 S，请你把其循环左移 K 位后的序列输出。例如，字符序列 S=”abcXYZdef”, 要求输出循环左移 3 位后的结果，即“XYZdefabc”。
 
 ```java
 public String LeftRotateString(String str, int n) {
@@ -1647,7 +1647,7 @@ private void reverse(char[] c, int i, int j) {
 
 **题目描述**
 
-给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组{2,3,4,2,6,2,5,1}及滑动窗口的大小3，那么一共存在6个滑动窗口，他们的最大值分别为{4,4,6,6,6,5}；
+给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组 {2, 3, 4, 2, 6, 2, 5, 1} 及滑动窗口的大小 3，那么一共存在 6 个滑动窗口，他们的最大值分别为 {4, 4, 6, 6, 6, 5}；
 
 ```java
 public ArrayList<Integer> maxInWindows(int[] num, int size) {
